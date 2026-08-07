@@ -1,0 +1,26 @@
+NBIC 2026 HERO + CONTACT CORRECTION
+
+Reason the contact page reverted:
+The previous mobile-menu package accidentally included an older contact.html.
+
+This package restores the latest enhanced contact page and keeps the mobile menu fix.
+
+Replace:
+- index.html
+- contact.html
+- css/styles.css
+- js/mobile-nav-fix.js
+
+You may also replace the other included HTML pages to keep the same cache version.
+
+Keep:
+- assets/
+- js/script.js
+
+Homepage improvements:
+- stronger hero title typography
+- justified desktop introduction paragraph
+- three compact layered fact cards
+- swipeable cards on mobile
+
+After upload, hard refresh or use Incognito mode.
