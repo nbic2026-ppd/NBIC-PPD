@@ -1,0 +1,147 @@
+/* overrides.css - hero + mobile footer fixes (updated) */
+/* Constrain homepage hero so it doesn't "bleed" indefinitely */
+.hero-home {
+  /* use viewport-based clamp so hero is large but bounded */
+  min-height: min(72vh, 820px);
+  background: transparent !important; /* remove the heavy white gradient so left copy remains visible */
+  background-position: right 60% center !important;
+  background-size: cover !important;
+}
+
+/* layout for hero content */
+.hero-inner {
+  display: grid !important;
+  grid-template-columns: 1fr 560px;
+  gap: 36px;
+  align-items: center;
+}
+
+/* ensure hero copy sits above any decorative layers */
+.home-hero-copy,
+.home-hero-copy * { z-index: 3 !important; position: relative !important; color: var(--navy) !important; }
+.home-hero-copy h1, .home-hero-copy .hero-title-v2 { color: var(--navy) !important; }
+.home-hero-copy p { color: #425777 !important; }
+
+/* cap the visual image so it can't overflow the hero block */
+.hero-visual,
+.hero-visual img,
+.page-hero-visual {
+  max-width: 620px !important;
+  width: 100% !important;
+  height: auto !important;
+  object-fit: cover;
+  transform: none !important;
+}
+
+/* inner-page hero (page-hero) fixes so other pages match header/hero treatment */
+.page-hero, .page-hero-visual, .page-hero-panel{
+  /* keep the existing soft background but ensure copy is visible */
+  background: transparent !important;
+}
+.page-hero-panel h1 { color: var(--navy) !important; font-weight:800 !important; }
+.page-hero-panel>p { color: #425777 !important; }
+.page-hero .container { position: relative; z-index: 2 !important; }
+
+/* remove floating decorative chrome on smaller screens and hide floating chips */
+@media (max-width: 760px) {
+  .hero-home {
+    min-height: 52vh !important;
+    background-position: right 72% center !important;
+  }
+
+  .hero-inner {
+    grid-template-columns: 1fr !important;
+    gap: 18px !important;
+    padding-top: 18px !important;
+  }
+
+  /* stop the big hero image scaling */
+  .hero-visual img,
+  .hero-visual {
+    width: 100% !important;
+    max-width: 100% !important;
+    transform: none !important;
+  }
+
+  /* hide decorative chrome assets and chips on small screens */
+  .chrome-ring,
+  .visual-glow,
+  .floating-chip,
+  .hero-orb,
+  .section-chrome::before,
+  .section-chrome::after {
+    display: none !important;
+    opacity: 0 !important;
+    height: 0 !important;
+  }
+
+  /* make hero-benefits compact */
+  .hero-benefits { margin-top: 18px !important; grid-template-columns: 1fr !important; gap: 12px !important; }
+}
+
+/* Prefer a clean hero for very small phones */
+@media (max-width: 420px) {
+  .hero-home { min-height: 44vh !important; padding-bottom: 8px !important; }
+  .hero-title-v2, .hero h1 { font-size: clamp(24px, 7vw, 38px) !important; line-height: 1.05 !important; }
+}
+
+/* Minimalist footer for mobile */
+/* Remove heavy gradients and simplify layout */
+.site-footer {
+  background: #071427 !important; /* slightly warmer dark */
+  border-top: 0 !important;
+  box-shadow: none !important;
+  color: #dbeafc !important;
+}
+
+/* single-column footer on small screens */
+.footer-shell {
+  grid-template-columns: 1fr !important;
+  gap: 10px !important;
+  padding: 16px 18px !important;
+  align-items: center;
+  text-align: center;
+}
+
+/* reduce clutter: center links and hide small decorative text */
+.footer-links {
+  display: flex !important;
+  justify-content: center !important;
+  gap: 10px !important;
+  flex-wrap: wrap !important;
+}
+
+.footer-brand-text span:last-child { display: none !important; } /* hide secondary tagline on mobile */
+
+/* footer bottom simplified */
+.footer-bottom {
+  padding: 10px 18px !important;
+  font-size: 13px !important;
+  justify-content: center !important;
+}
+
+/* restore 3-column layout on large screens */
+@media (min-width: 960px) {
+  .footer-shell { grid-template-columns: 0.9fr 1fr 0.6fr !important; padding: 26px 32px !important; text-align: left; }
+  .footer-brand-text span:last-child { display: block !important; }
+}
+
+/* Optional: reduce the size of footer icons and spacing for better mobile density */
+.footer-links a img { width: 26px !important; height: 26px !important; }
+
+/* Emergency safety: if chrome/background pseudo-elements still push page height, hide them globally on mobile */
+@media (max-width: 900px) {
+  .section-chrome::before,
+  .section-chrome::after { display: none !important; height: 0 !important; opacity: 0 !important; }
+}
+
+/* Placeholder (status / empty content) font color improvement */
+.status-placeholder p,
+.status-placeholder small,
+.section-intro,
+.section p { color: #425777 !important; }
+.status-placeholder h2 { color: var(--navy) !important; }
+
+/* Header nav: ensure sticky header doesn't overlay hero text on small screens */
+.site-header { background: rgba(247,250,255,0.98) !important; }
+.nav-shell { min-height: var(--header-height) !important; }
