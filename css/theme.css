@@ -149,6 +149,7 @@ body.inner-page.system-page .brand-badge img {
 .system-page.participation-guide-page .page-hero { background-image: linear-gradient(90deg,rgba(4,12,36,.98),rgba(5,15,45,.82) 56%,rgba(7,18,55,.4)),url('../assets/images/participation-page-hero.jpg'); }
 .system-page.gallery-page .page-hero { background-image: linear-gradient(90deg,rgba(4,12,36,.98),rgba(5,15,45,.82) 56%,rgba(7,18,55,.4)),url('../assets/images/gallery-page-hero.png'); }
 .system-page.winners-page .page-hero { background-image: linear-gradient(90deg,rgba(4,12,36,.98),rgba(5,15,45,.82) 56%,rgba(7,18,55,.4)),url('../assets/images/winners-page-hero.png'); }
+.system-page.evaluation-page .page-hero { background-image: linear-gradient(90deg,rgba(4,12,36,.98),rgba(5,15,45,.82) 56%,rgba(7,18,55,.4)),url('../assets/images/hero-cityscape.png'); }
 .system-page.contact-page .page-hero { background-image: linear-gradient(90deg,rgba(4,12,36,.98),rgba(5,15,45,.82) 56%,rgba(7,18,55,.4)),url('../assets/images/contact-page-hero.jpg'); }
 .system-page .page-hero > .container { width: min(calc(100% - 48px),1280px); }
 body.inner-page.system-page .page-hero-panel {
@@ -187,6 +188,14 @@ body.inner-page.system-page .meta-item:first-child {
 body.inner-page.system-page .meta-item strong { color: #fff; }
 body.inner-page.system-page .meta-item > span,
 body.inner-page.system-page .meta-item span { color: #cbd7f0; }
+.evaluation-page .subsection-title {
+  margin: 34px 0 16px;
+  font-family: "Orbitron",sans-serif;
+  font-size: clamp(24px,2.4vw,34px);
+  color: var(--nbic-navy);
+}
+.evaluation-page .requirements-row > :last-child { justify-self: end; color: var(--nbic-blue); }
+.evaluation-page .requirements-head > :last-child { color: #fff; }
 
 /* Homepage hero */
 body.inner-page .hero-home {
@@ -535,6 +544,10 @@ body.inner-page.home-page .btn-outline-light:hover { color: #fff; transform: tra
   .system-page .page-hero-panel { padding-top: 24px; }
   .system-page .hero-meta { grid-template-columns: 1fr; gap: 10px; }
   .system-page .meta-item { min-height: 0; }
+  .evaluation-page .requirements-row > :last-child {
+    grid-column: 2;
+    justify-self: start;
+  }
   .home-page .event-name { font-size: clamp(23px,7vw,30px); }
   .decision-grid,
   .value-grid { grid-template-columns: 1fr; }
