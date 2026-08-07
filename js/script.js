@@ -1,10 +1,7 @@
 (() => {
   "use strict";
-
   const html = document.documentElement;
   const header = document.getElementById("siteHeader") || document.querySelector(".site-header");
-  const menuToggle = document.getElementById("menuToggle");
-  const mainNav = document.getElementById("mainNav") || document.getElementById("navLinks");
   const langButtons = document.querySelectorAll("[data-set-lang]");
   const revealItems = document.querySelectorAll(".reveal");
 
@@ -12,83 +9,34 @@
     const safeLang = lang === "en" ? "en" : "ms";
     html.dataset.lang = safeLang;
     html.lang = safeLang;
-
     langButtons.forEach((button) => {
       button.classList.toggle("active", button.dataset.setLang === safeLang);
-      button.setAttribute(
-        "aria-pressed",
-        button.dataset.setLang === safeLang ? "true" : "false"
-      );
+      button.setAttribute("aria-pressed", button.dataset.setLang === safeLang ? "true" : "false");
     });
-
-    try {
-      localStorage.setItem("nbic-language", safeLang);
-    } catch (error) {
-      console.warn("Language preference could not be saved.", error);
-    }
+    try { localStorage.setItem("nbic-language", safeLang); } catch {}
   };
 
-  const savedLanguage = (() => {
-    try {
-      return localStorage.getItem("nbic-language");
-    } catch {
-      return null;
-    }
-  })();
-
+  let savedLanguage = null;
+  try { savedLanguage = localStorage.getItem("nbic-language"); } catch {}
   setLanguage(savedLanguage || "ms");
+  langButtons.forEach((button) => button.addEventListener("click", () => setLanguage(button.dataset.setLang)));
 
-  langButtons.forEach((button) => {
-    button.addEventListener("click", () => setLanguage(button.dataset.setLang));
-  });
-
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener("click", () => {
-      const isOpen = mainNav.classList.toggle("open");
-      menuToggle.setAttribute("aria-expanded", String(isOpen));
-    });
-
-    mainNav.querySelectorAll("a").forEach((link) => {
-      link.addEventListener("click", () => {
-        mainNav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
-      });
-    });
-
-    document.addEventListener("click", (event) => {
-      if (
-        mainNav.classList.contains("open") &&
-        !mainNav.contains(event.target) &&
-        !menuToggle.contains(event.target)
-      ) {
-        mainNav.classList.remove("open");
-        menuToggle.setAttribute("aria-expanded", "false");
-      }
-    });
-  }
-
-  const updateHeader = () => {
-    header?.classList.toggle("scrolled", window.scrollY > 12);
-  };
-
+  const updateHeader = () => header?.classList.toggle("scrolled", window.scrollY > 12);
   updateHeader();
   window.addEventListener("scroll", updateHeader, { passive: true });
 
   if ("IntersectionObserver" in window) {
-    const observer = new IntersectionObserver(
-      (entries, currentObserver) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            currentObserver.unobserve(entry.target);
-          }
-        });
-      },
-      { threshold: 0.12 }
-    );
-
+    const observer = new IntersectionObserver((entries, currentObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          currentObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
     revealItems.forEach((item) => observer.observe(item));
   } else {
     revealItems.forEach((item) => item.classList.add("visible"));
   }
+  /* Mobile navigation is handled only by mobile-nav-fix.js to avoid duplicate click handlers. */
 })();
