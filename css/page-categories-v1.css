@@ -56,7 +56,7 @@
   min-height:660px;display:flex;align-items:center;color:#fff;
   background:
     linear-gradient(90deg,rgba(4,12,36,.97) 0%,rgba(5,15,45,.92) 38%,rgba(7,18,55,.56) 58%,rgba(8,19,55,.15) 82%,rgba(8,19,55,.04) 100%),
-    url('../assets/images/hero-students.png') 58% center/cover no-repeat;
+    url('../assets/images/category-hero-page.png') 58% center/cover no-repeat;
 }
 .categories-hero-inner { width:min(calc(100% - 48px),1280px);margin-inline:auto; }
 .categories-hero-copy { max-width:700px;padding:66px 0 76px; }
