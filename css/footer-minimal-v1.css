@@ -1,0 +1,34 @@
+/* =========================================================
+   NBIC 2026 — GLOBAL MINIMAL FOOTER STANDARD V1
+   Locked footer treatment for Homepage + all internal pages.
+   ========================================================= */
+
+.nbic-minimal-footer {
+  border-top: 2px solid transparent;
+  border-image: var(--nbic-chrome) 1;
+  background:
+    radial-gradient(circle at 20% 0%, rgba(54,215,255,.07), transparent 28rem),
+    radial-gradient(circle at 86% 10%, rgba(117,87,255,.07), transparent 26rem),
+    #07132f;
+}
+
+.nbic-minimal-footer .nbic-footer-line {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 28px 24px 30px;
+  text-align: center;
+  color: #dbe7ff;
+  font-family: var(--nbic-font-display, "Orbitron", sans-serif);
+  font-size: clamp(11px, 1vw, 14px);
+  font-weight: 500;
+  line-height: 1.55;
+  letter-spacing: .015em;
+}
+
+@media (max-width: 760px) {
+  .nbic-minimal-footer .nbic-footer-line {
+    padding: 24px 20px 26px;
+    font-size: 11px;
+    line-height: 1.65;
+  }
+}
