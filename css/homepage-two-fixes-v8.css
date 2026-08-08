@@ -1,0 +1,47 @@
+/* =========================================================
+   NBIC 2026 HOMEPAGE — EXACT COLOUR FIX V8
+   ONLY requested items are overridden.
+   ========================================================= */
+
+.home-page {
+  --requested-blue: #0033FF;
+}
+
+/* 1) HERO EYEBROW:
+   JPPKK × POLITEKNIK PREMIER PORT DICKSON
+   Blue fill + white outline on dark background */
+.home-page .hero-home .eyebrow {
+  color: var(--requested-blue) !important;
+  -webkit-text-fill-color: var(--requested-blue) !important;
+  -webkit-text-stroke: 0.55px rgba(255, 255, 255, 0.98) !important;
+  paint-order: stroke fill;
+  text-shadow: 0 0 0.7px rgba(255, 255, 255, 0.95) !important;
+}
+
+/* 2) SECTION EYEBROWS ON LIGHT / WHITE BACKGROUNDS:
+   Tarikh Penting
+   Panduan Penyertaan
+   Bidang Pertandingan
+   Garis Masa Rasmi
+   Struktur Penilaian
+   Soalan Lazim
+   Blue fill + black outline */
+.home-page .deadline-section .eyebrow,
+.home-page #eligibility .eyebrow,
+.home-page #categories .eyebrow,
+.home-page #key-dates .eyebrow,
+.home-page #evaluation .eyebrow,
+.home-page #faq .eyebrow {
+  color: var(--requested-blue) !important;
+  -webkit-text-fill-color: var(--requested-blue) !important;
+  -webkit-text-stroke: 0.45px rgba(0, 0, 0, 0.88) !important;
+  paint-order: stroke fill;
+  text-shadow: 0 0 0.55px rgba(0, 0, 0, 0.82) !important;
+}
+
+/* 3) "Ke Halaman Pendaftaran" CTA text only -> white */
+.home-page .home-register-panel a.btn-primary,
+.home-page .home-register-panel a.btn-primary span {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
