@@ -553,3 +553,47 @@
   .program-facts { grid-template-columns:1fr 1fr; }
   .program-footer .footer-bottom { font-size:13px; padding:30px 22px 34px; }
 }
+
+
+/* =========================================================
+   PROGRAM PAGE V2 — REQUESTED VISUAL FIXES ONLY
+   ========================================================= */
+
+/* 1. Program page primary buttons now match homepage:
+      NBIC cyan → violet → pink gradient + white wording. */
+.program-master-page .btn-primary {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+  background: var(--nbic-chrome) !important;
+  border-color: transparent !important;
+  box-shadow: 0 12px 28px rgba(68, 65, 198, .20);
+}
+
+.program-master-page .btn-primary span,
+.program-master-page .btn-primary .btn-icon {
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+/* 2. Exact requested eyebrow outline treatment:
+      Ringkasan Program + Penyertaan NBIC 2026 use BLACK outline. */
+.program-hero .eyebrow,
+.program-register-panel .eyebrow {
+  color: var(--program-blue) !important;
+  -webkit-text-fill-color: var(--program-blue) !important;
+  -webkit-text-stroke: .48px rgba(0, 0, 0, .92) !important;
+  paint-order: stroke fill;
+  text-shadow: 0 0 .55px rgba(0, 0, 0, .82) !important;
+}
+
+/* 3. Ensure the supplied Program hero image is visible and preserved. */
+.program-hero {
+  background:
+    linear-gradient(90deg,
+      rgba(4,12,36,.97) 0%,
+      rgba(5,15,45,.90) 34%,
+      rgba(7,18,55,.56) 54%,
+      rgba(8,19,55,.12) 78%,
+      rgba(8,19,55,.03) 100%),
+    url('../assets/images/program-page-hero.jpg') 58% center / cover no-repeat !important;
+}
