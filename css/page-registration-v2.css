@@ -364,3 +364,100 @@
     width:140px;height:140px;
   }
 }
+
+
+/* ============================================================
+   V2.1 — TIMELINE COLOR SYNC + EARLY BIRD HIGHLIGHT
+   ============================================================ */
+
+/* Timeline-aligned page surface */
+.registration-page{
+  --timeline-cyan:#15c7e8;
+  --timeline-blue:#2f7cff;
+  --timeline-violet:#7458ef;
+  --timeline-magenta:#d84fb8;
+  --timeline-pink:#f06a93;
+  --timeline-gold:#e6a33d;
+  --timeline-navy:#0a1838;
+  --timeline-soft:#f4f7ff;
+}
+
+/* Deadline panel follows Timeline white-card treatment */
+.registration-v2-deadline .deadline-panel{
+  background:linear-gradient(145deg,#ffffff 0%,#f7f9ff 100%);
+  border:1px solid rgba(73,94,164,.15);
+  box-shadow:0 20px 46px rgba(29,42,104,.10);
+}
+.registration-v2-deadline .deadline-panel:before{
+  content:"";
+  position:absolute;
+  inset:0 auto 0 0;
+  width:5px;
+  border-radius:26px 0 0 26px;
+  background:linear-gradient(180deg,var(--timeline-cyan),var(--timeline-violet),var(--timeline-pink));
+}
+.registration-v2-deadline .deadline-panel{position:relative;overflow:hidden}
+.registration-v2-deadline .countdown-grid>div{
+  background:linear-gradient(180deg,#ffffff,#f7f8fd);
+}
+.registration-v2-deadline .countdown-grid strong{
+  color:transparent;
+  background:linear-gradient(135deg,var(--timeline-blue),var(--timeline-violet),var(--timeline-magenta));
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+
+/* Milestones use the same Timeline color progression */
+.milestone-step:nth-child(1) .step-no{background:var(--timeline-cyan);box-shadow:0 0 0 2px var(--timeline-cyan)}
+.milestone-step:nth-child(2) .step-no{background:var(--timeline-violet);box-shadow:0 0 0 2px var(--timeline-violet)}
+.milestone-step:nth-child(3) .step-no{background:var(--timeline-blue);box-shadow:0 0 0 2px var(--timeline-blue)}
+.milestone-step:nth-child(4) .step-no{background:var(--timeline-magenta);box-shadow:0 0 0 2px var(--timeline-magenta)}
+.milestone-step:nth-child(5) .step-no{background:var(--timeline-gold);box-shadow:0 0 0 2px var(--timeline-gold)}
+.registration-milestone-strip:before{
+  background:linear-gradient(90deg,var(--timeline-cyan),var(--timeline-violet),var(--timeline-blue),var(--timeline-magenta),var(--timeline-gold));
+}
+
+/* Fee cards */
+.fee-card{
+  position:relative;
+  overflow:hidden;
+}
+.fee-card:before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;
+  height:4px;
+  background:linear-gradient(90deg,var(--timeline-blue),var(--timeline-violet));
+}
+.fee-card-earlybird{
+  border:1px solid rgba(230,163,61,.36);
+  background:linear-gradient(145deg,#fffdf7 0%,#fff8e9 55%,#fff2d9 100%);
+  box-shadow:0 18px 40px rgba(217,155,48,.14);
+}
+.fee-card-earlybird:before{
+  height:6px;
+  background:linear-gradient(90deg,#f0b74a,#ff8a4c,#e85e98);
+}
+.fee-card-earlybird strong{
+  background:linear-gradient(90deg,#f0a62f 0%,#ff7f50 42%,#e757a1 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+.earlybird-badge{
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+  margin-bottom:12px;
+  padding:7px 11px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#f5bd50,#ff8a52,#e75a9e);
+  color:#fff;
+  font-size:10px;
+  font-weight:900;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  box-shadow:0 8px 18px rgba(222,130,75,.18);
+}
+
+/* Remove old pending-note visual if stale cached markup ever remains */
+.pending-fee-note{display:none!important}
