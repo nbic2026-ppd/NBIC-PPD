@@ -1,0 +1,83 @@
+/* NBIC 2026 FINAL NAVIGATION + FOOTER FIX ONLY */
+
+/* Keep the approved footer identical on every page, including Home. */
+.nbic-minimal-footer{
+  border-top:2px solid transparent !important;
+  border-image:linear-gradient(90deg,#11c8ed,#357cf7,#7659f3,#d64bc7,#ff7a77) 1 !important;
+  background:#07132f !important;
+}
+.nbic-minimal-footer .nbic-footer-line{
+  max-width:1280px !important;
+  margin:0 auto !important;
+  padding:27px 24px 29px !important;
+  text-align:center !important;
+  color:#dbe7ff !important;
+  font:500 clamp(11px,1vw,14px)/1.55 "Orbitron",sans-serif !important;
+  letter-spacing:0 !important;
+}
+
+/* Mobile navigation correction only. Prevent submenu labels from being
+   shifted/clipped outside the visible menu. */
+@media (max-width: 900px){
+  .nav-links .nav-dropdown{width:100% !important;}
+  .nav-links .nav-dropdown-menu{
+    position:static !important;
+    inset:auto !important;
+    left:auto !important;
+    right:auto !important;
+    top:auto !important;
+    transform:none !important;
+    translate:none !important;
+    width:100% !important;
+    min-width:0 !important;
+    max-width:none !important;
+    margin:8px 0 0 !important;
+    padding:0 !important;
+    background:transparent !important;
+    border:0 !important;
+    box-shadow:none !important;
+    overflow:visible !important;
+  }
+  .nav-links .nav-dropdown-menu a{
+    position:relative !important;
+    left:auto !important;
+    right:auto !important;
+    transform:none !important;
+    translate:none !important;
+    width:100% !important;
+    min-width:0 !important;
+    margin:8px 0 0 !important;
+    padding:18px 24px !important;
+    box-sizing:border-box !important;
+    text-align:left !important;
+    text-indent:0 !important;
+    justify-content:flex-start !important;
+    overflow:visible !important;
+  }
+  .nav-links .nav-dropdown-menu a span{
+    position:static !important;
+    transform:none !important;
+    translate:none !important;
+    max-width:100% !important;
+    white-space:normal !important;
+    overflow:visible !important;
+    text-overflow:clip !important;
+  }
+  /* Preserve collapsed/expanded behaviour regardless of which existing
+     JS state class is used. */
+  .nav-links .nav-dropdown-menu{display:none !important;}
+  .nav-links .nav-dropdown.open > .nav-dropdown-menu,
+  .nav-links .nav-dropdown.is-open > .nav-dropdown-menu,
+  .nav-links .nav-dropdown.active > .nav-dropdown-menu,
+  .nav-links .nav-dropdown:has(> .nav-dropdown-toggle[aria-expanded="true"]) > .nav-dropdown-menu{
+    display:block !important;
+    opacity:1 !important;
+    visibility:visible !important;
+    pointer-events:auto !important;
+  }
+  .nbic-minimal-footer .nbic-footer-line{
+    padding:23px 18px 25px !important;
+    font-size:11px !important;
+    line-height:1.55 !important;
+  }
+}
