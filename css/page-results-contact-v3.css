@@ -1,0 +1,267 @@
+
+/* ============================================================
+   NBIC 2026 — RESULTS + CONTACT PREMIUM V3
+   Scope: gallery.html, winners.html, contact.html only
+   ============================================================ */
+
+.gallery-page,.winners-page,.contact-page{
+  --nbic-blue:#0033FF;
+  --nbic-cyan:#16c7eb;
+  --nbic-violet:#7357ee;
+  --nbic-magenta:#d54fbe;
+  --nbic-coral:#ff7b72;
+  --nbic-gold:#e8a63f;
+  --nbic-navy:#071a3d;
+  --nbic-text:#5b6c88;
+  --nbic-line:rgba(67,91,161,.16);
+  --nbic-chrome:linear-gradient(90deg,#16c7eb 0%,#357cf7 28%,#7357ee 56%,#d54fbe 79%,#ff7b72 100%);
+}
+
+/* Approved eyebrow system */
+.gallery-page .eyebrow,
+.winners-page .eyebrow,
+.contact-page .eyebrow{
+  color:var(--nbic-blue)!important;
+  -webkit-text-fill-color:var(--nbic-blue)!important;
+  -webkit-text-stroke:.42px rgba(0,0,0,.88);
+  paint-order:stroke fill;
+  text-shadow:0 0 .5px rgba(0,0,0,.68);
+  font-weight:800;
+  letter-spacing:.10em;
+  text-transform:uppercase;
+}
+.gallery-page .rc-hero .eyebrow,
+.winners-page .rc-hero .eyebrow,
+.contact-page .rc-hero .eyebrow{
+  -webkit-text-stroke:.45px rgba(255,255,255,.92);
+  text-shadow:0 0 .7px rgba(255,255,255,.75);
+}
+
+/* Hero — definitive, fail-safe, current PNGs */
+.rc-hero{
+  min-height:640px;
+  display:flex;
+  align-items:center;
+  padding:0!important;
+  background-color:#07142f!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  background-position:center!important;
+}
+.rc-hero-gallery{
+  background-image:
+    linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.70) 40%,rgba(4,11,38,.14) 68%,rgba(4,11,38,.03) 100%),
+    url('../assets/images/gallery-page-hero.png')!important;
+}
+.rc-hero-winners{
+  background-image:
+    linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.70) 40%,rgba(4,11,38,.14) 68%,rgba(4,11,38,.03) 100%),
+    url('../assets/images/winners-page-hero.png')!important;
+}
+.rc-hero-contact{
+  background-image:
+    linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.70) 40%,rgba(4,11,38,.14) 68%,rgba(4,11,38,.03) 100%),
+    url('../assets/images/contact-page-hero.png')!important;
+}
+.rc-hero .container{width:min(calc(100% - 48px),1280px);margin:auto}
+.rc-hero .page-hero-panel{
+  max-width:650px;
+  min-height:auto!important;
+  padding:66px 0 72px!important;
+  background:transparent!important;
+  border:0!important;
+  box-shadow:none!important;
+}
+.rc-hero .page-hero-visual{display:none!important}
+.rc-hero h1{
+  margin:14px 0 18px!important;
+  color:#fff!important;
+  font:700 clamp(38px,5vw,68px)/1.05 "Orbitron",sans-serif!important;
+  letter-spacing:-.045em!important;
+}
+.rc-hero h1 em,.rc-hero h1 .accent{
+  font-style:normal;
+  color:transparent!important;
+  background:var(--nbic-chrome)!important;
+  -webkit-background-clip:text!important;
+  background-clip:text!important;
+}
+.rc-hero p{
+  max-width:600px;
+  margin:0!important;
+  color:#dfe7f7!important;
+  line-height:1.72!important;
+  font-size:16px;
+}
+.rc-hero .hero-meta{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px;
+  margin-top:28px;
+}
+.rc-hero .meta-item{
+  padding:14px 15px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:16px;
+  background:rgba(255,255,255,.07);
+  backdrop-filter:blur(9px);
+}
+.rc-hero .meta-item strong{color:#fff!important}
+.rc-hero .meta-item span{color:#dfe7f7!important}
+
+/* Premium section rhythm */
+.gallery-page .section,
+.winners-page .section,
+.contact-page .section{padding-block:70px}
+.section-light,.section-ivory{background:#fff}
+.section-fog{background:linear-gradient(180deg,#f7f9ff 0%,#f1f4ff 100%)}
+.section-dark{background:linear-gradient(145deg,#06132f 0%,#0a2352 58%,#2a256d 100%)}
+
+/* Headings */
+.section-heading h2,
+.contact-support-card h3,
+.status-placeholder h2{
+  color:var(--nbic-navy)!important;
+}
+.section-heading .accent{
+  color:transparent!important;
+  background:var(--nbic-chrome);
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+
+/* Premium outlines / cards */
+.gallery-item,.winner-card,.contact-support-card,.faq-item,.card,.status-placeholder{
+  position:relative;
+  border:1px solid transparent!important;
+  border-radius:22px!important;
+  background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(135deg,rgba(22,199,235,.45),rgba(115,87,238,.42),rgba(213,79,190,.38)) border-box!important;
+  box-shadow:0 16px 34px rgba(25,38,102,.08)!important;
+}
+.gallery-item:hover,.winner-card:hover,.contact-person-card:hover,.card:hover{
+  transform:translateY(-3px);
+  box-shadow:0 20px 42px rgba(25,38,102,.12)!important;
+}
+
+/* Gallery */
+.gallery-grid{gap:18px!important}
+.gallery-item{overflow:hidden}
+.gallery-item img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.gallery-tag{
+  background:linear-gradient(90deg,#eaf2ff,#f2ecff)!important;
+  color:#665bdc!important;
+  border:1px solid rgba(112,88,227,.15);
+}
+.gallery-item figcaption{font-weight:800;color:var(--nbic-navy)}
+.gallery-page .card-grid.two .card{min-height:180px}
+
+/* Winners */
+.status-placeholder{
+  padding:34px!important;
+  text-align:center;
+  background:
+    linear-gradient(145deg,#fff,#f8faff) padding-box,
+    linear-gradient(135deg,#16c7eb,#7357ee,#d54fbe) border-box!important;
+}
+.status-placeholder-icon{font-size:46px}
+.winners-grid{gap:18px!important}
+.winner-card{
+  padding:24px!important;
+  background:
+    linear-gradient(145deg,#fff,#f8faff) padding-box,
+    linear-gradient(135deg,rgba(53,124,247,.42),rgba(115,87,238,.36)) border-box!important;
+}
+.category-index{
+  background:var(--nbic-chrome)!important;
+  color:#fff!important;
+}
+.status-pill-pending{
+  background:#eef1ff!important;
+  color:#6458df!important;
+  border:1px solid rgba(100,88,223,.12);
+}
+.winner-name{font-weight:800;color:#66718a!important}
+
+/* Contact */
+.contact-support-grid{gap:20px!important}
+.contact-support-card{
+  padding:30px!important;
+  background:
+    linear-gradient(145deg,#fff,#f8faff) padding-box,
+    linear-gradient(135deg,rgba(22,199,235,.38),rgba(115,87,238,.34)) border-box!important;
+}
+.contact-person-card{
+  border:1px solid var(--nbic-line)!important;
+  background:#f8faff!important;
+  border-radius:16px!important;
+}
+.contact-icon{
+  background:linear-gradient(135deg,#2f7cff,#7357ee)!important;
+  box-shadow:0 8px 18px rgba(62,77,184,.14);
+}
+.contact-guidelines-list li{
+  background:#f8faff!important;
+  border:1px solid rgba(80,103,170,.10);
+}
+.faq-grid{gap:16px!important}
+.faq-item{padding:22px!important}
+.contact-page .section-ivory .card{min-height:170px}
+
+/* Premium buttons — exact white text */
+.btn-primary,
+.nav-cta{
+  background:var(--nbic-chrome)!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  border:0!important;
+  border-radius:999px!important;
+  box-shadow:0 12px 28px rgba(69,64,192,.20)!important;
+}
+.btn-primary span,.nav-cta span{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+.btn-primary:hover,.nav-cta:hover{transform:translateY(-2px)}
+
+/* CTA panels */
+.cta-panel{
+  border:1px solid rgba(255,255,255,.12)!important;
+  border-radius:26px!important;
+  background:
+    linear-gradient(90deg,rgba(7,19,47,.94),rgba(33,34,105,.86) 58%,rgba(119,52,141,.72))!important;
+  box-shadow:0 24px 56px rgba(12,20,64,.20)!important;
+}
+.cta-panel h2{color:#fff!important}
+.cta-panel p{color:#dce5f6!important}
+
+/* Approved footer */
+.nbic-minimal-footer{
+  border-top:2px solid transparent;
+  border-image:var(--nbic-chrome) 1;
+  background:#07132f;
+}
+.nbic-minimal-footer .nbic-footer-line{
+  max-width:1280px;
+  margin:auto;
+  padding:27px 24px 29px;
+  text-align:center;
+  color:#dbe7ff;
+  font:500 clamp(11px,1vw,14px)/1.55 "Orbitron",sans-serif;
+}
+
+/* Responsive */
+@media(max-width:900px){
+  .rc-hero{min-height:590px;background-position:67% center!important}
+  .rc-hero .hero-meta{grid-template-columns:1fr 1fr}
+}
+@media(max-width:640px){
+  .gallery-page .section,.winners-page .section,.contact-page .section{padding-block:48px}
+  .rc-hero{min-height:560px}
+  .rc-hero .container{width:min(calc(100% - 28px),1280px)}
+  .rc-hero .page-hero-panel{padding:48px 0 58px!important;max-width:94%}
+  .rc-hero h1{font-size:clamp(32px,8.6vw,48px)!important}
+  .rc-hero .hero-meta{grid-template-columns:1fr}
+  .contact-support-card{padding:22px 18px!important}
+}
