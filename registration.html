@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="css/styles.css?v=20260806-unified">
 <link rel="stylesheet" href="css/theme.css?v=20260807-locked-system-v16">
 <link rel="stylesheet" href="css/page-participate-v1.css?v=20260809-premium-v1">
+<link rel="stylesheet" href="css/page-registration-v2.css?v=20260809-home-timeline-sync-v2">
 
 <title>NBIC 2026 | Pendaftaran</title>
 <meta name="description" content="Halaman rasmi pendaftaran NBIC 2026: tarikh tutup, yuran, checklist, borang rasmi dan kod QR pendaftaran.">
@@ -89,27 +90,33 @@
 </header>
 <main id="main-content">
 
-<section class="module-hero hero-registration">
+<section class="module-hero hero-registration registration-v2-hero" aria-labelledby="registration-title">
   <div class="container hero-module-inner">
     <div class="module-hero-copy reveal">
       <p class="eyebrow"><span class="lang-ms">Pendaftaran</span><span class="lang-en">Registration</span></p>
-      <h1><span class="lang-ms">Sediakan maklumat. <em>Daftar dengan yakin.</em></span><span class="lang-en">Prepare your details. <em>Register with confidence.</em></span></h1>
-      <p><span class="lang-ms">Gunakan halaman ini untuk menyemak tarikh tutup, yuran, maklumat yang perlu disediakan dan pautan borang rasmi.</span><span class="lang-en">Use this page to check the deadline, fees, required information and the official registration form.</span></p>
+      <h1 id="registration-title">
+        <span class="lang-ms">Bersedia menghantar <em>penyertaan anda?</em></span>
+        <span class="lang-en">Ready to submit <em>your entry?</em></span>
+      </h1>
+      <p>
+        <span class="lang-ms">Semak tarikh utama, sediakan maklumat pasukan dan lengkapkan borang rasmi NBIC 2026 sebelum tarikh tutup.</span>
+        <span class="lang-en">Review the key dates, prepare your team information and complete the official NBIC 2026 form before the deadline.</span>
+      </p>
       <div class="module-hero-actions">
-        <a class="btn-primary" href="#register-now"><span class="lang-ms">Ke Borang Pendaftaran</span><span class="lang-en">Go to Registration Form</span><span>→</span></a>
+        <a class="btn-primary" href="#official-form"><span class="lang-ms">Ke Borang Pendaftaran</span><span class="lang-en">Go to Registration Form</span><span>→</span></a>
         <a class="btn-outline-light" href="participation-guide.html"><span class="lang-ms">Semak Kelayakan</span><span class="lang-en">Check Eligibility</span></a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="registration-deadline">
+<section class="registration-deadline registration-v2-deadline">
   <div class="container">
     <div class="deadline-panel reveal" data-registration-countdown data-target="2026-08-14T23:59:59+08:00">
       <div class="deadline-copy">
-        <p class="eyebrow"><span class="lang-ms">Tarikh Tutup Pendaftaran</span><span class="lang-en">Registration Deadline</span></p>
-        <h2>14 AUGUST 2026 · 11.59 PM (MYT)</h2>
-        <p><span class="lang-ms">Pendaftaran dan penghantaran abstrak perlu diselesaikan sebelum tarikh tutup.</span><span class="lang-en">Registration and abstract submission must be completed before the deadline.</span></p>
+        <p class="eyebrow"><span class="lang-ms">Tarikh Tindakan Semasa</span><span class="lang-en">Current Action Deadline</span></p>
+        <h2><span class="lang-ms">Pendaftaran & Abstrak Ditutup</span><span class="lang-en">Registration & Abstract Submission Closes</span></h2>
+        <p class="deadline-date">14 AUGUST 2026 · 11.59 PM (MYT)</p>
       </div>
       <div class="countdown-grid" aria-live="polite">
         <div><strong data-count="days">00</strong><span><span class="lang-ms">Hari</span><span class="lang-en">Days</span></span></div>
@@ -121,32 +128,43 @@
   </div>
 </section>
 
-<section class="module-section" id="register-now">
+<section class="module-section registration-milestones-section">
   <div class="container">
     <div class="section-title reveal">
-      <p class="eyebrow"><span class="lang-ms">Sebelum Membuka Borang</span><span class="lang-en">Before Opening the Form</span></p>
-      <h2><span class="lang-ms">Sediakan maklumat <em>terlebih dahulu.</em></span><span class="lang-en">Prepare your information <em>first.</em></span></h2>
+      <p class="eyebrow"><span class="lang-ms">Tarikh Penting</span><span class="lang-en">Key Dates</span></p>
+      <h2><span class="lang-ms">Ringkasan perjalanan <em>penyertaan.</em></span><span class="lang-en">A quick view of the <em>participation journey.</em></span></h2>
+      <p><span class="lang-ms">Paparan ringkas ini diselaraskan dengan Garis Masa Rasmi. Rujuk halaman Garis Masa untuk butiran penuh setiap fasa.</span><span class="lang-en">This summary is synchronized with the Official Timeline. Refer to the Timeline page for complete phase details.</span></p>
     </div>
-    <div class="registration-layout">
-      <div class="prepare-list">
-        <article class="reveal"><span>01</span><div><h3><span class="lang-ms">Bidang Pertandingan</span><span class="lang-en">Competition Area</span></h3><p><span class="lang-ms">Kenal pasti bidang yang paling sesuai untuk idea atau projek anda.</span><span class="lang-en">Identify the area that best fits your idea or project.</span></p></div></article>
-        <article class="reveal"><span>02</span><div><h3><span class="lang-ms">Maklumat Pasukan</span><span class="lang-en">Team Information</span></h3><p><span class="lang-ms">Sediakan nama ahli pasukan, penyelia dan maklumat hubungan.</span><span class="lang-en">Prepare team member, supervisor and contact information.</span></p></div></article>
-        <article class="reveal"><span>03</span><div><h3><span class="lang-ms">Tajuk & Ringkasan Projek</span><span class="lang-en">Project Title & Summary</span></h3><p><span class="lang-ms">Rumusan hendaklah menerangkan masalah, penyelesaian dan nilai yang dijangka.</span><span class="lang-en">The summary should clearly describe the problem, solution and expected value.</span></p></div></article>
-        <article class="reveal"><span>04</span><div><h3><span class="lang-ms">Semak Maklumat Hubungan</span><span class="lang-en">Verify Contact Details</span></h3><p><span class="lang-ms">Pastikan urus setia boleh menghubungi pasukan melalui maklumat yang diberikan.</span><span class="lang-en">Ensure the secretariat can reach the team through the details provided.</span></p></div></article>
-      </div>
 
-      <aside class="register-box-premium reveal">
-        <p class="eyebrow"><span class="lang-ms">Borang Rasmi</span><span class="lang-en">Official Form</span></p>
-        <h3><span class="lang-ms">Pendaftaran NBIC 2026</span><span class="lang-en">NBIC 2026 Registration</span></h3>
-        <p><span class="lang-ms">Lengkapkan pendaftaran melalui borang dalam talian rasmi selepas semua maklumat disediakan.</span><span class="lang-en">Complete registration through the official online form after preparing all required information.</span></p>
-        <a class="btn-primary full" href="https://forms.gle/xqiHcMK7a9vtpRTu7" target="_blank" rel="noopener">
-          <span class="lang-ms">Buka Borang Pendaftaran</span><span class="lang-en">Open Registration Form</span><span>→</span>
-        </a>
-        <div class="qr-panel">
-          <img src="assets/images/registration-qr.png" alt="NBIC 2026 registration QR code">
-          <span><strong><span class="lang-ms">Imbas untuk akses</span><span class="lang-en">Scan to access</span></strong><small><span class="lang-ms">Kod QR menggunakan pautan borang rasmi yang sama.</span><span class="lang-en">The QR code uses the same official form link.</span></small></span>
-        </div>
-      </aside>
+    <div class="registration-milestone-strip reveal">
+      <article class="milestone-step is-current">
+        <span class="step-no">01</span>
+        <strong>01–14 AUG 2026</strong>
+        <b><span class="lang-ms">Pendaftaran & Abstrak</span><span class="lang-en">Registration & Abstract</span></b>
+      </article>
+      <article class="milestone-step">
+        <span class="step-no">02</span>
+        <strong>15–28 AUG 2026</strong>
+        <b><span class="lang-ms">Penerimaan & Pembayaran</span><span class="lang-en">Acceptance & Payment</span></b>
+      </article>
+      <article class="milestone-step">
+        <span class="step-no">03</span>
+        <strong>29 AUG–06 SEP 2026</strong>
+        <b><span class="lang-ms">Penghantaran Bahan</span><span class="lang-en">Material Submission</span></b>
+      </article>
+      <article class="milestone-step">
+        <span class="step-no">04</span>
+        <strong>07–25 SEP 2026</strong>
+        <b><span class="lang-ms">Penilaian Saringan</span><span class="lang-en">Preliminary Judging</span></b>
+      </article>
+      <article class="milestone-step">
+        <span class="step-no">05</span>
+        <strong>13–14 OCT 2026</strong>
+        <b><span class="lang-ms">Peringkat Akhir</span><span class="lang-en">Grand Final</span></b>
+      </article>
+    </div>
+    <div class="section-link-row reveal">
+      <a class="btn-soft" href="timeline.html"><span class="lang-ms">Lihat Garis Masa Rasmi</span><span class="lang-en">View Official Timeline</span><span>→</span></a>
     </div>
   </div>
 </section>
@@ -154,8 +172,43 @@
 <section class="module-section section-fog">
   <div class="container">
     <div class="section-title reveal">
+      <p class="eyebrow"><span class="lang-ms">Sebelum Mendaftar</span><span class="lang-en">Before You Register</span></p>
+      <h2><span class="lang-ms">Sediakan enam perkara <em>utama.</em></span><span class="lang-en">Prepare six <em>essential items.</em></span></h2>
+    </div>
+
+    <div class="prepare-card-grid">
+      <article class="prepare-card reveal"><span>01</span><h3><span class="lang-ms">Pilih Bidang</span><span class="lang-en">Choose an Area</span></h3><p><span class="lang-ms">Kenal pasti bidang A–G yang paling tepat.</span><span class="lang-en">Identify the most appropriate Area A–G.</span></p><a href="categories.html"><span class="lang-ms">Lihat Bidang</span><span class="lang-en">View Areas</span> →</a></article>
+      <article class="prepare-card reveal"><span>02</span><h3><span class="lang-ms">Lengkapkan Pasukan</span><span class="lang-en">Complete the Team</span></h3><p><span class="lang-ms">Sediakan maklumat 1 penyelia + 4 pelajar.</span><span class="lang-en">Prepare details for 1 supervisor + 4 students.</span></p></article>
+      <article class="prepare-card reveal"><span>03</span><h3><span class="lang-ms">Maklumat Penyelia</span><span class="lang-en">Supervisor Details</span></h3><p><span class="lang-ms">Pastikan maklumat penyelia dan hubungan adalah tepat.</span><span class="lang-en">Ensure supervisor and contact information is accurate.</span></p></article>
+      <article class="prepare-card reveal"><span>04</span><h3><span class="lang-ms">Tajuk Projek</span><span class="lang-en">Project Title</span></h3><p><span class="lang-ms">Gunakan tajuk yang jelas dan konsisten dengan inovasi.</span><span class="lang-en">Use a clear title that accurately represents the innovation.</span></p></article>
+      <article class="prepare-card reveal"><span>05</span><h3><span class="lang-ms">Ringkasan / Abstrak</span><span class="lang-en">Summary / Abstract</span></h3><p><span class="lang-ms">Terangkan masalah, penyelesaian dan nilai utama projek.</span><span class="lang-en">Explain the problem, solution and primary value of the project.</span></p></article>
+      <article class="prepare-card reveal"><span>06</span><h3><span class="lang-ms">Maklumat Hubungan</span><span class="lang-en">Contact Details</span></h3><p><span class="lang-ms">Pastikan saluran hubungan yang diberi adalah aktif.</span><span class="lang-en">Ensure the contact channel provided is active.</span></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="module-section registration-process-section">
+  <div class="container">
+    <div class="section-title reveal">
+      <p class="eyebrow"><span class="lang-ms">Proses Pendaftaran</span><span class="lang-en">Registration Process</span></p>
+      <h2><span class="lang-ms">Daripada persediaan hingga <em>pengesahan.</em></span><span class="lang-en">From preparation to <em>confirmation.</em></span></h2>
+    </div>
+
+    <div class="registration-process-flow reveal">
+      <article><span>01</span><h3><span class="lang-ms">Semak Kelayakan</span><span class="lang-en">Check Eligibility</span></h3><p><span class="lang-ms">Pastikan pasukan memenuhi syarat asas.</span><span class="lang-en">Confirm that the team meets the basic requirements.</span></p></article>
+      <article><span>02</span><h3><span class="lang-ms">Pilih Bidang</span><span class="lang-en">Choose Area</span></h3><p><span class="lang-ms">Pilih bidang pertandingan yang tepat.</span><span class="lang-en">Select the appropriate competition area.</span></p></article>
+      <article><span>03</span><h3><span class="lang-ms">Lengkapkan Borang</span><span class="lang-en">Complete Form</span></h3><p><span class="lang-ms">Isi borang pendaftaran rasmi.</span><span class="lang-en">Complete the official registration form.</span></p></article>
+      <article><span>04</span><h3><span class="lang-ms">Hantar Maklumat</span><span class="lang-en">Submit Details</span></h3><p><span class="lang-ms">Semak semula sebelum menghantar.</span><span class="lang-en">Review all details before submission.</span></p></article>
+      <article><span>05</span><h3><span class="lang-ms">Tunggu Pemakluman</span><span class="lang-en">Await Notification</span></h3><p><span class="lang-ms">Rujuk pemakluman rasmi urus setia bagi fasa seterusnya.</span><span class="lang-en">Refer to official secretariat notification for the next phase.</span></p></article>
+    </div>
+  </div>
+</section>
+
+<section class="module-section section-fog registration-fee-section">
+  <div class="container">
+    <div class="section-title reveal">
       <p class="eyebrow"><span class="lang-ms">Yuran Pendaftaran</span><span class="lang-en">Registration Fees</span></p>
-      <h2><span class="lang-ms">Pilih kategori peserta <em>yang berkaitan.</em></span><span class="lang-en">Choose the relevant <em>participant category.</em></span></h2>
+      <h2><span class="lang-ms">Yuran mengikut <em>kategori peserta.</em></span><span class="lang-en">Fees by <em>participant category.</em></span></h2>
     </div>
     <div class="fee-grid">
       <article class="fee-card reveal">
@@ -168,39 +221,58 @@
         <span class="fee-type">Kategori B · Category B</span>
         <h3><span class="lang-ms">IPT Terbuka</span><span class="lang-en">Open Higher Education</span></h3>
         <strong>RM120.00</strong>
-        <p><span class="lang-ms">Yuran Early Bird yang dinyatakan dalam maklumat dibekalkan.</span><span class="lang-en">Early Bird fee stated in the supplied information.</span></p>
+        <p><span class="lang-ms">Yuran Early Bird seperti dinyatakan dalam maklumat yang dibekalkan.</span><span class="lang-en">Early Bird fee as stated in the supplied information.</span></p>
       </article>
     </div>
-    <div class="warning-panel reveal">
-      <strong><span class="lang-ms">Perlu pengesahan:</span><span class="lang-en">Requires confirmation:</span></strong>
-      <span class="lang-ms">Yuran biasa Kategori B selepas Early Bird, kaedah pembayaran dan polisi bayaran balik belum dinyatakan dalam maklumat sumber.</span>
-      <span class="lang-en">The standard Category B fee after Early Bird, payment method and refund policy are not stated in the supplied information.</span>
+    <div class="pending-fee-note reveal">
+      <strong><span class="lang-ms">Menunggu Pengesahan Urus Setia</span><span class="lang-en">Awaiting Secretariat Confirmation</span></strong>
+      <span><span class="lang-ms">Yuran biasa Kategori B selepas Early Bird, kaedah pembayaran dan polisi bayaran balik.</span><span class="lang-en">Standard Category B fee after Early Bird, payment method and refund policy.</span></span>
     </div>
   </div>
 </section>
 
-<section class="module-section">
+<section class="module-section official-form-section" id="official-form">
+  <div class="container">
+    <div class="official-form-card reveal">
+      <div class="official-form-copy">
+        <p class="eyebrow"><span class="lang-ms">Borang Rasmi NBIC 2026</span><span class="lang-en">Official NBIC 2026 Form</span></p>
+        <h2><span class="lang-ms">Lengkapkan pendaftaran <em>secara dalam talian.</em></span><span class="lang-en">Complete your registration <em>online.</em></span></h2>
+        <p><span class="lang-ms">Pastikan semua maklumat telah disemak sebelum membuka dan menghantar borang rasmi.</span><span class="lang-en">Ensure all information has been checked before opening and submitting the official form.</span></p>
+        <a class="btn-primary form-main-cta" href="https://forms.gle/xqiHcMK7a9vtpRTu7" target="_blank" rel="noopener">
+          <span class="lang-ms">Buka Borang Pendaftaran</span><span class="lang-en">Open Registration Form</span><span>→</span>
+        </a>
+      </div>
+      <div class="official-form-qr">
+        <img src="assets/images/registration-qr.png" alt="NBIC 2026 registration QR code">
+        <strong><span class="lang-ms">Imbas Kod QR</span><span class="lang-en">Scan QR Code</span></strong>
+        <small><span class="lang-ms">Pautan yang sama dengan butang pendaftaran rasmi.</span><span class="lang-en">Uses the same official registration link.</span></small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="module-section section-fog">
   <div class="container">
     <div class="section-title reveal">
-      <p class="eyebrow"><span class="lang-ms">Checklist Akhir</span><span class="lang-en">Final Checklist</span></p>
-      <h2><span class="lang-ms">Sebelum tekan <em>Hantar.</em></span><span class="lang-en">Before you press <em>Submit.</em></span></h2>
+      <p class="eyebrow"><span class="lang-ms">Semakan Akhir</span><span class="lang-en">Final Check</span></p>
+      <h2><span class="lang-ms">Pastikan semuanya <em>lengkap.</em></span><span class="lang-en">Make sure everything is <em>complete.</em></span></h2>
     </div>
-    <div class="check-grid">
-      <label><input type="checkbox"> <span><span class="lang-ms">Bidang pertandingan telah dipilih.</span><span class="lang-en">Competition area has been selected.</span></span></label>
-      <label><input type="checkbox"> <span><span class="lang-ms">Maklumat 1 penyelia + 4 pelajar telah disediakan.</span><span class="lang-en">Details for 1 supervisor + 4 students are ready.</span></span></label>
-      <label><input type="checkbox"> <span><span class="lang-ms">Tajuk dan ringkasan projek telah disemak.</span><span class="lang-en">Project title and summary have been reviewed.</span></span></label>
-      <label><input type="checkbox"> <span><span class="lang-ms">Maklumat hubungan adalah tepat dan aktif.</span><span class="lang-en">Contact details are accurate and active.</span></span></label>
-      <label><input type="checkbox"> <span><span class="lang-ms">Panduan Penyertaan telah dibaca.</span><span class="lang-en">Participation Guide has been reviewed.</span></span></label>
-      <label><input type="checkbox"> <span><span class="lang-ms">Kriteria Penilaian telah difahami.</span><span class="lang-en">Evaluation Criteria have been reviewed.</span></span></label>
+    <div class="check-grid check-grid-v2">
+      <label><input type="checkbox"> <span><span class="lang-ms">Bidang dipilih</span><span class="lang-en">Area selected</span></span></label>
+      <label><input type="checkbox"> <span><span class="lang-ms">Pasukan lengkap</span><span class="lang-en">Team complete</span></span></label>
+      <label><input type="checkbox"> <span><span class="lang-ms">Penyelia disahkan</span><span class="lang-en">Supervisor confirmed</span></span></label>
+      <label><input type="checkbox"> <span><span class="lang-ms">Abstrak disediakan</span><span class="lang-en">Abstract prepared</span></span></label>
+      <label><input type="checkbox"> <span><span class="lang-ms">Maklumat hubungan disemak</span><span class="lang-en">Contact details checked</span></span></label>
+      <label><input type="checkbox"> <span><span class="lang-ms">Bersedia untuk hantar</span><span class="lang-en">Ready to submit</span></span></label>
     </div>
   </div>
 </section>
 
-<section class="module-cta">
+<section class="module-cta registration-final-cta">
   <div class="container">
     <div class="cta-panel-premium reveal">
       <div>
-        <p class="eyebrow"><span class="lang-ms">Perlu Bantuan?</span><span class="lang-en">Need Help?</span></p>
+        <p class="eyebrow"><span class="lang-ms">Perlu Bantuan?</span><span class="lang-en">Need Assistance?</span></p>
         <h2><span class="lang-ms">Semak panduan atau hubungi urus setia sebelum menghantar.</span><span class="lang-en">Review the guide or contact the secretariat before submitting.</span></h2>
       </div>
       <div class="cta-actions-dual">
@@ -220,5 +292,6 @@
 <script src="js/script.js?v=20260807-menu-fix"></script>
 <script src="js/mobile-nav-fix.js?v=20260807-menu-fix"></script>
 <script src="js/page-participate-v1.js?v=20260809-premium-v1"></script>
+<script src="js/page-registration-v2.js?v=20260809-home-timeline-sync-v2"></script>
 </body>
 </html>
