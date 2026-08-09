@@ -174,3 +174,190 @@
   .rc4-link-strip{grid-template-columns:1fr}
   .rc4-cta-panel{padding:30px 24px}.rc4-cta-panel .btn-primary{width:100%}
 }
+
+
+/* ============================================================
+   V4.1 — DESKTOP REGISTER CTA + LIQUID-CHROME PANEL CORRECTION
+   ============================================================ */
+
+/* Match the approved premium header CTA used on Participation/Registration pages */
+.gallery-page .nav-cta,
+.winners-page .nav-cta,
+.contact-page .nav-cta{
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:10px 18px;
+  border:0!important;
+  border-radius:999px!important;
+  background:var(--rc4-chrome)!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  box-shadow:0 10px 24px rgba(68,65,198,.20);
+  font-weight:800;
+  white-space:nowrap;
+  text-decoration:none;
+}
+.gallery-page .nav-cta span,
+.winners-page .nav-cta span,
+.contact-page .nav-cta span{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+/* Desktop/tablet header: show Register Now. Mobile header: hide it to protect spacing. */
+@media (min-width:901px){
+  .gallery-page .nav-actions .nav-cta,
+  .winners-page .nav-actions .nav-cta,
+  .contact-page .nav-actions .nav-cta{display:inline-flex!important}
+}
+@media (max-width:900px){
+  .gallery-page .nav-actions .nav-cta,
+  .winners-page .nav-actions .nav-cta,
+  .contact-page .nav-actions .nav-cta{display:none!important}
+}
+
+/* Match the premium image-filled CTA panel seen on the Participation page.
+   The packaged registration-hero.png acts as the liquid-chrome fill. */
+.gallery-page .rc4-cta-panel,
+.winners-page .rc4-cta-panel,
+.contact-page .rc4-cta-panel{
+  background:
+    linear-gradient(90deg,rgba(5,13,38,.94),rgba(25,30,89,.82) 60%,rgba(109,51,143,.75)),
+    url('../assets/images/registration-hero.png') center/cover no-repeat!important;
+}
+
+/* Gallery preview cards never display an empty placeholder if a referenced image
+   is unavailable on GitHub. */
+.gallery-page .rc4-gallery figure{
+  background:
+    linear-gradient(135deg,rgba(7,20,51,.80),rgba(55,36,121,.70)),
+    url('../assets/images/registration-hero.png') center/cover no-repeat;
+}
+.gallery-page .rc4-gallery img{
+  background:url('../assets/images/registration-hero.png') center/cover no-repeat;
+}
+
+
+/* ============================================================
+   V4.2 — OFFICIAL PRIZES SECTION
+   ============================================================ */
+.rc4-prize-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  max-width:1080px;
+  margin:0 auto 28px;
+}
+.rc4-prize-card{
+  position:relative;
+  min-height:285px;
+  padding:28px 24px 26px;
+  border:1px solid rgba(76,94,158,.14);
+  border-radius:24px;
+  background:linear-gradient(145deg,#fff,#f7f9ff);
+  box-shadow:0 18px 38px rgba(32,42,108,.08);
+  overflow:hidden;
+}
+.rc4-prize-card:before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:4px;
+}
+.rc4-prize-card.gold:before{background:linear-gradient(90deg,#f0b538,#ffd979,#d8961f)}
+.rc4-prize-card.silver:before{background:linear-gradient(90deg,#9aa8c1,#e4ebf7,#8797b4)}
+.rc4-prize-card.bronze:before{background:linear-gradient(90deg,#b86a38,#e0a070,#8b4d2a)}
+.rc4-prize-medal{
+  display:grid;
+  place-items:center;
+  width:58px;
+  height:58px;
+  border-radius:18px;
+  color:#fff;
+  font:700 16px "Orbitron",sans-serif;
+  box-shadow:0 12px 24px rgba(40,46,106,.12);
+}
+.rc4-prize-card.gold .rc4-prize-medal{background:linear-gradient(135deg,#d79a17,#ffd867)}
+.rc4-prize-card.silver .rc4-prize-medal{background:linear-gradient(135deg,#8797b4,#dfe6f1)}
+.rc4-prize-card.bronze .rc4-prize-medal{background:linear-gradient(135deg,#8d4d2a,#d88a55)}
+.rc4-prize-kicker{
+  margin:20px 0 4px;
+  color:#74839b;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.rc4-prize-card h3{
+  margin:0 0 18px;
+  color:var(--rc4-navy);
+  font:700 28px/1.1 "Orbitron",sans-serif;
+}
+.rc4-prize-card ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:9px;
+}
+.rc4-prize-card li{
+  position:relative;
+  padding-left:18px;
+  color:#61718e;
+  line-height:1.5;
+}
+.rc4-prize-card li:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.65em;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--rc4-violet);
+}
+.rc4-special-awards{
+  max-width:1080px;
+  margin:0 auto;
+  padding:28px;
+  border:1px solid rgba(76,94,158,.14);
+  border-radius:24px;
+  background:linear-gradient(145deg,#071a3d,#1a2d67 60%,#513379);
+  box-shadow:0 20px 46px rgba(20,28,86,.16);
+}
+.rc4-special-awards .eyebrow{
+  -webkit-text-stroke:.45px rgba(255,255,255,.88);
+  text-shadow:0 0 .7px rgba(255,255,255,.72);
+}
+.rc4-special-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:18px;
+}
+.rc4-special-card{
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:14px;
+  align-items:center;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  background:rgba(255,255,255,.07);
+  backdrop-filter:blur(8px);
+}
+.rc4-special-card h3{
+  margin:0;
+  color:#fff;
+  font:700 15px/1.45 "Orbitron",sans-serif;
+}
+@media(max-width:900px){
+  .rc4-prize-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .rc4-special-grid{grid-template-columns:1fr}
+  .rc4-special-awards{padding:22px 18px}
+}
