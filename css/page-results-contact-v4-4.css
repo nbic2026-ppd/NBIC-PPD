@@ -1,0 +1,577 @@
+
+/* ============================================================
+   NBIC 2026 — RESULTS + CONTACT PREMIUM V4
+   Registration-page benchmark
+   Scope: Gallery, Official Results, Contact only
+   ============================================================ */
+.gallery-page,.winners-page,.contact-page{
+  --rc4-blue:#0033FF;
+  --rc4-cyan:#15c7e8;
+  --rc4-violet:#7458ef;
+  --rc4-magenta:#d84fb8;
+  --rc4-coral:#ff7b72;
+  --rc4-gold:#e6a33d;
+  --rc4-navy:#071a3d;
+  --rc4-text:#5c6e89;
+  --rc4-line:rgba(73,94,164,.15);
+  --rc4-chrome:linear-gradient(90deg,#15c7e8 0%,#357cf7 28%,#7458ef 56%,#d84fb8 79%,#ff7b72 100%);
+}
+
+/* Exactly the Registration benchmark proportions */
+.rc4-hero{
+  min-height:640px;
+  display:flex;
+  align-items:center;
+  padding:0!important;
+  background-size:cover!important;
+  background-repeat:no-repeat!important;
+  background-position:center center!important;
+  background-color:#07142f!important;
+}
+.rc4-hero-gallery{background-image:linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.72) 40%,rgba(4,11,38,.13) 68%,rgba(4,11,38,.02) 100%),url('../assets/images/gallery-page-hero.png')!important}
+.rc4-hero-winners{background-image:linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.72) 40%,rgba(4,11,38,.13) 68%,rgba(4,11,38,.02) 100%),url('../assets/images/winners-page-hero.png')!important}
+.rc4-hero-contact{background-image:linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.72) 40%,rgba(4,11,38,.13) 68%,rgba(4,11,38,.02) 100%),url('../assets/images/contact-page-hero.png')!important}
+.rc4-hero-inner{width:min(calc(100% - 48px),1280px);margin:auto}
+.rc4-hero-copy{max-width:640px;padding:66px 0 74px}
+.rc4-hero h1{
+  margin:14px 0 20px;color:#fff;
+  font:700 clamp(38px,5vw,68px)/1.04 "Orbitron",sans-serif;
+  letter-spacing:-.045em
+}
+.rc4-hero h1 em{font-style:normal;color:transparent;background:var(--rc4-chrome);-webkit-background-clip:text;background-clip:text}
+.rc4-hero-copy>p:not(.eyebrow){max-width:570px;margin:0;color:#dce5f7;font-size:clamp(15px,1.2vw,17px);line-height:1.75}
+
+/* eyebrow = approved site standard */
+.gallery-page .eyebrow,.winners-page .eyebrow,.contact-page .eyebrow{
+  display:inline-flex;align-items:center;gap:10px;margin:0;
+  color:var(--rc4-blue)!important;-webkit-text-fill-color:var(--rc4-blue)!important;
+  -webkit-text-stroke:.42px rgba(0,0,0,.88);paint-order:stroke fill;
+  text-shadow:0 0 .5px rgba(0,0,0,.7);
+  font:800 12px/1.2 "Inter",sans-serif;letter-spacing:.11em;text-transform:uppercase
+}
+.gallery-page .eyebrow:before,.winners-page .eyebrow:before,.contact-page .eyebrow:before{
+  content:"";width:30px;height:2px;flex:0 0 30px;border-radius:999px;background:linear-gradient(90deg,var(--rc4-cyan),var(--rc4-violet))
+}
+.rc4-hero .eyebrow,.rc4-cta-panel .eyebrow{-webkit-text-stroke:.45px rgba(255,255,255,.88);text-shadow:0 0 .7px rgba(255,255,255,.72)}
+
+/* Section rhythm same family as Registration */
+.rc4-section{padding:72px 0;background:#fff}
+.rc4-fog{background:linear-gradient(180deg,#f8faff,#f1f4ff)}
+.rc4-title{max-width:860px;margin:0 auto 34px;text-align:center}
+.rc4-title .eyebrow{justify-content:center}
+.rc4-title h2{
+  margin:10px 0 0;color:var(--rc4-navy);
+  font:700 clamp(28px,3.6vw,48px)/1.1 "Orbitron",sans-serif;letter-spacing:-.035em
+}
+.rc4-title h2 em{font-style:normal;color:transparent;background:var(--rc4-chrome);-webkit-background-clip:text;background-clip:text}
+.rc4-title>p:last-child{max-width:740px;margin:14px auto 0;color:var(--rc4-text);font-size:16px;line-height:1.7}
+
+/* premium cards */
+.rc4-card-grid{display:grid;gap:16px}
+.rc4-card-grid.five{grid-template-columns:repeat(5,1fr)}
+.rc4-card-grid.four{grid-template-columns:repeat(4,1fr)}
+.rc4-card-grid.three{grid-template-columns:repeat(3,1fr)}
+.rc4-card{
+  padding:24px;border:1px solid var(--rc4-line);border-radius:22px;
+  background:linear-gradient(145deg,#fff,#f6f8ff);box-shadow:0 14px 32px rgba(32,42,108,.06)
+}
+.rc4-card.compact{min-height:170px}
+.rc4-card h3{margin:16px 0 8px;color:var(--rc4-navy);font:700 15px/1.4 "Orbitron",sans-serif}
+.rc4-card p{margin:0;color:#61718e;line-height:1.62;font-size:13px}
+.rc4-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--rc4-chrome);color:#fff;font-weight:900}
+
+/* Process */
+.rc4-process{display:grid;gap:14px}
+.rc4-process.five{grid-template-columns:repeat(5,1fr)}
+.rc4-process article{position:relative;min-height:195px;padding:22px 18px;border:1px solid var(--rc4-line);border-radius:22px;background:linear-gradient(145deg,#fff,#f6f8ff);box-shadow:0 14px 32px rgba(32,42,108,.06)}
+.rc4-process article:not(:last-child):after{content:"→";position:absolute;right:-13px;top:50%;transform:translateY(-50%);width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:#fff;color:var(--rc4-violet);box-shadow:0 4px 14px rgba(32,42,108,.10);z-index:2}
+.rc4-process article>span{color:transparent;background:var(--rc4-chrome);-webkit-background-clip:text;background-clip:text;font:700 28px "Orbitron",sans-serif}
+.rc4-process h3{margin:18px 0 8px;color:var(--rc4-navy);font:700 15px/1.4 "Orbitron",sans-serif}
+.rc4-process p{margin:0;color:#61718e;line-height:1.55;font-size:13px}
+
+/* Gallery */
+.rc4-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rc4-gallery figure{margin:0;overflow:hidden;border:1px solid var(--rc4-line);border-radius:22px;background:#fff;box-shadow:0 16px 34px rgba(32,42,108,.07)}
+.rc4-gallery img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover}
+.rc4-gallery figcaption{padding:15px 17px;color:var(--rc4-navy);font-weight:800}
+
+/* Results status */
+.rc4-status-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.rc4-status-grid article{padding:24px;border:1px solid var(--rc4-line);border-radius:22px;background:linear-gradient(145deg,#fff,#f6f8ff);box-shadow:0 14px 32px rgba(32,42,108,.06)}
+.rc4-status-grid strong{display:block;margin:15px 0 8px;color:var(--rc4-navy);font:700 15px/1.4 "Orbitron",sans-serif}
+.rc4-status-grid p{margin:0;color:#61718e;line-height:1.6}
+.status-dot{display:block;width:12px;height:12px;border-radius:50%;box-shadow:0 0 0 5px rgba(116,88,239,.10)}
+.status-dot.pending{background:var(--rc4-violet)}
+
+/* Results accordion */
+.rc4-results-accordion,.rc4-faq{max-width:960px;margin:auto;display:grid;gap:12px}
+.rc4-results-accordion details,.rc4-faq details{overflow:hidden;border:1px solid var(--rc4-line);border-radius:18px;background:#fff;box-shadow:0 12px 28px rgba(32,42,108,.06)}
+.rc4-results-accordion summary,.rc4-faq summary{list-style:none;cursor:pointer;padding:18px 20px;color:var(--rc4-navy);font-weight:800}
+.rc4-results-accordion summary::-webkit-details-marker,.rc4-faq summary::-webkit-details-marker{display:none}
+.rc4-results-accordion summary{display:grid;grid-template-columns:48px 1fr;gap:14px;align-items:center}
+.rc4-results-accordion summary b{display:block}
+.rc4-results-accordion summary small{display:block;margin-top:4px;color:#7a88a0;font-weight:600}
+.area-badge{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--rc4-chrome);color:#fff;font:700 13px "Orbitron",sans-serif}
+.rc4-results-accordion details>div,.rc4-faq details>div{padding:0 20px 20px;color:#61718e;line-height:1.65}
+
+/* Contact resources */
+.rc4-resource-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.rc4-resource-card{display:grid;grid-template-columns:48px 1fr auto;gap:14px;align-items:center;padding:20px;border:1px solid var(--rc4-line);border-radius:20px;background:#fff;box-shadow:0 14px 32px rgba(32,42,108,.06);text-decoration:none}
+.rc4-resource-card>span{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--rc4-chrome);color:#fff;font:700 11px "Orbitron",sans-serif}
+.rc4-resource-card h3{margin:0;color:var(--rc4-navy);font:700 15px/1.4 "Orbitron",sans-serif}
+.rc4-resource-card p{margin:5px 0 0;color:#61718e;line-height:1.5}
+.rc4-resource-card>b{color:var(--rc4-violet);font-size:20px}
+.rc4-contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.rc4-contact-card{display:grid;grid-template-columns:54px 1fr;gap:14px;align-items:center;padding:24px;border:1px solid var(--rc4-line);border-radius:22px;background:linear-gradient(145deg,#fff,#f6f8ff);box-shadow:0 14px 32px rgba(32,42,108,.06);text-decoration:none}
+.rc4-contact-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:15px;background:linear-gradient(135deg,#2f7cff,#7458ef);color:#fff;font-size:22px}
+.rc4-contact-card small{display:block;color:#74839b;font-weight:800;text-transform:uppercase;letter-spacing:.05em}
+.rc4-contact-card strong{display:block;margin-top:5px;color:var(--rc4-navy);font:700 16px "Orbitron",sans-serif}
+.rc4-contact-card b{display:block;margin-top:5px;color:#536783}
+
+/* Link strip */
+.rc4-link-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.rc4-link-strip a{display:flex;align-items:center;justify-content:center;min-height:56px;padding:12px 16px;border:1px solid var(--rc4-line);border-radius:999px;background:#fff;color:var(--rc4-navy);font-weight:800;text-decoration:none;box-shadow:0 10px 24px rgba(32,42,108,.06)}
+
+/* CTA exactly same premium family as Registration */
+.rc4-cta{padding:58px 0;background:#f7f9ff}
+.rc4-cta-panel{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:30px;align-items:center;padding:38px 42px;border-radius:27px;color:#fff;background:linear-gradient(90deg,rgba(5,13,38,.94),rgba(25,30,89,.82) 60%,rgba(109,51,143,.75));box-shadow:0 26px 60px rgba(17,26,79,.20)}
+.rc4-cta-panel h2{max-width:760px;margin:10px 0 0;color:#fff;font:700 clamp(24px,2.8vw,38px)/1.16 "Orbitron",sans-serif}
+
+/* Buttons: Registration match */
+.btn-primary{
+  min-height:48px;display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:12px 22px;border:0!important;border-radius:999px!important;
+  background:var(--rc4-chrome)!important;color:#fff!important;-webkit-text-fill-color:#fff!important;
+  box-shadow:0 12px 28px rgba(68,65,198,.20);font:800 14px "Inter",sans-serif;text-decoration:none
+}
+.btn-primary span{color:#fff!important;-webkit-text-fill-color:#fff!important}
+
+/* Footer untouched in HTML, styled consistently */
+.nbic-minimal-footer{border-top:2px solid transparent;border-image:var(--rc4-chrome) 1;background:#07132f}
+.nbic-minimal-footer .nbic-footer-line{max-width:1280px;margin:auto;padding:27px 24px 29px;text-align:center;color:#dbe7ff;font:500 clamp(11px,1vw,14px)/1.55 "Orbitron",sans-serif}
+
+/* Responsive — Registration benchmark */
+@media(max-width:1024px){
+  .rc4-card-grid.five{grid-template-columns:1fr 1fr}
+  .rc4-card-grid.four{grid-template-columns:1fr 1fr}
+  .rc4-process.five{grid-template-columns:repeat(5,minmax(155px,1fr));overflow-x:auto}
+  .rc4-process article:not(:last-child):after{display:none}
+  .rc4-gallery{grid-template-columns:1fr 1fr}
+  .rc4-status-grid{grid-template-columns:1fr 1fr}
+  .rc4-contact-grid{grid-template-columns:1fr}
+  .rc4-cta-panel{grid-template-columns:1fr}
+}
+@media(max-width:760px){
+  .rc4-section{padding:48px 0}
+  .rc4-title{text-align:left}.rc4-title .eyebrow{justify-content:flex-start}.rc4-title>p:last-child{margin-inline:0}
+  .rc4-hero{min-height:575px;background-position:68% center!important}
+  .rc4-hero-inner{width:min(calc(100% - 28px),1280px)}
+  .rc4-hero-copy{max-width:94%;padding:48px 0 58px}
+  .rc4-hero h1{font-size:clamp(32px,8.6vw,48px)}
+  .rc4-card-grid.five,.rc4-card-grid.four,.rc4-card-grid.three{grid-template-columns:1fr}
+  .rc4-gallery{grid-template-columns:1fr}
+  .rc4-status-grid{grid-template-columns:1fr}
+  .rc4-resource-grid{grid-template-columns:1fr}
+  .rc4-link-strip{grid-template-columns:1fr}
+  .rc4-cta-panel{padding:30px 24px}.rc4-cta-panel .btn-primary{width:100%}
+}
+
+
+/* ============================================================
+   V4.1 — DESKTOP REGISTER CTA + LIQUID-CHROME PANEL CORRECTION
+   ============================================================ */
+
+/* Match the approved premium header CTA used on Participation/Registration pages */
+.gallery-page .nav-cta,
+.winners-page .nav-cta,
+.contact-page .nav-cta{
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:9px;
+  padding:10px 18px;
+  border:0!important;
+  border-radius:999px!important;
+  background:var(--rc4-chrome)!important;
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+  box-shadow:0 10px 24px rgba(68,65,198,.20);
+  font-weight:800;
+  white-space:nowrap;
+  text-decoration:none;
+}
+.gallery-page .nav-cta span,
+.winners-page .nav-cta span,
+.contact-page .nav-cta span{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+
+/* Desktop/tablet header: show Register Now. Mobile header: hide it to protect spacing. */
+@media (min-width:901px){
+  .gallery-page .nav-actions .nav-cta,
+  .winners-page .nav-actions .nav-cta,
+  .contact-page .nav-actions .nav-cta{display:inline-flex!important}
+}
+@media (max-width:900px){
+  .gallery-page .nav-actions .nav-cta,
+  .winners-page .nav-actions .nav-cta,
+  .contact-page .nav-actions .nav-cta{display:none!important}
+}
+
+/* Match the premium image-filled CTA panel seen on the Participation page.
+   The packaged registration-hero.png acts as the liquid-chrome fill. */
+.gallery-page .rc4-cta-panel,
+.winners-page .rc4-cta-panel,
+.contact-page .rc4-cta-panel{
+  background:
+    linear-gradient(90deg,rgba(5,13,38,.94),rgba(25,30,89,.82) 60%,rgba(109,51,143,.75)),
+    url('../assets/images/registration-hero.png') center/cover no-repeat!important;
+}
+
+/* Gallery preview cards never display an empty placeholder if a referenced image
+   is unavailable on GitHub. */
+.gallery-page .rc4-gallery figure{
+  background:
+    linear-gradient(135deg,rgba(7,20,51,.80),rgba(55,36,121,.70)),
+    url('../assets/images/registration-hero.png') center/cover no-repeat;
+}
+.gallery-page .rc4-gallery img{
+  background:url('../assets/images/registration-hero.png') center/cover no-repeat;
+}
+
+
+/* ============================================================
+   V4.2 — OFFICIAL PRIZES SECTION
+   ============================================================ */
+.rc4-prize-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+  max-width:1080px;
+  margin:0 auto 28px;
+}
+.rc4-prize-card{
+  position:relative;
+  min-height:285px;
+  padding:28px 24px 26px;
+  border:1px solid rgba(76,94,158,.14);
+  border-radius:24px;
+  background:linear-gradient(145deg,#fff,#f7f9ff);
+  box-shadow:0 18px 38px rgba(32,42,108,.08);
+  overflow:hidden;
+}
+.rc4-prize-card:before{
+  content:"";
+  position:absolute;
+  inset:0 0 auto 0;
+  height:4px;
+}
+.rc4-prize-card.gold:before{background:linear-gradient(90deg,#f0b538,#ffd979,#d8961f)}
+.rc4-prize-card.silver:before{background:linear-gradient(90deg,#9aa8c1,#e4ebf7,#8797b4)}
+.rc4-prize-card.bronze:before{background:linear-gradient(90deg,#b86a38,#e0a070,#8b4d2a)}
+.rc4-prize-medal{
+  display:grid;
+  place-items:center;
+  width:58px;
+  height:58px;
+  border-radius:18px;
+  color:#fff;
+  font:700 16px "Orbitron",sans-serif;
+  box-shadow:0 12px 24px rgba(40,46,106,.12);
+}
+.rc4-prize-card.gold .rc4-prize-medal{background:linear-gradient(135deg,#d79a17,#ffd867)}
+.rc4-prize-card.silver .rc4-prize-medal{background:linear-gradient(135deg,#8797b4,#dfe6f1)}
+.rc4-prize-card.bronze .rc4-prize-medal{background:linear-gradient(135deg,#8d4d2a,#d88a55)}
+.rc4-prize-kicker{
+  margin:20px 0 4px;
+  color:#74839b;
+  font-size:11px;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.rc4-prize-card h3{
+  margin:0 0 18px;
+  color:var(--rc4-navy);
+  font:700 28px/1.1 "Orbitron",sans-serif;
+}
+.rc4-prize-card ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:9px;
+}
+.rc4-prize-card li{
+  position:relative;
+  padding-left:18px;
+  color:#61718e;
+  line-height:1.5;
+}
+.rc4-prize-card li:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:.65em;
+  width:7px;
+  height:7px;
+  border-radius:50%;
+  background:var(--rc4-violet);
+}
+.rc4-special-awards{
+  max-width:1080px;
+  margin:0 auto;
+  padding:28px;
+  border:1px solid rgba(76,94,158,.14);
+  border-radius:24px;
+  background:linear-gradient(145deg,#071a3d,#1a2d67 60%,#513379);
+  box-shadow:0 20px 46px rgba(20,28,86,.16);
+}
+.rc4-special-awards .eyebrow{
+  -webkit-text-stroke:.45px rgba(255,255,255,.88);
+  text-shadow:0 0 .7px rgba(255,255,255,.72);
+}
+.rc4-special-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-top:18px;
+}
+.rc4-special-card{
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:14px;
+  align-items:center;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.12);
+  border-radius:18px;
+  background:rgba(255,255,255,.07);
+  backdrop-filter:blur(8px);
+}
+.rc4-special-card h3{
+  margin:0;
+  color:#fff;
+  font:700 15px/1.45 "Orbitron",sans-serif;
+}
+@media(max-width:900px){
+  .rc4-prize-grid{grid-template-columns:1fr}
+}
+@media(max-width:640px){
+  .rc4-special-grid{grid-template-columns:1fr}
+  .rc4-special-awards{padding:22px 18px}
+}
+
+
+/* ============================================================
+   V4.3 — GALLERY + RESULTS AUDIT FIX
+   ============================================================ */
+
+/* Gallery preview: premium visible caption, no dark unreadable strip */
+.gallery-page .rc4-gallery-card{
+  position:relative;
+  overflow:hidden;
+  border:1px solid transparent!important;
+  background:
+    linear-gradient(#fff,#fff) padding-box,
+    linear-gradient(135deg,rgba(21,199,232,.75),rgba(116,88,239,.62),rgba(216,79,184,.58)) border-box!important;
+  box-shadow:0 18px 38px rgba(26,38,105,.10)!important;
+}
+.gallery-page .rc4-gallery-card img{
+  display:block;
+  width:100%;
+  aspect-ratio:16/10;
+  object-fit:cover;
+  transition:transform .35s ease, filter .35s ease;
+}
+.gallery-page .rc4-gallery-card figcaption{
+  position:absolute;
+  left:14px;
+  right:14px;
+  bottom:14px;
+  z-index:2;
+  min-height:48px;
+  display:flex;
+  align-items:center;
+  padding:11px 15px!important;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:14px;
+  background:linear-gradient(90deg,rgba(4,14,42,.88),rgba(31,28,91,.78),rgba(91,39,112,.72))!important;
+  color:#fff!important;
+  font:800 13px/1.3 "Inter",sans-serif!important;
+  box-shadow:0 10px 24px rgba(4,10,36,.20);
+  backdrop-filter:blur(10px);
+}
+.gallery-page .rc4-gallery-card figcaption span{
+  color:#fff!important;
+  -webkit-text-fill-color:#fff!important;
+}
+.gallery-page .rc4-gallery-card:after{
+  content:"";
+  position:absolute;
+  inset:auto 0 0 0;
+  height:38%;
+  pointer-events:none;
+  background:linear-gradient(180deg,transparent,rgba(4,11,38,.42));
+}
+.gallery-page .rc4-gallery-card:hover img{
+  transform:scale(1.025);
+  filter:saturate(1.06);
+}
+
+/* Results prize section takes the place of the previous generic recognition block */
+.winners-page #prizes{
+  background:linear-gradient(180deg,#f8faff,#f1f4ff)!important;
+}
+.winners-page #prizes .rc4-prize-card{
+  box-shadow:0 18px 40px rgba(27,39,110,.09);
+}
+
+
+/* ============================================================
+   V4.4 — WINNERS SECTION ONLY
+   Main Cash Prizes → Recognition Awards → Special Awards
+   ============================================================ */
+.rc4-prize-group{
+  max-width:1080px;
+  margin:0 auto 28px;
+}
+.rc4-prize-group-heading{
+  margin-bottom:18px;
+  text-align:center;
+}
+.rc4-prize-group-heading .eyebrow{justify-content:center}
+.rc4-prize-group-heading h3{
+  margin:10px 0 0;
+  color:var(--rc4-navy);
+  font:700 clamp(20px,2.4vw,30px)/1.2 "Orbitron",sans-serif;
+}
+
+.rc4-cash-podium{
+  display:grid;
+  grid-template-columns:1fr 1.08fr 1fr;
+  gap:18px;
+  align-items:end;
+}
+.rc4-cash-card{
+  position:relative;
+  min-height:245px;
+  display:grid;
+  align-content:center;
+  justify-items:center;
+  text-align:center;
+  padding:28px 22px;
+  border:1px solid rgba(77,95,159,.14);
+  border-radius:24px;
+  background:linear-gradient(145deg,#fff,#f7f9ff);
+  box-shadow:0 18px 38px rgba(32,42,108,.08);
+  overflow:hidden;
+}
+.rc4-cash-card.first{
+  min-height:282px;
+  background:linear-gradient(145deg,#fffdf5,#fff6dd);
+  border-color:rgba(219,165,50,.28);
+  box-shadow:0 22px 46px rgba(189,139,35,.14);
+}
+.rc4-cash-card.second{background:linear-gradient(145deg,#fff,#f3f6fb)}
+.rc4-cash-card.third{background:linear-gradient(145deg,#fff9f5,#f7eee8)}
+.rc4-cash-card:before{
+  content:"";
+  position:absolute;
+  left:0;right:0;top:0;
+  height:5px;
+}
+.rc4-cash-card.first:before{background:linear-gradient(90deg,#d99b1e,#ffd66d,#c9850d)}
+.rc4-cash-card.second:before{background:linear-gradient(90deg,#8795ae,#dde6f2,#71829f)}
+.rc4-cash-card.third:before{background:linear-gradient(90deg,#9c582f,#dc9562,#814521)}
+.rc4-place-badge{
+  display:grid;
+  place-items:center;
+  width:54px;height:54px;
+  border-radius:17px;
+  color:#fff;
+  font:700 15px "Orbitron",sans-serif;
+  margin-bottom:18px;
+}
+.rc4-cash-card.first .rc4-place-badge{background:linear-gradient(135deg,#d89a16,#ffd768)}
+.rc4-cash-card.second .rc4-place-badge{background:linear-gradient(135deg,#8191ad,#dfe6f0)}
+.rc4-cash-card.third .rc4-place-badge{background:linear-gradient(135deg,#8f4e29,#d88b57)}
+.rc4-cash-kicker{
+  margin:0 0 10px;
+  color:#65748c;
+  font-size:12px;
+  font-weight:900;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+.rc4-cash-card strong{
+  display:block;
+  color:var(--rc4-navy);
+  font:700 clamp(34px,4vw,52px)/1 "Orbitron",sans-serif;
+}
+.rc4-cash-card.first strong{
+  color:transparent;
+  background:linear-gradient(90deg,#d49418,#f5bb37,#b97308);
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+.rc4-cash-card>span{
+  margin-top:10px;
+  color:#6a7a92;
+  font-weight:800;
+}
+
+.rc4-prize-note{
+  margin-top:16px;
+  padding:15px 18px;
+  border:1px solid rgba(76,95,160,.13);
+  border-radius:15px;
+  background:#fff;
+  color:#5f718c;
+  line-height:1.6;
+  text-align:center;
+}
+
+.rc4-recognition-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px;
+}
+.rc4-recognition-card{
+  padding:24px;
+  border:1px solid rgba(76,94,158,.14);
+  border-radius:22px;
+  background:linear-gradient(145deg,#fff,#f7f9ff);
+  box-shadow:0 15px 34px rgba(32,42,108,.06);
+}
+.rc4-recognition-medal{
+  display:grid;
+  place-items:center;
+  width:52px;height:52px;
+  border-radius:16px;
+  color:#fff;
+  font:700 16px "Orbitron",sans-serif;
+}
+.rc4-recognition-card.gold .rc4-recognition-medal{background:linear-gradient(135deg,#d99a18,#ffd96f)}
+.rc4-recognition-card.silver .rc4-recognition-medal{background:linear-gradient(135deg,#8191ad,#dfe6f0)}
+.rc4-recognition-card.bronze .rc4-recognition-medal{background:linear-gradient(135deg,#8d4c28,#d78a55)}
+.rc4-recognition-card h4{
+  margin:18px 0 8px;
+  color:var(--rc4-navy);
+  font:700 16px/1.4 "Orbitron",sans-serif;
+}
+.rc4-recognition-card p{
+  margin:0;
+  color:#61718e;
+  line-height:1.62;
+  font-size:13px;
+}
+
+@media(max-width:900px){
+  .rc4-cash-podium,.rc4-recognition-grid{grid-template-columns:1fr}
+  .rc4-cash-card.first,.rc4-cash-card{min-height:auto}
+}
+@media(max-width:640px){
+  .rc4-prize-group-heading{text-align:left}
+  .rc4-prize-group-heading .eyebrow{justify-content:flex-start}
+}
