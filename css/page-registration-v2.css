@@ -1,0 +1,366 @@
+/* ============================================================
+   NBIC 2026 — REGISTRATION V2
+   HOME + TIMELINE SYNCHRONISATION LAYER
+   ============================================================ */
+
+.registration-page{
+  --reg-chrome:linear-gradient(90deg,#10c8ef 0%,#357cf7 28%,#7659f3 56%,#d64bc7 78%,#ff7a77 100%);
+  --reg-navy:#071a3d;
+  --reg-blue:#0033FF;
+  --reg-line:rgba(74,95,170,.15);
+}
+
+/* Hero matches the premium inner-page hero system */
+.registration-v2-hero{
+  min-height:640px;
+  background-image:
+    linear-gradient(90deg,rgba(4,11,38,.91) 0%,rgba(4,11,38,.72) 40%,rgba(4,11,38,.13) 68%,rgba(4,11,38,.02) 100%),
+    url('../assets/images/registration-hero.png');
+  background-position:center center;
+}
+.registration-v2-hero .module-hero-copy{max-width:640px}
+.registration-v2-hero .module-hero-copy>p:not(.eyebrow){max-width:570px}
+
+/* Countdown visual language synchronized with Timeline */
+.registration-v2-deadline{
+  padding:38px 0 50px;
+  background:#fff;
+}
+.registration-v2-deadline .deadline-panel{
+  padding:30px 34px;
+  border-radius:26px;
+  background:linear-gradient(145deg,#fff,#f5f7ff);
+  box-shadow:0 18px 42px rgba(32,42,108,.08);
+}
+.registration-v2-deadline .deadline-copy h2{
+  margin:10px 0 0;
+  font-size:clamp(25px,3vw,38px);
+}
+.registration-v2-deadline .deadline-date{
+  margin:12px 0 0!important;
+  color:#526887!important;
+  font-weight:900;
+}
+.registration-v2-deadline .countdown-grid>div{
+  min-width:92px;
+  padding:15px 12px;
+  border-radius:17px;
+  background:rgba(248,250,255,.96);
+}
+.registration-v2-deadline .countdown-grid strong{
+  font-size:clamp(24px,2.4vw,34px);
+}
+
+/* Timeline synchronized milestone strip */
+.registration-milestones-section{padding-top:52px}
+.registration-milestone-strip{
+  position:relative;
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:14px;
+  padding:26px 24px;
+  border:1px solid var(--reg-line);
+  border-radius:24px;
+  background:linear-gradient(145deg,#fff,#f7f8ff);
+  box-shadow:0 16px 38px rgba(32,42,108,.07);
+}
+.registration-milestone-strip:before{
+  content:"";
+  position:absolute;
+  left:8%;right:8%;top:48px;height:2px;
+  background:linear-gradient(90deg,#2f7cff,#7458ef,#1aaa8f,#e19b2d,#d84fb8);
+  opacity:.55;
+}
+.milestone-step{
+  position:relative;
+  z-index:1;
+  text-align:center;
+  padding:8px 6px 4px;
+}
+.milestone-step .step-no{
+  width:16px;height:16px;
+  margin:8px auto 14px;
+  display:grid;place-items:center;
+  overflow:hidden;
+  border:3px solid #fff;
+  border-radius:50%;
+  background:#7458ef;
+  color:transparent;
+  box-shadow:0 0 0 2px #7458ef;
+}
+.milestone-step:nth-child(1) .step-no{background:#2f7cff;box-shadow:0 0 0 2px #2f7cff}
+.milestone-step:nth-child(2) .step-no{background:#7458ef;box-shadow:0 0 0 2px #7458ef}
+.milestone-step:nth-child(3) .step-no{background:#1aaa8f;box-shadow:0 0 0 2px #1aaa8f}
+.milestone-step:nth-child(4) .step-no{background:#e19b2d;box-shadow:0 0 0 2px #e19b2d}
+.milestone-step:nth-child(5) .step-no{background:#d84fb8;box-shadow:0 0 0 2px #d84fb8}
+.milestone-step strong{
+  display:block;
+  color:var(--reg-navy);
+  font:700 12px/1.3 var(--nbic-font-display,"Orbitron",sans-serif);
+}
+.milestone-step b{
+  display:block;
+  margin-top:7px;
+  color:#536783;
+  font-size:11px;
+}
+.section-link-row{
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+}
+.btn-soft{
+  min-height:44px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+  padding:10px 18px;
+  border:1px solid var(--reg-line);
+  border-radius:999px;
+  background:#fff;
+  color:var(--reg-navy);
+  box-shadow:0 10px 24px rgba(32,42,108,.06);
+  font-weight:800;
+  text-decoration:none;
+}
+
+/* Preparation cards */
+.prepare-card-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:16px;
+}
+.prepare-card{
+  padding:24px;
+  border:1px solid var(--reg-line);
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 14px 32px rgba(32,42,108,.06);
+}
+.prepare-card>span{
+  display:grid;
+  place-items:center;
+  width:42px;height:42px;
+  border-radius:12px;
+  background:var(--reg-chrome);
+  color:#fff;
+  font:700 11px var(--nbic-font-display,"Orbitron",sans-serif);
+}
+.prepare-card h3{
+  margin:18px 0 8px;
+  color:var(--reg-navy);
+  font:700 16px/1.4 var(--nbic-font-display,"Orbitron",sans-serif);
+}
+.prepare-card p{
+  margin:0;
+  color:#61718e;
+  line-height:1.6;
+}
+.prepare-card a{
+  display:inline-flex;
+  margin-top:14px;
+  color:var(--reg-blue);
+  font-weight:800;
+  text-decoration:none;
+}
+
+/* Registration process */
+.registration-process-section{background:#fff}
+.registration-process-flow{
+  display:grid;
+  grid-template-columns:repeat(5,1fr);
+  gap:14px;
+}
+.registration-process-flow article{
+  position:relative;
+  min-height:200px;
+  padding:22px 18px;
+  border:1px solid var(--reg-line);
+  border-radius:22px;
+  background:linear-gradient(145deg,#fff,#f6f8ff);
+  box-shadow:0 14px 32px rgba(32,42,108,.06);
+}
+.registration-process-flow article:not(:last-child):after{
+  content:"→";
+  position:absolute;
+  right:-13px;
+  top:50%;
+  transform:translateY(-50%);
+  width:26px;height:26px;
+  display:grid;place-items:center;
+  border-radius:50%;
+  background:#fff;
+  color:#7458ef;
+  box-shadow:0 4px 14px rgba(32,42,108,.10);
+  z-index:2;
+}
+.registration-process-flow article>span{
+  color:transparent;
+  background:var(--reg-chrome);
+  -webkit-background-clip:text;
+  background-clip:text;
+  font:700 28px var(--nbic-font-display,"Orbitron",sans-serif);
+}
+.registration-process-flow h3{
+  margin:18px 0 8px;
+  color:var(--reg-navy);
+  font:700 15px/1.4 var(--nbic-font-display,"Orbitron",sans-serif);
+}
+.registration-process-flow p{
+  margin:0;
+  color:#61718e;
+  line-height:1.55;
+  font-size:13px;
+}
+
+/* Fee status */
+.pending-fee-note{
+  margin-top:20px;
+  padding:18px 20px;
+  border:1px solid rgba(230,154,44,.24);
+  border-radius:17px;
+  background:#fffaf1;
+  color:#6b5b3d;
+}
+.pending-fee-note strong{
+  display:block;
+  margin-bottom:5px;
+  color:#8b611c;
+  font-size:12px;
+  text-transform:uppercase;
+  letter-spacing:.06em;
+}
+
+/* Main conversion block */
+.official-form-section{background:#fff}
+.official-form-card{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) 220px;
+  gap:38px;
+  align-items:center;
+  padding:42px 44px;
+  border-radius:30px;
+  color:#fff;
+  background:
+    linear-gradient(90deg,rgba(4,13,39,.94),rgba(18,27,79,.82) 58%,rgba(87,46,130,.72)),
+    url('../assets/images/registration-hero.png') center/cover no-repeat;
+  box-shadow:0 28px 64px rgba(17,26,79,.22);
+}
+.official-form-card .eyebrow{
+  -webkit-text-stroke:.46px rgba(255,255,255,.82);
+}
+.official-form-copy h2{
+  margin:10px 0 0;
+  max-width:760px;
+  color:#fff;
+  font:700 clamp(28px,3.5vw,46px)/1.13 var(--nbic-font-display,"Orbitron",sans-serif);
+}
+.official-form-copy h2 em{
+  font-style:normal;
+  color:transparent;
+  background:var(--reg-chrome);
+  -webkit-background-clip:text;
+  background-clip:text;
+}
+.official-form-copy>p:not(.eyebrow){
+  max-width:680px;
+  color:#dce5f6;
+  line-height:1.7;
+}
+.form-main-cta{
+  margin-top:16px;
+  min-height:54px!important;
+  padding-inline:26px!important;
+  font-size:15px!important;
+}
+.official-form-qr{
+  display:grid;
+  justify-items:center;
+  text-align:center;
+  padding:18px;
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:22px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(8px);
+}
+.official-form-qr img{
+  width:160px;height:160px;
+  object-fit:contain;
+  padding:8px;
+  border-radius:14px;
+  background:#fff;
+}
+.official-form-qr strong{
+  margin-top:12px;
+  color:#fff;
+}
+.official-form-qr small{
+  margin-top:5px;
+  color:#dce5f6;
+  line-height:1.4;
+}
+
+/* Reduced checklist */
+.check-grid-v2 label{
+  min-height:62px;
+  align-items:center;
+  font-weight:800;
+  color:#445a7c;
+}
+
+.registration-final-cta .cta-panel-premium{
+  background:
+    linear-gradient(90deg,rgba(5,13,38,.94),rgba(25,30,89,.82) 60%,rgba(109,51,143,.75)),
+    url('../assets/images/registration-hero.png') center/cover no-repeat;
+}
+
+/* Tablet */
+@media(max-width:1024px){
+  .registration-milestone-strip{
+    grid-template-columns:repeat(5,minmax(135px,1fr));
+    overflow-x:auto;
+  }
+  .registration-milestone-strip:before{display:none}
+  .prepare-card-grid{grid-template-columns:1fr 1fr}
+  .registration-process-flow{grid-template-columns:1fr 1fr}
+  .registration-process-flow article:not(:last-child):after{display:none}
+  .official-form-card{grid-template-columns:1fr}
+  .official-form-qr{max-width:260px}
+}
+
+/* Mobile */
+@media(max-width:760px){
+  .registration-v2-hero{
+    min-height:575px;
+    background-position:68% center;
+  }
+  .registration-v2-deadline{padding:28px 0 38px}
+  .registration-v2-deadline .deadline-panel{padding:24px 20px}
+  .registration-milestones-section{padding-top:40px}
+  .registration-milestone-strip{
+    display:flex;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    padding:18px 14px;
+  }
+  .milestone-step{
+    min-width:155px;
+    scroll-snap-align:start;
+  }
+  .milestone-step .step-no{margin-top:3px}
+  .prepare-card-grid{grid-template-columns:1fr}
+  .registration-process-flow{grid-template-columns:1fr}
+  .registration-process-flow article{min-height:0}
+  .official-form-card{
+    gap:26px;
+    padding:30px 24px;
+  }
+  .official-form-qr{
+    max-width:none;
+    width:100%;
+  }
+  .official-form-qr img{
+    width:140px;height:140px;
+  }
+}
