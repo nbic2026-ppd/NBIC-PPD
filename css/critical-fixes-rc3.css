@@ -1,0 +1,90 @@
+
+/* NBIC 2026 — RC2 critical fixes only */
+
+/* Homepage programme banner */
+.home-programme-banner-section{
+  padding:34px 0 8px;
+  background:#fff;
+}
+.home-programme-banner{
+  margin:0;
+  overflow:hidden;
+  border:1px solid rgba(76,94,158,.14);
+  border-radius:22px;
+  background:#fff;
+  box-shadow:0 18px 40px rgba(28,38,105,.09);
+}
+.home-programme-banner img{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* Registration Category B: make post–Early Bird standard rate explicit */
+.standard-fee-after{
+  margin-top:14px;
+  padding:14px 15px;
+  border:1px solid rgba(83,101,167,.14);
+  border-radius:14px;
+  background:rgba(255,255,255,.78);
+}
+.standard-fee-after>span{
+  display:block;
+  color:#596b87;
+  font-size:12px;
+  font-weight:800;
+  text-transform:uppercase;
+  letter-spacing:.04em;
+}
+.standard-fee-after b{
+  display:block;
+  margin-top:4px;
+  color:#071a3d;
+  font:700 24px/1.1 "Orbitron",sans-serif;
+}
+.standard-fee-after small{
+  display:block;
+  margin-top:5px;
+  color:#6b7a92;
+  line-height:1.45;
+}
+
+@media(max-width:760px){
+  .home-programme-banner-section{padding-top:22px}
+  .home-programme-banner{border-radius:16px}
+}
+
+
+/* RC3 — Payment wording clarification only */
+.fee-eligibility-note{
+  max-width:820px;
+  margin:14px auto 0;
+  color:#5f7089;
+  line-height:1.65;
+  font-weight:600;
+}
+.fee-grid-open{
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  max-width:980px;
+  margin-inline:auto;
+}
+.fee-card-standard{
+  border-color:rgba(53,124,247,.22);
+  background:linear-gradient(145deg,#fff,#f7faff);
+}
+.standard-fee-badge{
+  display:inline-flex;
+  width:max-content;
+  margin-bottom:13px;
+  padding:8px 12px;
+  border-radius:999px;
+  background:linear-gradient(90deg,#15c7e8,#357cf7,#7458ef);
+  color:#fff;
+  font-size:11px;
+  font-weight:900;
+  letter-spacing:.06em;
+  text-transform:uppercase;
+}
+@media(max-width:760px){
+  .fee-grid-open{grid-template-columns:1fr}
+}
