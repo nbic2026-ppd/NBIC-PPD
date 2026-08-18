@@ -19,7 +19,17 @@
 <meta content="Halaman rasmi pendaftaran NBIC 2026: tarikh tutup, yuran, checklist, borang rasmi dan kod QR pendaftaran." name="description"/>
 <meta content="NBIC 2026 | Pendaftaran" property="og:title"/>
 <meta content="assets/images/registration-hero.png" property="og:image"/>
-<link href="css/nav-footer-final-fix-v1.css?v=20260809-nav-footer-fix" rel="stylesheet"/><link href="css/critical-fixes-rc3.css?v=20260810-payment-qr-rc3" rel="stylesheet"/></head>
+<link href="css/nav-footer-final-fix-v1.css?v=20260809-nav-footer-fix" rel="stylesheet"/><link href="css/critical-fixes-rc3.css?v=20260810-payment-qr-rc3" rel="stylesheet"/><style id="registration-extension-27aug2026">
+.registration-extension-alert{padding:28px 0 0;background:linear-gradient(180deg,#fff 0%,#f7fbff 100%)}
+.extension-alert-card{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:22px;padding:22px 24px;border:2px solid #0b5cff;border-radius:20px;background:#fff;box-shadow:0 16px 40px rgba(11,92,255,.12)}
+.extension-alert-badge{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:10px 14px;border-radius:999px;background:#0b5cff;color:#fff;font:800 12px/1.1 Inter,sans-serif;letter-spacing:.08em;white-space:nowrap}
+.extension-alert-copy .eyebrow{margin:0 0 6px;color:#0b5cff}
+.extension-alert-copy h2{margin:0 0 6px;font-size:clamp(1.25rem,2.2vw,1.8rem);line-height:1.2;color:#0d1b2a}
+.extension-alert-copy h2 em{color:#0b5cff;font-style:normal}
+.extension-alert-copy p:last-child{margin:0;color:#4a5568}
+.extension-alert-cta{white-space:nowrap}
+@media(max-width:900px){.extension-alert-card{grid-template-columns:1fr}.extension-alert-badge{justify-self:start}.extension-alert-cta{justify-self:start}}
+</style></head>
 <body class="inner-page system-page participate-module registration-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
@@ -92,13 +102,26 @@
 </div>
 </div>
 </section>
+<section class="registration-extension-alert" aria-label="Registration extension notice">
+<div class="container">
+<div class="extension-alert-card reveal" role="status">
+<div class="extension-alert-badge"><span class="lang-ms">TARIKH DILANJUTKAN</span><span class="lang-en">DEADLINE EXTENDED</span></div>
+<div class="extension-alert-copy">
+<p class="eyebrow"><span class="lang-ms">Makluman Terkini NBIC 2026</span><span class="lang-en">Latest NBIC 2026 Update</span></p>
+<h2><span class="lang-ms">Pendaftaran penyertaan dilanjutkan sehingga <em>27 Ogos 2026.</em></span><span class="lang-en">Participation registration has been extended until <em>27 August 2026.</em></span></h2>
+<p><span class="lang-ms">Masih belum mendaftar? Lengkapkan pendaftaran dan penghantaran abstrak sebelum <strong>11.59 malam (MYT), 27 Ogos 2026</strong>.</span><span class="lang-en">Haven’t registered yet? Complete your registration and abstract submission by <strong>11.59 PM (MYT), 27 August 2026</strong>.</span></p>
+</div>
+<a class="btn-primary extension-alert-cta" href="#official-form"><span class="lang-ms">Daftar Sekarang</span><span class="lang-en">Register Now</span><span>→</span></a>
+</div>
+</div>
+</section>
 <section class="registration-deadline registration-v2-deadline">
 <div class="container">
-<div class="deadline-panel reveal" data-registration-countdown="" data-target="2026-08-20T23:59:59+08:00">
+<div class="deadline-panel reveal" data-registration-countdown="" data-target="2026-08-27T23:59:59+08:00">
 <div class="deadline-copy">
 <p class="eyebrow"><span class="lang-ms">Tarikh Tindakan Semasa</span><span class="lang-en">Current Action Deadline</span></p>
 <h2><span class="lang-ms">Pendaftaran &amp; Abstrak Ditutup</span><span class="lang-en">Registration &amp; Abstract Submission Closes</span></h2>
-<p class="deadline-date">20 AUGUST 2026 · 11.59 PM (MYT)</p>
+<p class="deadline-date">27 AUGUST 2026 · 11.59 PM (MYT)</p>
 </div>
 <div aria-live="polite" class="countdown-grid">
 <div><strong data-count="days">00</strong><span><span class="lang-ms">Hari</span><span class="lang-en">Days</span></span></div>
@@ -119,7 +142,7 @@
 <div class="registration-milestone-strip reveal">
 <article class="milestone-step is-current">
 <span class="step-no">01</span>
-<strong>01–20 AUG 2026</strong>
+<strong>01–27 AUG 2026</strong>
 <b><span class="lang-ms">Pendaftaran &amp; Abstrak</span><span class="lang-en">Registration &amp; Abstract</span></b>
 </article>
 <article class="milestone-step">
