@@ -23,7 +23,20 @@
 <link href="css/styles.css?v=20260806-unified" rel="stylesheet"/>
 <link href="css/theme.css?v=20260807-locked-system-v16" rel="stylesheet"/>
 <link href="css/page-timeline-v3.css?v=20260808-timeline-hero-countdown-v3" rel="stylesheet"/>
-<link href="css/nav-footer-final-fix-v1.css?v=20260809-nav-footer-fix" rel="stylesheet"/></head>
+<link href="css/nav-footer-final-fix-v1.css?v=20260809-nav-footer-fix" rel="stylesheet"/>
+<style>
+/* NBIC timeline phase colour system */
+.phase-card{--phase:#2563eb;--phase-soft:#eff6ff;border-left:7px solid var(--phase)!important;background:linear-gradient(105deg,var(--phase-soft) 0,rgba(255,255,255,.98) 34%)!important}
+.phase-card .phase-index{background:var(--phase)!important;color:#fff!important;border-color:var(--phase)!important;box-shadow:0 8px 20px color-mix(in srgb,var(--phase) 24%,transparent)!important}
+.phase-card .phase-topline time,.phase-card .phase-status{background:var(--phase)!important;color:#fff!important;border-color:var(--phase)!important}
+.phase-card .phase-deadline{color:var(--phase)!important;border-color:color-mix(in srgb,var(--phase) 36%,#fff)!important;background:var(--phase-soft)!important}
+.phase-registration{--phase:#2563eb;--phase-soft:#eff6ff}
+.phase-acceptance{--phase:#d97706;--phase-soft:#fff7e6}
+.phase-submission{--phase:#7c3aed;--phase-soft:#f5f0ff}
+.phase-judging{--phase:#0f8a83;--phase-soft:#eafaf8}
+.phase-final{--phase:#dc4c4c;--phase-soft:#fff1f1}
+@media(max-width:700px){.phase-card{border-left-width:5px!important}}
+</style></head>
 <body class="inner-page system-page timeline-page timeline-master-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
