@@ -45,6 +45,12 @@
 .payment-reference-box strong{display:block;margin:12px 0;color:#b11260;font-family:'Orbitron',sans-serif;font-size:clamp(1.15rem,2.3vw,1.65rem);line-height:1.25}
 .payment-reference-box small{color:#821449;font-weight:700}
 @media(max-width:760px){.payment-highlight-body{grid-template-columns:1fr;padding:19px}.bank-detail-list{grid-template-columns:1fr}.bank-detail-list dt{padding-bottom:5px;border-bottom:0}.bank-detail-list dd{padding-top:5px}.bank-detail-list dd:last-of-type{border-bottom:0}}
+/* Early Bird expired indicator (kept in place per request; not removed, just marked closed) */
+.fee-card-expired{position:relative;filter:grayscale(.45);opacity:.86}
+.fee-card-expired .expired-indicator{display:inline-flex;align-items:center;gap:6px;margin:0 0 12px;padding:6px 16px;border-radius:999px;background:#5b6472;box-shadow:0 6px 14px rgba(0,0,0,.18)}
+.fee-card-expired .expired-indicator span{color:#fff!important;font-family:'Orbitron',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.fee-card-expired strong{position:relative}
+.fee-card-expired strong::after{content:'';position:absolute;left:-4%;right:-4%;top:50%;height:3px;background:#8a94a6;transform:rotate(-4deg)}
 </style></head>
 <body class="inner-page system-page participate-module registration-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -214,7 +220,8 @@
 <p class="fee-eligibility-note"><span class="lang-ms">Terbuka kepada semua Institusi Pengajian Tinggi Awam (IPTA) dan Institusi Pengajian Tinggi Swasta (IPTS).</span><span class="lang-en">Open to all Public and Private Higher Education Institutions (IPTA/IPTS).</span></p>
 </div>
 <div class="fee-grid fee-grid-open">
-<article class="fee-card fee-card-earlybird reveal">
+<article class="fee-card fee-card-earlybird fee-card-expired reveal">
+<span class="expired-indicator"><span class="lang-ms">⏰ TAMAT TEMPOH</span><span class="lang-en">⏰ EXPIRED</span></span>
 <span class="earlybird-badge"><span class="lang-ms">PENDAFTARAN AWAL · EARLY BIRD</span><span class="lang-en">EARLY BIRD REGISTRATION</span></span>
 <span class="fee-type"><span class="lang-ms">Dilanjutkan sehingga 31 Ogos 2026</span><span class="lang-en">Extended until 31 August 2026</span></span>
 <h3><span class="lang-ms">Yuran Pendaftaran Awal</span><span class="lang-en">Early Bird Fee</span></h3>
