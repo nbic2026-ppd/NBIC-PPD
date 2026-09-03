@@ -29,6 +29,22 @@
 .deadline-panel .countdown-grid>div{background:rgba(111,31,8,.22)!important;border:1px solid rgba(255,255,255,.78)!important;box-shadow:none!important}
 .deadline-panel .countdown-grid strong{font-family:'Orbitron',sans-serif!important;color:#fff!important}
 .deadline-panel .countdown-grid span{color:#fff!important;opacity:.92}
+.payment-highlight{margin-top:30px;overflow:hidden;border:3px solid #f36b21;border-radius:24px;background:#fff;box-shadow:0 18px 42px rgba(175,66,20,.18)}
+.payment-highlight-header{padding:20px 26px;background:linear-gradient(120deg,#f36b21 0%,#dc4d16 100%);color:#fff}
+.payment-highlight-header .eyebrow{margin:0 0 5px;color:#fff!important;opacity:.9}
+.payment-highlight-header h3{margin:0;color:#fff!important;font-family:'Orbitron',sans-serif;font-size:clamp(1.35rem,2.6vw,2rem)}
+.payment-highlight-body{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;padding:26px}
+.bank-detail-list{display:grid;grid-template-columns:minmax(155px,.7fr) minmax(0,1.3fr);margin:0;border:1px solid #dbe3ef;border-radius:16px;overflow:hidden}
+.bank-detail-list dt,.bank-detail-list dd{margin:0;padding:14px 17px;border-bottom:1px solid #dbe3ef}
+.bank-detail-list dt{background:#f5f7fb;color:#53627a;font-weight:750}
+.bank-detail-list dd{background:#fff;color:#10213f;font-weight:850;overflow-wrap:anywhere}
+.bank-detail-list dd.account-number{color:#d94b16;font-family:'Orbitron',sans-serif;font-size:clamp(1.15rem,2.2vw,1.55rem);letter-spacing:.045em}
+.bank-detail-list dt:last-of-type,.bank-detail-list dd:last-of-type{border-bottom:0}
+.payment-reference-box{display:flex;flex-direction:column;justify-content:center;padding:22px;border:2px solid #f43f9e;border-radius:16px;background:linear-gradient(145deg,#fff0f7 0%,#ffe2f0 100%);text-align:center}
+.payment-reference-box span{color:#821449;font-weight:750}
+.payment-reference-box strong{display:block;margin:12px 0;color:#b11260;font-family:'Orbitron',sans-serif;font-size:clamp(1.15rem,2.3vw,1.65rem);line-height:1.25}
+.payment-reference-box small{color:#821449;font-weight:700}
+@media(max-width:760px){.payment-highlight-body{grid-template-columns:1fr;padding:19px}.bank-detail-list{grid-template-columns:1fr}.bank-detail-list dt{padding-bottom:5px;border-bottom:0}.bank-detail-list dd{padding-top:5px}.bank-detail-list dd:last-of-type{border-bottom:0}}
 </style></head>
 <body class="inner-page system-page participate-module registration-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -213,6 +229,27 @@
 <p><span class="lang-ms">Berkuat kuasa mulai 1 September sehingga tarikh akhir pendaftaran pada 4 September 2026.</span><span class="lang-en">Applicable from 1 September until the registration deadline on 4 September 2026.</span></p>
 </article>
 </div>
+<article class="payment-highlight reveal" aria-labelledby="payment-title">
+<header class="payment-highlight-header">
+<p class="eyebrow"><span class="lang-ms">Penting · Sila Semak Sebelum Membayar</span><span class="lang-en">Important · Check Before Payment</span></p>
+<h3 id="payment-title"><span class="lang-ms">Maklumat Pembayaran</span><span class="lang-en">Payment Details</span></h3>
+</header>
+<div class="payment-highlight-body">
+<dl class="bank-detail-list">
+<dt><span class="lang-ms">Nama Akaun</span><span class="lang-en">Account Name</span></dt>
+<dd>KOPERASI POLITEKNIK PORT DICKSON BERHAD</dd>
+<dt><span class="lang-ms">Bank</span><span class="lang-en">Bank</span></dt>
+<dd>Bank Muamalat</dd>
+<dt><span class="lang-ms">Nombor Akaun</span><span class="lang-en">Account Number</span></dt>
+<dd class="account-number">05020000161718</dd>
+</dl>
+<aside class="payment-reference-box" aria-label="Mandatory payment reference">
+<span><span class="lang-ms">REFERENCE PEMBAYARAN WAJIB</span><span class="lang-en">MANDATORY PAYMENT REFERENCE</span></span>
+<strong>YURAN PENYERTAAN NBIC</strong>
+<small><span class="lang-ms">Wajib dimasukkan setiap kali pembayaran dilakukan.</span><span class="lang-en">Must be entered for every payment.</span></small>
+</aside>
+</div>
+</article>
 </div>
 </section>
 
