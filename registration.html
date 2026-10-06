@@ -51,6 +51,10 @@
 .fee-card-expired .expired-indicator span{color:#fff!important;font-family:'Orbitron',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
 .fee-card-expired strong{position:relative}
 .fee-card-expired strong::after{content:'';position:absolute;left:-4%;right:-4%;top:50%;height:3px;background:#8a94a6;transform:rotate(-4deg)}
+</style><style>
+.btn-closed{background:#e8ecf3!important;color:#64748b!important;border:1px dashed #94a3b8!important;box-shadow:none!important;cursor:not-allowed!important;pointer-events:none;user-select:none;filter:none!important;text-shadow:none!important}
+.btn-closed .arrow{display:none}
+.btn-closed .lock{margin-right:.4em}
 </style></head>
 <body class="inner-page system-page participate-module registration-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -86,7 +90,7 @@
 <button aria-expanded="false" class="nav-dropdown-toggle" type="button">
 <span class="lang-en">Results</span><span class="lang-ms">Keputusan</span><span class="caret">▾</span>
 </button>
-<div class="nav-dropdown-menu"><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-ms">Galeri</span></a><a href="winners.html"><span class="lang-en">Winners</span><span class="lang-ms">Pemenang</span></a></div>
+<div class="nav-dropdown-menu"><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-ms">Galeri</span></a><a href="winners.html"><span class="lang-en">Finalists</span><span class="lang-ms">Finalis</span></a></div>
 </div>
 <a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ms">Hubungi</span></a>
 <div aria-label="Language switcher" class="lang-switch lang-switch-mobile">
@@ -97,9 +101,7 @@
 <div class="lang-switch">
 <button data-set-lang="ms" type="button">BM</button><span class="sep">|</span><button data-set-lang="en" type="button">EN</button>
 </div>
-<a class="nav-cta" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank">
-<span class="lang-en">Register Now</span><span class="lang-ms">Daftar Sekarang</span><span class="arrow">→</span>
-</a>
+<span class="nav-cta btn-closed" role="link" aria-disabled="true"><span class="lock" aria-hidden="true">🔒</span><span class="lang-en">Registration Closed</span><span class="lang-ms">Pendaftaran Ditutup</span></span>
 </div>
 </nav>
 </div>
@@ -110,16 +112,16 @@
 <div class="module-hero-copy reveal">
 <p class="eyebrow"><span class="lang-ms">Pendaftaran</span><span class="lang-en">Registration</span></p>
 <h1 id="registration-title">
-<span class="lang-ms">Bersedia menghantar <em>penyertaan anda?</em></span>
-<span class="lang-en">Ready to submit <em>your entry?</em></span>
+<span class="lang-ms">Pendaftaran NBIC 2026 <em>telah ditutup.</em></span>
+<span class="lang-en">NBIC 2026 registration is <em>now closed.</em></span>
 </h1>
 <p>
-<span class="lang-ms">Semak tarikh utama, sediakan maklumat pasukan dan lengkapkan borang rasmi NBIC 2026 sebelum tarikh tutup.</span>
-<span class="lang-en">Review the key dates, prepare your team information and complete the official NBIC 2026 form before the deadline.</span>
+<span class="lang-ms">Terima kasih kepada semua peserta. Pendaftaran dan penghantaran abstrak telah ditutup pada 18 September 2026. Tahniah kepada 20 finalis NBIC 2026!</span>
+<span class="lang-en">Thank you to all participants. Registration and abstract submission closed on 18 September 2026. Congratulations to the 20 NBIC 2026 finalists!</span>
 </p>
 <div class="module-hero-actions">
-<a class="btn-primary" href="#official-form"><span class="lang-ms">Ke Borang Pendaftaran</span><span class="lang-en">Go to Registration Form</span><span>→</span></a>
-<a class="btn-outline-light" href="participation-guide.html"><span class="lang-ms">Semak Kelayakan</span><span class="lang-en">Check Eligibility</span></a>
+<a class="btn-primary" href="winners.html#top-20-finalists"><span class="lang-ms">Lihat Finalis</span><span class="lang-en">View Finalists</span><span>→</span></a>
+<a class="btn-outline-light" href="timeline.html"><span class="lang-ms">Garis Masa Rasmi</span><span class="lang-en">Official Timeline</span></a>
 </div>
 </div>
 </div>
@@ -128,11 +130,11 @@
 <div class="container">
 <div class="deadline-panel reveal" data-registration-countdown="" data-target="2026-09-18T23:59:59+08:00">
 <div class="deadline-copy">
-<p class="eyebrow"><span class="lang-ms">Tarikh Tindakan Semasa</span><span class="lang-en">Current Action Deadline</span></p>
-<h2><span class="lang-ms">Pendaftaran &amp; Abstrak Ditutup</span><span class="lang-en">Registration &amp; Abstract Submission Closes</span></h2>
-<p class="deadline-date">18 SEPTEMBER 2026 · 11.59 PM (MYT)</p>
+<p class="eyebrow"><span class="lang-ms">Status Pendaftaran</span><span class="lang-en">Registration Status</span></p>
+<h2><span class="lang-ms">🔒 Pendaftaran &amp; Abstrak Telah Ditutup</span><span class="lang-en">🔒 Registration &amp; Abstract Submission Closed</span></h2>
+<p class="deadline-date"><span class="lang-ms">Ditutup pada 18 SEPTEMBER 2026 · 11.59 PM (MYT)</span><span class="lang-en">Closed on 18 SEPTEMBER 2026 · 11.59 PM (MYT)</span></p>
 </div>
-<div aria-live="polite" class="countdown-grid">
+<div aria-hidden="true" class="countdown-grid" style="display:none">
 <div><strong data-count="days">00</strong><span><span class="lang-ms">Hari</span><span class="lang-en">Days</span></span></div>
 <div><strong data-count="hours">00</strong><span><span class="lang-ms">Jam</span><span class="lang-en">Hours</span></span></div>
 <div><strong data-count="minutes">00</strong><span><span class="lang-ms">Minit</span><span class="lang-en">Minutes</span></span></div>
@@ -149,10 +151,10 @@
 <p><span class="lang-ms">Paparan ringkas ini diselaraskan dengan Garis Masa Rasmi. Rujuk halaman Garis Masa untuk butiran penuh setiap fasa.</span><span class="lang-en">This summary is synchronized with the Official Timeline. Refer to the Timeline page for complete phase details.</span></p>
 </div>
 <div class="registration-milestone-strip reveal">
-<article class="milestone-step is-current">
+<article class="milestone-step">
 <span class="step-no">01</span>
 <strong>21 AUG → 18 SEP 2026</strong>
-<b><span class="lang-ms">Pendaftaran &amp; Penghantaran Abstrak Dilanjutkan</span><span class="lang-en">Registration &amp; Abstract Submission Extended</span></b>
+<b><span class="lang-ms">Pendaftaran &amp; Penghantaran Abstrak (Ditutup)</span><span class="lang-en">Registration &amp; Abstract Submission (Closed)</span></b>
 </article>
 <article class="milestone-step">
 <span class="step-no">02</span>
@@ -169,10 +171,10 @@
 <strong>27 SEP – 05 OCT 2026</strong>
 <b><span class="lang-ms">Penilaian Peringkat Saringan</span><span class="lang-en">Preliminary-Round Evaluation</span></b>
 </article>
-<article class="milestone-step">
+<article class="milestone-step is-current">
 <span class="step-no">05</span>
 <strong>14–15 OCT 2026</strong>
-<b><span class="lang-ms">Penilaian Akhir &amp; Majlis Penutup</span><span class="lang-en">Final Evaluation &amp; Closing Ceremony</span></b>
+<b><span class="lang-ms">Pameran Finalis &amp; Pengumuman Pemenang</span><span class="lang-en">Finalist Exhibition &amp; Winner Announcement</span></b>
 </article>
 </div>
 <div class="section-link-row reveal">
@@ -228,7 +230,8 @@
 <strong>RM120.00</strong>
 <p><span class="lang-ms">Kadar Early Bird dilanjutkan bagi pendaftaran yang dibuat sehingga 31 Ogos 2026.</span><span class="lang-en">The Early Bird rate is extended for registrations completed on or before 31 August 2026.</span></p>
 </article>
-<article class="fee-card fee-card-standard reveal">
+<article class="fee-card fee-card-standard fee-card-expired reveal">
+<span class="expired-indicator"><span class="lang-ms">🔒 DITUTUP</span><span class="lang-en">🔒 CLOSED</span></span>
 <span class="standard-fee-badge"><span class="lang-ms">YURAN PENYERTAAN BIASA</span><span class="lang-en">STANDARD PARTICIPATION FEE</span></span>
 <span class="fee-type"><span class="lang-ms">1–18 September 2026</span><span class="lang-en">1–18 September 2026</span></span>
 <h3><span class="lang-ms">Yuran Penyertaan Biasa</span><span class="lang-en">Standard Fee</span></h3>
@@ -265,16 +268,14 @@
 <div class="official-form-card reveal">
 <div class="official-form-copy">
 <p class="eyebrow"><span class="lang-ms">Borang Rasmi NBIC 2026</span><span class="lang-en">Official NBIC 2026 Form</span></p>
-<h2><span class="lang-ms">Lengkapkan pendaftaran <em>secara dalam talian.</em></span><span class="lang-en">Complete your registration <em>online.</em></span></h2>
-<p><span class="lang-ms">Pastikan semua maklumat telah disemak sebelum membuka dan menghantar borang rasmi.</span><span class="lang-en">Ensure all information has been checked before opening and submitting the official form.</span></p>
-<a class="btn-primary form-main-cta" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank">
-<span class="lang-ms">Buka Borang Pendaftaran</span><span class="lang-en">Open Registration Form</span><span>→</span>
-</a>
+<h2><span class="lang-ms">Borang pendaftaran <em>telah ditutup.</em></span><span class="lang-en">The registration form is <em>now closed.</em></span></h2>
+<p><span class="lang-ms">Borang rasmi tidak lagi menerima penyertaan selepas 18 September 2026, 11.59 malam (MYT). Untuk pertanyaan, sila hubungi urus setia.</span><span class="lang-en">The official form no longer accepts entries after 18 September 2026, 11.59 PM (MYT). For enquiries, please contact the secretariat.</span></p>
+<span class="btn-primary form-main-cta btn-closed" role="link" aria-disabled="true"><span class="lock" aria-hidden="true">🔒</span><span class="lang-ms">Pendaftaran Ditutup</span><span class="lang-en">Registration Closed</span></span>
 </div>
 <div class="official-form-qr">
-<img alt="NBIC 2026 registration QR code" src="assets/images/registration-qr.png"/>
-<strong><span class="lang-ms">Imbas Kod QR</span><span class="lang-en">Scan QR Code</span></strong>
-<small><span class="lang-ms">Pautan yang sama dengan butang pendaftaran rasmi.</span><span class="lang-en">Uses the same official registration link.</span></small>
+<span aria-hidden="true" style="font-size:72px;line-height:1">🔒</span>
+<strong><span class="lang-ms">Ditutup</span><span class="lang-en">Closed</span></strong>
+<small><span class="lang-ms">Kod QR pendaftaran tidak lagi aktif.</span><span class="lang-en">The registration QR code is no longer active.</span></small>
 </div>
 </div>
 </div>
