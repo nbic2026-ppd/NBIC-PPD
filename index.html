@@ -46,6 +46,21 @@
 .deadline-card .deadline-unit span{color:#fff!important;opacity:.92}
 </style><style>
 .nbic-finalists{padding:56px 0;background:#f4f7fb;scroll-margin-top:100px}.nbic-finalists h2{margin:8px 0 16px}.nbic-table-wrap{overflow-x:auto;border:1px solid #dce3ed;border-radius:16px;background:#fff;margin-top:24px}.nbic-finalist-table{width:100%;border-collapse:collapse;text-align:left}.nbic-finalist-table th{background:#122744;color:#fff}.nbic-finalist-table th,.nbic-finalist-table td{padding:16px 20px;border-bottom:1px solid #e6ebf2;vertical-align:top}.nbic-finalist-table td:first-child{white-space:nowrap;color:#17365b}.nbic-finalist-table tr:last-child td{border-bottom:0}.nbic-title-note{display:block;color:#667085;font-size:.8em;margin-top:6px}.nbic-announcement{padding:26px 0;background:#edf5ff}.nbic-announcement .container{display:flex;align-items:center;justify-content:space-between;gap:20px}.nbic-announcement h2{margin:0 0 8px}.nbic-announcement p{margin:0}.nbic-announcement a{display:inline-block;padding:12px 20px;background:#122744;color:white;border-radius:10px;text-decoration:none;white-space:nowrap}@media(max-width:600px){.nbic-announcement .container{display:block}.nbic-announcement a{margin-top:16px}.nbic-finalist-table th,.nbic-finalist-table td{padding:12px}.nbic-finalists{padding:32px 0}}
+
+/* ===== Finalist banner + pameran countdown enhancement ===== */
+.nbic-announcement{padding:30px 0!important;background:linear-gradient(120deg,#071a3d 0%,#122744 60%,#1b2f6b 100%)!important;border-bottom:4px solid #f43f9e}
+.nbic-announcement .nbic-announcement-kicker{margin:0 0 6px;color:#ffb3d9!important;font-family:'Orbitron',sans-serif;font-size:.78rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase}
+.nbic-announcement h2{color:#fff!important}
+.nbic-announcement p{color:#dbe6f7!important}
+.nbic-announcement a{background:#fff!important;color:#122744!important;font-weight:800;box-shadow:0 8px 20px rgba(0,0,0,.25)}
+.nbic-announcement a:hover{background:#ffe2f0!important}
+.nbic-sched{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:760px;margin:22px auto 0}
+.nbic-sched-card{--phase:#d97706;--pill:#b45309;--fill:#fef3c7;padding:20px 22px;border:2px solid var(--phase);border-top-width:7px;border-radius:18px;background:var(--fill);box-shadow:0 10px 24px rgba(15,35,70,.10)}
+.nbic-sched-card.is-expo{--phase:#dc4c4c;--pill:#b91c1c;--fill:#fee2e2}
+.nbic-sched-card time{display:inline-flex;padding:.48rem .8rem;border-radius:999px;background:var(--pill);color:#fff;font-family:'Orbitron',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.04em}
+.nbic-sched-card h3{margin:12px 0 6px;color:#10213f;font-size:1.15rem;line-height:1.3}
+.nbic-sched-card p{margin:0;color:#3b4a63;font-size:.95rem;line-height:1.55}
+@media(max-width:640px){.nbic-sched{grid-template-columns:1fr}}
 </style></head>
 <body class="inner-page home-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -94,7 +109,7 @@
 </div>
 </header>
 <main id="main-content">
-<section class="nbic-announcement" aria-labelledby="finalist-announcement"><div class="container"><div><h2 id="finalist-announcement"><span class="lang-en">NBIC 2026 Top 20 Finalists</span><span class="lang-ms">20 Finalis Terbaik NBIC 2026</span></h2><p><span class="lang-en">Congratulations to the shortlisted innovations. View the complete finalist list.</span><span class="lang-ms">Tahniah kepada inovasi yang terpilih. Lihat senarai penuh finalis.</span></p></div><a href="winners.html#top-20-finalists"><span class="lang-en">View Finalists →</span><span class="lang-ms">Lihat Finalis →</span></a></div></section>
+<section class="nbic-announcement" aria-labelledby="finalist-announcement"><div class="container"><div><p class="nbic-announcement-kicker"><span class="lang-en">Congratulations</span><span class="lang-ms">Tahniah</span></p><h2 id="finalist-announcement"><span class="lang-en">NBIC 2026 Top 20 Finalists</span><span class="lang-ms">20 Finalis Terbaik NBIC 2026</span></h2><p><span class="lang-en">Finalists will receive a call letter (<i>surat panggilan</i>) for the exhibition and the main prize winner announcement on 15 October 2026.</span><span class="lang-ms">Finalis akan menerima surat panggilan untuk pameran dan pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span></p></div><a href="winners.html#top-20-finalists"><span class="lang-en">View Finalists →</span><span class="lang-ms">Lihat Finalis →</span></a></div></section>
 <section aria-labelledby="hero-title" class="hero hero-home">
 <div class="container hero-inner">
 <div class="home-hero-copy reveal">
@@ -110,8 +125,8 @@
 </p>
 <p class="hero-deadline">
 <span aria-hidden="true">⏳</span>
-<span class="lang-ms">Pendaftaran &amp; penghantaran abstrak dilanjutkan sehingga 18 September 2026, 11.59 malam (MYT).</span>
-<span class="lang-en">Registration &amp; abstract submission are extended until 18 September 2026, 11.59 PM (MYT).</span>
+<span class="lang-ms">Tahniah kepada 20 finalis NBIC 2026! Pameran &amp; pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span>
+<span class="lang-en">Congratulations to the NBIC 2026 Top 20 finalists! Exhibition &amp; main prize winner announcement on 15 October 2026.</span>
 </p>
 <div class="hero-actions">
 <a class="btn-primary" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank">
@@ -128,8 +143,8 @@
 <div class="home-facts">
 <div class="home-fact"><strong>7</strong><span><span class="lang-ms">Bidang Pertandingan</span><span class="lang-en">Competition Areas</span></span></div>
 <div class="home-fact"><strong>1 + 4</strong><span><span class="lang-ms">1 Pensyarah/Penyelia + 4 Pelajar</span><span class="lang-en">1 Lecturer/Supervisor + 4 Students</span></span></div>
-<div class="home-fact"><strong>RM150</strong><span><span class="lang-ms">Yuran Biasa (Early Bird Tamat)</span><span class="lang-en">Standard Fee (Early Bird Closed)</span></span></div>
-<div class="home-fact"><strong>18 SEP</strong><span><span class="lang-ms">Tarikh Tutup Pendaftaran &amp; Abstrak</span><span class="lang-en">Registration &amp; Abstract Deadline</span></span></div>
+<div class="home-fact"><strong>20</strong><span><span class="lang-ms">Finalis Dipanggil ke Pameran</span><span class="lang-en">Finalists Called to the Exhibition</span></span></div>
+<div class="home-fact"><strong><span class="lang-ms">15 OKT</span><span class="lang-en">15 OCT</span></strong><span><span class="lang-ms">Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">Exhibition &amp; Winner Announcement</span></span></div>
 </div>
 </div>
 <!-- Temporarily hidden because the artwork contains superseded dates. -->
@@ -144,12 +159,12 @@
 <div class="container">
 <div class="section-title-wrap reveal">
 <p class="eyebrow"><span class="lang-ms">Tarikh Penting</span><span class="lang-en">Important Date</span></p>
-<h2><span class="lang-ms">Kiraan Masa ke <em>Tarikh Tutup Pendaftaran</em></span><span class="lang-en">Countdown to the <em>Registration Deadline</em></span></h2>
+<h2><span class="lang-ms">Kiraan Masa ke <em>Pameran &amp; Pengumuman Pemenang</em></span><span class="lang-en">Countdown to the <em>Exhibition &amp; Winner Announcement</em></span></h2>
 </div>
-<div class="deadline-card reveal" data-home-deadline="2026-09-18T23:59:59+08:00">
+<div class="deadline-card reveal" data-home-deadline="2026-10-15T00:00:00+08:00">
 <div class="deadline-label">
-<span class="lang-ms">Pendaftaran &amp; Penghantaran Abstrak</span><span class="lang-en">Registration &amp; Abstract Submission</span>
-<strong>18 September 2026 · 11.59 PM (MYT)</strong>
+<span class="lang-ms">Pameran &amp; Pengumuman Pemenang Hadiah Utama</span><span class="lang-en">Exhibition &amp; Main Prize Winner Announcement</span>
+<strong><span class="lang-ms">15 Oktober 2026</span><span class="lang-en">15 October 2026</span></strong>
 </div>
 <div class="deadline-grid">
 <div class="deadline-unit"><strong data-count="days">00</strong><span><span class="lang-ms">Hari</span><span class="lang-en">Days</span></span></div>
@@ -157,6 +172,10 @@
 <div class="deadline-unit"><strong data-count="minutes">00</strong><span><span class="lang-ms">Minit</span><span class="lang-en">Minutes</span></span></div>
 <div class="deadline-unit"><strong data-count="seconds">00</strong><span><span class="lang-ms">Saat</span><span class="lang-en">Seconds</span></span></div>
 </div>
+</div>
+<div class="nbic-sched reveal">
+<article class="nbic-sched-card"><time datetime="2026-10-14"><span class="lang-ms">14 OKT 2026</span><span class="lang-en">14 OCT 2026</span></time><h3><span class="lang-ms">Persiapan Pameran</span><span class="lang-en">Exhibition Preparation</span></h3><p><span class="lang-ms">Finalis membuat persiapan pameran. Maklumat lanjut dalam surat panggilan rasmi.</span><span class="lang-en">Finalists prepare for the exhibition. Further details are in the official call letter.</span></p></article>
+<article class="nbic-sched-card is-expo"><time datetime="2026-10-15"><span class="lang-ms">15 OKT 2026</span><span class="lang-en">15 OCT 2026</span></time><h3><span class="lang-ms">Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">Exhibition &amp; Winner Announcement</span></h3><p><span class="lang-ms">Pameran finalis dan pengumuman pemenang hadiah utama NBIC 2026.</span><span class="lang-en">Finalist exhibition and announcement of the NBIC 2026 main prize winners.</span></p></article>
 </div>
 </div>
 </section>
@@ -334,7 +353,7 @@
 <article class="timeline-home-step phase-acceptance"><time>29 AUG → 18 SEP 2026</time><h3><span class="lang-ms">Notis Penerimaan &amp; Tempoh Pembayaran Dilanjutkan</span><span class="lang-en">Acceptance Notice &amp; Payment Period Extended</span></h3></article>
 <article class="timeline-home-step phase-submission"><time>28 AUG → 20 SEP 2026</time><h3><span class="lang-ms">Penghantaran Poster &amp; Video</span><span class="lang-en">Poster &amp; Video Submission</span></h3></article>
 <article class="timeline-home-step phase-judging"><time>27 SEP – 05 OCT 2026</time><h3><span class="lang-ms">Penilaian Peringkat Saringan</span><span class="lang-en">Preliminary Round Judging</span></h3></article>
-<article class="timeline-home-step phase-final"><time>14–15 OCT 2026</time><h3><span class="lang-ms">Penilaian Akhir &amp; Majlis Penutup</span><span class="lang-en">Final Judging &amp; Closing Ceremony</span></h3></article>
+<article class="timeline-home-step phase-final"><time>14–15 OCT 2026</time><h3><span class="lang-ms">Pameran Finalis &amp; Pengumuman Pemenang</span><span class="lang-en">Finalist Exhibition &amp; Winner Announcement</span></h3><p><span class="lang-ms">14 Okt: Persiapan Pameran · 15 Okt: Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">14 Oct: Exhibition Preparation · 15 Oct: Exhibition &amp; Winner Announcement</span></p></article>
 </div>
 </div>
 </section>

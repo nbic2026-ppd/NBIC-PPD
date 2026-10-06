@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="NBIC 2026 Top 20 finalists and final award results" name="description"/>
+<meta content="NBIC 2026 Top 20 finalists, exhibition on 15 October 2026 and main prize winner announcement" name="description"/>
 <title>NBIC 2026 | Official Results</title>
 <link href="assets/images/favicon.ico" rel="icon" type="image/x-icon"/>
 <link href="assets/images/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
@@ -14,56 +14,113 @@
 <meta content="NBIC 2026" property="og:site_name"/>
 <meta content="https://nbic2026-ppd.github.io/NBIC-PPD/winners.html" property="og:url"/>
 <meta content="NBIC 2026 | Official Results" property="og:title"/>
-<meta content="Winners and results will be announced after final judging concludes on 13–14 October 2026." property="og:description"/>
+<meta content="Top 20 finalists will be called to the NBIC 2026 exhibition. Main prize winners will be announced on 15 October 2026." property="og:description"/>
 <meta content="https://nbic2026-ppd.github.io/NBIC-PPD/assets/images/winners-page-hero.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="NBIC 2026 | Official Results" name="twitter:title"/>
-<meta content="Winners and results will be announced after final judging concludes on 13–14 October 2026." name="twitter:description"/>
+<meta content="Top 20 finalists will be called to the NBIC 2026 exhibition. Main prize winners will be announced on 15 October 2026." name="twitter:description"/>
 <meta content="https://nbic2026-ppd.github.io/NBIC-PPD/assets/images/winners-page-hero.png" name="twitter:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Orbitron:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <link href="css/styles.css?v=20260806-unified" rel="stylesheet"/><link href="css/theme.css?v=20260807-locked-system-v16" rel="stylesheet"/><link href="css/page-results-contact-v4-4.css?v=20260810-winners-prize-structure-v44" rel="stylesheet"/><link as="image" href="assets/images/winners-page-hero.png" rel="preload"/><style>
 .nbic-finalists{padding:56px 0;background:#f4f7fb;scroll-margin-top:100px}.nbic-finalists h2{margin:8px 0 16px}.nbic-table-wrap{overflow-x:auto;border:1px solid #dce3ed;border-radius:16px;background:#fff;margin-top:24px}.nbic-finalist-table{width:100%;border-collapse:collapse;text-align:left}.nbic-finalist-table th{background:#122744;color:#fff}.nbic-finalist-table th,.nbic-finalist-table td{padding:16px 20px;border-bottom:1px solid #e6ebf2;vertical-align:top}.nbic-finalist-table td:first-child{white-space:nowrap;color:#17365b}.nbic-finalist-table tr:last-child td{border-bottom:0}.nbic-title-note{display:block;color:#667085;font-size:.8em;margin-top:6px}.nbic-announcement{padding:26px 0;background:#edf5ff}.nbic-announcement .container{display:flex;align-items:center;justify-content:space-between;gap:20px}.nbic-announcement h2{margin:0 0 8px}.nbic-announcement p{margin:0}.nbic-announcement a{display:inline-block;padding:12px 20px;background:#122744;color:white;border-radius:10px;text-decoration:none;white-space:nowrap}@media(max-width:600px){.nbic-announcement .container{display:block}.nbic-announcement a{margin-top:16px}.nbic-finalist-table th,.nbic-finalist-table td{padding:12px}.nbic-finalists{padding:32px 0}}
+/* ===== NBIC 2026 finalists, pameran schedule & countdown (theme: orange countdown, fuchsia accent, navy, phase colours) ===== */
+.nbic-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+.nbic-pameran{padding:56px 0;background:#fff;scroll-margin-top:100px}
+.nbic-countdown{max-width:860px;margin:28px auto 0;padding:26px 28px;border-radius:24px;border-left:7px solid #f43f9e;background:linear-gradient(120deg,#f36b21 0%,#dc4d16 100%);box-shadow:0 18px 40px rgba(190,69,18,.24);text-align:center}
+.nbic-countdown,.nbic-countdown *{color:#fff!important}
+.nbic-countdown-kicker{display:block;font-weight:700;font-size:.98rem}
+.nbic-countdown-date{display:block;margin:6px 0 18px;font-family:'Orbitron',sans-serif!important;font-weight:700;font-size:clamp(1.25rem,3vw,1.9rem)}
+.nbic-countdown-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.nbic-countdown-unit{padding:14px 8px;border:1px solid rgba(255,255,255,.78);border-radius:16px;background:rgba(111,31,8,.22)}
+.nbic-countdown-unit strong{display:block;font-family:'Orbitron',sans-serif!important;font-size:clamp(1.6rem,4.5vw,2.6rem);line-height:1.1}
+.nbic-unit-label{display:block;margin-top:6px;font-size:.74rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.92}
+.nbic-sched{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:860px;margin:22px auto 0}
+.nbic-sched-card{--phase:#d97706;--pill:#b45309;--fill:#fef3c7;padding:20px 22px;border:2px solid var(--phase);border-top-width:7px;border-radius:18px;background:var(--fill);box-shadow:0 10px 24px rgba(15,35,70,.10)}
+.nbic-sched-card.is-expo{--phase:#dc4c4c;--pill:#b91c1c;--fill:#fee2e2}
+.nbic-sched-card time{display:inline-flex;padding:.48rem .8rem;border-radius:999px;background:var(--pill);color:#fff;font-family:'Orbitron',sans-serif;font-weight:700;font-size:.8rem;letter-spacing:.04em}
+.nbic-sched-card h3{margin:12px 0 6px;color:#10213f;font-size:1.15rem;line-height:1.3}
+.nbic-sched-card p{margin:0;color:#3b4a63;font-size:.95rem;line-height:1.55}
+.nbic-callout{display:flex;gap:16px;align-items:flex-start;max-width:860px;margin:22px auto 0;padding:20px 22px;border:2px solid #f43f9e;border-radius:16px;background:linear-gradient(145deg,#fff0f7 0%,#ffe2f0 100%)}
+.nbic-callout-icon{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:#b11260}
+.nbic-callout strong{display:block;margin-bottom:4px;color:#b11260;font-family:'Orbitron',sans-serif}
+.nbic-callout p{margin:0;color:#821449;line-height:1.55}
+.nbic-callout a{color:#b11260;font-weight:800;text-decoration:underline}
+.nbic-finalist-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px;margin:28px 0 0;padding:0;list-style:none}
+.nbic-finalist-card{display:flex;gap:14px;align-items:flex-start;padding:18px;border:1px solid #dce3ed;border-left:6px solid #f36b21;border-radius:16px;background:#fff;box-shadow:0 8px 22px rgba(15,35,70,.07);transition:transform .18s ease,box-shadow .18s ease}
+.nbic-finalist-card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(15,35,70,.13)}
+.nbic-finalist-no{flex:none;display:grid;place-items:center;min-width:46px;height:46px;border-radius:12px;background:linear-gradient(135deg,#122744 0%,#2563eb 100%);color:#fff;font-family:'Orbitron',sans-serif;font-weight:800;font-size:1rem}
+.nbic-finalist-code{display:inline-block;margin-bottom:6px;padding:3px 10px;border:1px solid #f4b3d3;border-radius:999px;background:#fff0f7;color:#9d1055;font-size:.76rem;font-weight:800;letter-spacing:.06em}
+.nbic-finalist-name{margin:0;color:#10213f;font-weight:700;line-height:1.4;overflow-wrap:anywhere}
+@media(max-width:640px){.nbic-pameran{padding:36px 0}.nbic-sched{grid-template-columns:1fr}.nbic-countdown{padding:20px 14px}.nbic-countdown-grid{gap:8px}.nbic-unit-label{font-size:.66rem;letter-spacing:.04em}.nbic-callout{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.nbic-finalist-card{transition:none}.nbic-finalist-card:hover{transform:none}}
 </style></head>
 <body class="inner-page system-page winners-page"><a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
-<div class="container navbar"><nav aria-label="Primary navigation" class="nav-shell"><a aria-label="NBIC 2026 home" class="brand" href="index.html"><div class="brand-badge"><img alt="NBIC 2026 logo" src="assets/images/nbic-logo.png"/></div><span class="brand-year">2026</span></a><button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button><div class="nav-links" id="navLinks"><a href="index.html"><span class="lang-en">Home</span><span class="lang-ms">Utama</span></a><div class="nav-dropdown"><button aria-expanded="false" class="nav-dropdown-toggle" type="button"><span class="lang-en">About</span><span class="lang-ms">Tentang</span><span class="caret">▾</span></button><div class="nav-dropdown-menu"><a href="program.html"><span class="lang-en">Programme</span><span class="lang-ms">Program</span></a><a href="categories.html"><span class="lang-en">Categories</span><span class="lang-ms">Bidang</span></a><a href="timeline.html"><span class="lang-en">Timeline</span><span class="lang-ms">Garis Masa</span></a></div></div><div class="nav-dropdown"><button aria-expanded="false" class="nav-dropdown-toggle" type="button"><span class="lang-en">Participate</span><span class="lang-ms">Penyertaan</span><span class="caret">▾</span></button><div class="nav-dropdown-menu"><a href="participation-guide.html"><span class="lang-en">Participation Guide</span><span class="lang-ms">Panduan Penyertaan</span></a><a href="evaluation.html"><span class="lang-en">Evaluation Criteria</span><span class="lang-ms">Kriteria Penilaian</span></a><a href="registration.html"><span class="lang-en">Registration</span><span class="lang-ms">Pendaftaran</span></a></div></div><div class="nav-dropdown"><button aria-expanded="false" class="nav-dropdown-toggle active" type="button"><span class="lang-en">Results</span><span class="lang-ms">Keputusan</span><span class="caret">▾</span></button><div class="nav-dropdown-menu"><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-ms">Galeri</span></a><a class="active" href="winners.html"><span class="lang-en">Official Results</span><span class="lang-ms">Keputusan Rasmi</span></a></div></div><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ms">Hubungi</span></a><div aria-label="Language switcher" class="lang-switch lang-switch-mobile"><button data-set-lang="ms" type="button">BM</button><span class="sep">|</span><button data-set-lang="en" type="button">EN</button></div></div><div class="nav-actions"><div class="lang-switch"><button data-set-lang="ms" type="button">BM</button><span class="sep">|</span><button data-set-lang="en" type="button">EN</button></div><a class="nav-cta" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank"><span class="lang-en">Register Now</span><span class="lang-ms">Daftar Sekarang</span><span class="arrow">→</span></a></div></nav></div>
+<div class="container navbar"><nav aria-label="Primary navigation" class="nav-shell"><a aria-label="NBIC 2026 home" class="brand" href="index.html"><div class="brand-badge"><img alt="NBIC 2026 logo" src="assets/images/nbic-logo.png"/></div><span class="brand-year">2026</span></a><button aria-controls="navLinks" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button><div class="nav-links" id="navLinks"><a href="index.html"><span class="lang-en">Home</span><span class="lang-ms">Utama</span></a><div class="nav-dropdown"><button aria-expanded="false" class="nav-dropdown-toggle" type="button"><span class="lang-en">About</span><span class="lang-ms">Tentang</span><span class="caret">▾</span></button><div class="nav-dropdown-menu"><a href="program.html"><span class="lang-en">Programme</span><span class="lang-ms">Program</span></a><a href="categories.html"><span class="lang-en">Categories</span><span class="lang-ms">Bidang</span></a><a href="timeline.html"><span class="lang-en">Timeline</span><span class="lang-ms">Garis Masa</span></a></div></div><div class="nav-dropdown"><button aria-expanded="false" class="nav-dropdown-toggle" type="button"><span class="lang-en">Participate</span><span class="lang-ms">Penyertaan</span><span class="caret">▾</span></button><div class="nav-dropdown-menu"><a href="participation-guide.html"><span class="lang-en">Participation Guide</span><span class="lang-ms">Panduan Penyertaan</span></a><a href="evaluation.html"><span class="lang-en">Evaluation Criteria</span><span class="lang-ms">Kriteria Penilaian</span></a><a href="registration.html"><span class="lang-en">Registration</span><span class="lang-ms">Pendaftaran</span></a><a href="https://forms.gle/dYY2yKwu6adYgLa46" rel="noopener" target="_blank"><span class="lang-en">Submission</span><span class="lang-ms">Penghantaran</span></a></div></div><div class="nav-dropdown"><button aria-expanded="false" class="nav-dropdown-toggle active" type="button"><span class="lang-en">Results</span><span class="lang-ms">Keputusan</span><span class="caret">▾</span></button><div class="nav-dropdown-menu"><a href="gallery.html"><span class="lang-en">Gallery</span><span class="lang-ms">Galeri</span></a><a class="active" href="winners.html"><span class="lang-en">Official Results</span><span class="lang-ms">Keputusan Rasmi</span></a></div></div><a href="contact.html"><span class="lang-en">Contact</span><span class="lang-ms">Hubungi</span></a><div aria-label="Language switcher" class="lang-switch lang-switch-mobile"><button data-set-lang="ms" type="button">BM</button><span class="sep">|</span><button data-set-lang="en" type="button">EN</button></div></div><div class="nav-actions"><div class="lang-switch"><button data-set-lang="ms" type="button">BM</button><span class="sep">|</span><button data-set-lang="en" type="button">EN</button></div><a class="nav-cta" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank"><span class="lang-en">Register Now</span><span class="lang-ms">Daftar Sekarang</span><span class="arrow">→</span></a></div></nav></div>
 </header>
 <main class="page-main" id="main-content">
 <section class="rc4-hero rc4-hero-winners">
 <div class="container rc4-hero-inner">
 <div class="rc4-hero-copy reveal">
 <p class="eyebrow"><span class="lang-en">Official Results Centre</span><span class="lang-ms">Pusat Keputusan Rasmi</span></p>
-<h1><span class="lang-en">Top 20 finalists, <em>ready for the next stage.</em></span><span class="lang-ms">20 finalis terbaik, <em>bersedia ke peringkat seterusnya.</em></span></h1>
-<p><span class="lang-en">Explore the NBIC 2026 Top 20 finalists below. Final award results will be published after judging is completed.</span><span class="lang-ms">Lihat senarai 20 finalis terbaik NBIC 2026 di bawah. Keputusan anugerah akhir akan diterbitkan selepas penilaian selesai.</span></p>
+<h1><span class="lang-en">Top 20 finalists, <em>heading to the NBIC 2026 exhibition.</em></span><span class="lang-ms">20 finalis terbaik, <em>menuju Pameran NBIC 2026.</em></span></h1>
+<p><span class="lang-en">Congratulations to the NBIC 2026 Top 20 finalists. Finalists will receive an official call letter (<i>surat panggilan</i>) to attend the exhibition and the announcement of the main prize winners on 15 October 2026.</span><span class="lang-ms">Tahniah kepada 20 finalis terbaik NBIC 2026. Finalis akan menerima surat panggilan rasmi untuk menghadiri pameran dan pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span></p>
+<div class="nbic-hero-actions"><a class="btn-primary" href="#top-20-finalists"><span class="lang-en">View Finalists</span><span class="lang-ms">Lihat Finalis</span><span>→</span></a><a class="btn-outline-light" href="#pameran-schedule"><span class="lang-en">Exhibition Schedule</span><span class="lang-ms">Jadual Pameran</span></a></div>
 </div>
 </div>
 </section>
+<section class="nbic-pameran" id="pameran-schedule" aria-labelledby="pameran-heading"><div class="container">
+<div class="rc4-title reveal">
+<p class="eyebrow"><span class="lang-en">Exhibition &amp; Announcement</span><span class="lang-ms">Pameran &amp; Pengumuman</span></p>
+<h2 id="pameran-heading"><span class="lang-en">Finalists called to the <em>NBIC 2026 Exhibition.</em></span><span class="lang-ms">Finalis dipanggil ke <em>Pameran NBIC 2026.</em></span></h2>
+<p><span class="lang-en">The 20 finalists will receive an official call letter (<i>surat panggilan</i>) to attend the exhibition and the announcement of the NBIC 2026 main prize winners.</span><span class="lang-ms">20 finalis akan menerima surat panggilan rasmi untuk menghadiri pameran dan pengumuman pemenang hadiah utama NBIC 2026.</span></p>
+</div>
+<div class="nbic-countdown reveal" data-home-deadline="2026-10-15T00:00:00+08:00" role="timer" aria-label="Kiraan masa ke pameran 15 Oktober 2026 · Countdown to the exhibition, 15 October 2026">
+<span class="nbic-countdown-kicker"><span class="lang-ms">Kiraan masa ke Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">Countdown to the Exhibition &amp; Winner Announcement</span></span>
+<span class="nbic-countdown-date"><span class="lang-ms">15 Oktober 2026</span><span class="lang-en">15 October 2026</span></span>
+<div class="nbic-countdown-grid">
+<div class="nbic-countdown-unit"><strong data-count="days">00</strong><span class="nbic-unit-label"><span class="lang-ms">Hari</span><span class="lang-en">Days</span></span></div>
+<div class="nbic-countdown-unit"><strong data-count="hours">00</strong><span class="nbic-unit-label"><span class="lang-ms">Jam</span><span class="lang-en">Hours</span></span></div>
+<div class="nbic-countdown-unit"><strong data-count="minutes">00</strong><span class="nbic-unit-label"><span class="lang-ms">Minit</span><span class="lang-en">Minutes</span></span></div>
+<div class="nbic-countdown-unit"><strong data-count="seconds">00</strong><span class="nbic-unit-label"><span class="lang-ms">Saat</span><span class="lang-en">Seconds</span></span></div>
+</div>
+</div>
+<div class="nbic-sched reveal">
+<article class="nbic-sched-card"><time datetime="2026-10-14"><span class="lang-ms">14 OKT 2026</span><span class="lang-en">14 OCT 2026</span></time><h3><span class="lang-ms">Persiapan Pameran</span><span class="lang-en">Exhibition Preparation</span></h3><p><span class="lang-ms">Finalis membuat persiapan pameran. Maklumat lanjut akan dinyatakan dalam surat panggilan rasmi.</span><span class="lang-en">Finalists prepare for the exhibition. Further details will be stated in the official call letter.</span></p></article>
+<article class="nbic-sched-card is-expo"><time datetime="2026-10-15"><span class="lang-ms">15 OKT 2026</span><span class="lang-en">15 OCT 2026</span></time><h3><span class="lang-ms">Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">Exhibition &amp; Winner Announcement</span></h3><p><span class="lang-ms">Pameran finalis dan pengumuman pemenang hadiah utama NBIC 2026.</span><span class="lang-en">Finalist exhibition and announcement of the NBIC 2026 main prize winners.</span></p></article>
+</div>
+<div class="nbic-callout reveal">
+<span class="nbic-callout-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
+<div><strong><span class="lang-ms">Surat Panggilan Finalis</span><span class="lang-en">Finalist Call Letter</span></strong><p><span class="lang-ms">Setiap finalis akan menerima surat panggilan rasmi bagi pameran serta pengumuman pemenang hadiah utama. Sila <a href="contact.html">hubungi urus setia</a> sekiranya terdapat pertanyaan.</span><span class="lang-en">Every finalist will receive an official call letter for the exhibition and the main prize announcement. Please <a href="contact.html">contact the secretariat</a> if you have any questions.</span></p></div>
+</div>
+</div></section>
 <section class="nbic-finalists" id="top-20-finalists" aria-labelledby="finalists-heading"><div class="container">
 <p class="eyebrow">NBIC 2026</p><h2 id="finalists-heading"><span class="lang-en">Top 20 Finalists</span><span class="lang-ms">20 Finalis Terbaik</span></h2>
-<p><span class="lang-en">Congratulations to the 20 shortlisted innovations. The list follows the supplied announcement order and does not indicate ranking. Final award results will be announced separately.</span><span class="lang-ms">Tahniah kepada 20 inovasi yang terpilih. Senarai mengikut susunan pengumuman yang dibekalkan dan tidak menunjukkan kedudukan. Keputusan anugerah akhir akan diumumkan secara berasingan.</span></p>
-<div class="nbic-table-wrap"><table class="nbic-finalist-table"><caption class="sr-only"><span class="lang-en">NBIC 2026 Top 20 Finalists</span><span class="lang-ms">20 Finalis Terbaik NBIC 2026</span></caption><thead><tr><th scope="col"><span class="lang-en">Product Code</span><span class="lang-ms">Kod Produk</span></th><th scope="col"><span class="lang-en">Innovation Product Name</span><span class="lang-ms">Nama Produk Inovasi</span></th></tr></thead><tbody><tr><td><strong>NBIC0012</strong></td><td>SCENTNATURE (AROMUSIC THERAPY CANDLES )</td></tr>
-<tr><td><strong>NBIC0022</strong></td><td>GELAM FIX Natural Wood Glue Made From Gelam Tree Bark</td></tr>
-<tr><td><strong>NBIC0010</strong></td><td>Compost Tube</td></tr>
-<tr><td><strong>NBIC0011</strong></td><td>Campus Bizhub : Centralized Marketplace</td></tr>
-<tr><td><strong>NBIC0021</strong></td><td>PiCoS - Mini Dehumidifier and Odour Absorber</td></tr>
-<tr><td><strong>NBIC0013</strong></td><td>GREENNEST POT</td></tr>
-<tr><td><strong>NBIC0025</strong></td><td>CHITOSENSE</td></tr>
-<tr><td><strong>NBIC0032</strong></td><td>Melorice Glow</td></tr>
-<tr><td><strong>NBIC0018</strong></td><td>ChickyGo! SpiceDial</td></tr>
-<tr><td><strong>NBIC007</strong></td><td>EMPOWERFOOD HUB</td></tr>
-<tr><td><strong>NBIC0030</strong></td><td>VITAPEEL - BANANA PEEL PROTEIN DRINK</td></tr>
-<tr><td><strong>NBIC003</strong></td><td>SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</td></tr>
-<tr><td><strong>NBIC0033</strong></td><td>PURECHICK</td></tr>
-<tr><td><strong>NBIC0019</strong></td><td>OB UNLOCKED: WORKPLAY EDITION</td></tr>
-<tr><td><strong>NBIC0016</strong></td><td>MellyChi</td></tr>
-<tr><td><strong>NBIC0036</strong></td><td>Development of Mistéra Hydrating Facial Mist Using Upcycled Dragon Fruit Peel <small class="nbic-title-note"><span class="lang-en">Title cropped in supplied image</span><span class="lang-ms">Tajuk terpotong dalam imej yang dibekalkan</span></small></td></tr>
-<tr><td><strong>NBIC0015</strong></td><td>NutriBite: An AI-Powered Food Scanning Application for Nutrition Analysis and <small class="nbic-title-note"><span class="lang-en">Title cropped in supplied image</span><span class="lang-ms">Tajuk terpotong dalam imej yang dibekalkan</span></small></td></tr>
-<tr><td><strong>NBIC0024</strong></td><td>CHAY JELLY</td></tr>
-<tr><td><strong>NBIC004</strong></td><td>REBREW! CANDLE</td></tr>
-<tr><td><strong>NBIC0023</strong></td><td>DRAGOUCE</td></tr>
-</tbody></table></div>
+<p><span class="lang-en">Congratulations to the 20 innovations selected for the exhibition stage. The list follows the announcement order and does not indicate ranking. Main prize winners will be announced on 15 October 2026.</span><span class="lang-ms">Tahniah kepada 20 inovasi yang terpilih ke peringkat pameran. Senarai mengikut susunan pengumuman dan tidak menunjukkan kedudukan. Pemenang hadiah utama akan diumumkan pada 15 Oktober 2026.</span></p>
+<ol class="nbic-finalist-grid" aria-label="NBIC 2026 Top 20 Finalists / 20 Finalis Terbaik NBIC 2026">
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">01</span><div><span class="nbic-finalist-code">NBIC0012</span><p class="nbic-finalist-name">SCENTNATURE (AROMUSIC THERAPY CANDLES)</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">02</span><div><span class="nbic-finalist-code">NBIC0022</span><p class="nbic-finalist-name">GELAM FIX Natural Wood Glue Made From Gelam Tree Bark</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">03</span><div><span class="nbic-finalist-code">NBIC0010</span><p class="nbic-finalist-name">Compost Tube</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">04</span><div><span class="nbic-finalist-code">NBIC0011</span><p class="nbic-finalist-name">Campus Bizhub : Centralized Marketplace</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">05</span><div><span class="nbic-finalist-code">NBIC0021</span><p class="nbic-finalist-name">PiCoS - Mini Dehumidifier and Odour Absorber</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">06</span><div><span class="nbic-finalist-code">NBIC0013</span><p class="nbic-finalist-name">GREENNEST POT</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">07</span><div><span class="nbic-finalist-code">NBIC0025</span><p class="nbic-finalist-name">CHITOSENSE</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">08</span><div><span class="nbic-finalist-code">NBIC0032</span><p class="nbic-finalist-name">Melorice Glow</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">09</span><div><span class="nbic-finalist-code">NBIC0018</span><p class="nbic-finalist-name">ChickyGo! SpiceDial</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">10</span><div><span class="nbic-finalist-code">NBIC007</span><p class="nbic-finalist-name">EMPOWERFOOD HUB</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">11</span><div><span class="nbic-finalist-code">NBIC0030</span><p class="nbic-finalist-name">VITAPEEL - BANANA PEEL PROTEIN DRINK</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">12</span><div><span class="nbic-finalist-code">NBIC003</span><p class="nbic-finalist-name">SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">13</span><div><span class="nbic-finalist-code">NBIC0033</span><p class="nbic-finalist-name">PURECHICK</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">14</span><div><span class="nbic-finalist-code">NBIC0019</span><p class="nbic-finalist-name">OB UNLOCKED: WORKPLAY EDITION</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">15</span><div><span class="nbic-finalist-code">NBIC0016</span><p class="nbic-finalist-name">MellyChi</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">16</span><div><span class="nbic-finalist-code">NBIC0036</span><p class="nbic-finalist-name">Development of Mistèra Hydrating Facial Mist Using Upcycled Dragon Fruit Peel Extract</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">17</span><div><span class="nbic-finalist-code">NBIC0015</span><p class="nbic-finalist-name">NutriBite: An AI-Powered Food Scanning Application for Nutrition Analysis and Recipe Recommendation</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">18</span><div><span class="nbic-finalist-code">NBIC0024</span><p class="nbic-finalist-name">CHAY JELLY</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">19</span><div><span class="nbic-finalist-code">NBIC004</span><p class="nbic-finalist-name">REBREW! CANDLE</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">20</span><div><span class="nbic-finalist-code">NBIC0023</span><p class="nbic-finalist-name">DRAGOUCE</p></div></li>
+</ol>
 </div></section>
 <section class="rc4-section">
 <div class="container">
@@ -72,9 +129,9 @@
 <h2><span class="lang-en">Current result <em>status.</em></span><span class="lang-ms">Status semasa <em>keputusan.</em></span></h2>
 </div>
 <div class="rc4-status-grid reveal">
-<article><span class="status-dot pending"></span><strong><span class="lang-en">Competition Stage</span><span class="lang-ms">Peringkat Pertandingan</span></strong><p><span class="lang-en">Final judging is scheduled for 13–14 October 2026.</span><span class="lang-ms">Penilaian akhir dijadualkan pada 13–14 Oktober 2026.</span></p></article>
+<article><span class="status-dot pending"></span><strong><span class="lang-en">Competition Stage</span><span class="lang-ms">Peringkat Pertandingan</span></strong><p><span class="lang-en">Exhibition preparation on 14 October 2026; exhibition and main prize announcement on 15 October 2026.</span><span class="lang-ms">Persiapan pameran pada 14 Oktober 2026; pameran dan pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span></p></article>
 <article><span class="status-dot pending"></span><strong><span class="lang-en">Results Verification</span><span class="lang-ms">Pengesahan Keputusan</span></strong><p><span class="lang-en">Official results remain pending until judging is completed and verified.</span><span class="lang-ms">Keputusan rasmi masih menunggu sehingga penilaian selesai dan disahkan.</span></p></article>
-<article><span class="status-dot pending"></span><strong><span class="lang-en">Publication</span><span class="lang-ms">Penerbitan</span></strong><p><span class="lang-en">The Top 20 finalist list is now available below. Final award results will follow.</span><span class="lang-ms">Senarai 20 finalis terbaik kini tersedia di bawah. Keputusan anugerah akhir akan menyusul.</span></p></article>
+<article><span class="status-dot pending"></span><strong><span class="lang-en">Publication</span><span class="lang-ms">Penerbitan</span></strong><p><span class="lang-en">The Top 20 finalist list is available above. Main prize winners will be published after the 15 October announcement.</span><span class="lang-ms">Senarai 20 finalis terbaik tersedia di atas. Pemenang hadiah utama akan diterbitkan selepas pengumuman pada 15 Oktober.</span></p></article>
 <article><span class="status-dot pending"></span><strong><span class="lang-en">Recognition</span><span class="lang-ms">Pengiktirafan</span></strong><p><span class="lang-en">Award details will follow the official final announcement.</span><span class="lang-ms">Butiran pengiktirafan akan mengikuti pengumuman rasmi akhir.</span></p></article>
 </div>
 </div>
@@ -213,7 +270,8 @@
 <h2><span class="lang-en">Quick guidance on <em>result publication.</em></span><span class="lang-ms">Panduan ringkas tentang <em>penerbitan keputusan.</em></span></h2>
 </div>
 <div class="rc4-faq">
-<details><summary><span class="lang-en">When will NBIC 2026 results be published?</span><span class="lang-ms">Bilakah keputusan NBIC 2026 akan diterbitkan?</span></summary><div><span class="lang-en">Results will be published after final judging and the closing ceremony on 13–14 October 2026.</span><span class="lang-ms">Keputusan akan diterbitkan selepas penilaian akhir dan majlis penutup pada 13–14 Oktober 2026.</span></div></details>
+<details><summary><span class="lang-en">When will NBIC 2026 results be published?</span><span class="lang-ms">Bilakah keputusan NBIC 2026 akan diterbitkan?</span></summary><div><span class="lang-en">Main prize winners will be announced during the exhibition on 15 October 2026. This page will then be updated with verified results.</span><span class="lang-ms">Pemenang hadiah utama akan diumumkan semasa pameran pada 15 Oktober 2026. Halaman ini kemudian akan dikemas kini dengan keputusan yang disahkan.</span></div></details>
+<details><summary><span class="lang-en">How will finalists be notified?</span><span class="lang-ms">Bagaimanakah finalis dimaklumkan?</span></summary><div><span class="lang-en">The 20 finalists will receive an official call letter (surat panggilan) for the exhibition and the announcement of the main prize winners.</span><span class="lang-ms">20 finalis akan menerima surat panggilan rasmi bagi pameran dan pengumuman pemenang hadiah utama.</span></div></details>
 <details><summary><span class="lang-en">Where should participants check for official results?</span><span class="lang-ms">Di mana peserta perlu menyemak keputusan rasmi?</span></summary><div><span class="lang-en">This page is the dedicated NBIC 2026 results centre and will be updated with confirmed information.</span><span class="lang-ms">Halaman ini ialah pusat keputusan NBIC 2026 dan akan dikemas kini dengan maklumat yang disahkan.</span></div></details>
 <details><summary><span class="lang-en">How will judging questions be handled?</span><span class="lang-ms">Bagaimana pertanyaan berkaitan penilaian dikendalikan?</span></summary><div><span class="lang-en">Use the Evaluation Criteria page for rubric information and the Contact page for official enquiries.</span><span class="lang-ms">Gunakan halaman Kriteria Penilaian untuk maklumat rubrik dan halaman Hubungi untuk pertanyaan rasmi.</span></div></details>
 </div>
@@ -236,5 +294,6 @@
 </footer>
 <script src="js/script.js?v=20260807-menu-fix"></script>
 <script src="js/mobile-nav-fix.js?v=20260807-menu-fix"></script>
+<script src="js/homepage-countdown.js?v=20260807-home-v2"></script>
 </body>
 </html>
