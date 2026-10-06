@@ -47,6 +47,8 @@
 .btn-closed{background:#e8ecf3!important;color:#64748b!important;border:1px dashed #94a3b8!important;box-shadow:none!important;cursor:not-allowed!important;pointer-events:none;user-select:none;filter:none!important;text-shadow:none!important}
 .btn-closed .arrow{display:none}
 .btn-closed .lock{margin-right:.4em}
+.nav-item-closed{opacity:.55;cursor:not-allowed!important;pointer-events:none}
+.phase-card.is-closed{filter:grayscale(.85);opacity:.82}
 </style></head>
 <body class="inner-page system-page timeline-page timeline-master-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -76,7 +78,7 @@
 <button aria-expanded="false" class="nav-dropdown-toggle" type="button">
 <span class="lang-en">Participate</span><span class="lang-ms">Penyertaan</span><span class="caret">▾</span>
 </button>
-<div class="nav-dropdown-menu"><a href="participation-guide.html"><span class="lang-en">Participation Guide</span><span class="lang-ms">Panduan Penyertaan</span></a><a href="evaluation.html"><span class="lang-en">Evaluation Criteria</span><span class="lang-ms">Kriteria Penilaian</span></a><a href="registration.html"><span class="lang-en">Registration</span><span class="lang-ms">Pendaftaran</span></a><a href="https://forms.gle/dYY2yKwu6adYgLa46" rel="noopener" target="_blank"><span class="lang-en">Submission</span><span class="lang-ms">Penghantaran</span></a></div>
+<div class="nav-dropdown-menu"><a href="participation-guide.html"><span class="lang-en">Participation Guide</span><span class="lang-ms">Panduan Penyertaan</span></a><a href="evaluation.html"><span class="lang-en">Evaluation Criteria</span><span class="lang-ms">Kriteria Penilaian</span></a><a href="registration.html"><span class="lang-en">Registration</span><span class="lang-ms">Pendaftaran</span></a><a class="nav-item-closed" role="link" aria-disabled="true" tabindex="-1"><span class="lang-en">🔒 Submission · Closed</span><span class="lang-ms">🔒 Penghantaran · Ditutup</span></a></div>
 </div>
 <div class="nav-dropdown">
 <button aria-expanded="false" class="nav-dropdown-toggle" type="button">
@@ -153,7 +155,7 @@
 <h2><span class="lang-ms">Apa yang perlu dilakukan <em>pada setiap fasa?</em></span><span class="lang-en">What needs to be done <em>at each phase?</em></span></h2>
 </div>
 <div class="timeline-flow">
-<article class="phase-card phase-registration reveal">
+<article class="phase-card phase-registration is-closed reveal">
 <div class="phase-index">01</div>
 <div class="phase-content">
 <div class="phase-topline"><time>21 AUG → 18 SEP 2026</time><span class="phase-status"><span class="lang-ms">Pendaftaran · Ditutup</span><span class="lang-en">Registration · Closed</span></span></div>
@@ -176,16 +178,16 @@
 </div>
 </div>
 </article>
-<article class="phase-card phase-submission reveal">
+<article class="phase-card phase-submission is-closed reveal">
 <div class="phase-index">03</div>
 <div class="phase-content">
-<div class="phase-topline"><time>28 AUG → 20 SEP 2026</time><span class="phase-status"><span class="lang-ms">Penghantaran</span><span class="lang-en">Submission</span></span></div>
+<div class="phase-topline"><time>28 AUG → 20 SEP 2026</time><span class="phase-status"><span class="lang-ms">Penghantaran · Ditutup</span><span class="lang-en">Submission · Closed</span></span></div>
 <h3><span class="lang-ms">Penghantaran Poster &amp; Video</span><span class="lang-en">Poster &amp; Video Submission</span></h3>
 <div class="phase-meta-grid">
 <div><span class="meta-label"><span class="lang-ms">Hasil Fasa</span><span class="lang-en">Phase Outcome</span></span><strong><span class="lang-ms">Bahan pertandingan diterima untuk penilaian.</span><span class="lang-en">Competition materials received for judging.</span></strong></div>
-<div><span class="meta-label"><span class="lang-ms">Tindakan</span><span class="lang-en">Action</span></span><strong><span class="lang-ms">Hantar bahan yang diperlukan mengikut spesifikasi rasmi.</span><span class="lang-en">Submit the required materials according to official specifications.</span></strong></div>
+<div><span class="meta-label"><span class="lang-ms">Tindakan</span><span class="lang-en">Action</span></span><strong><span class="lang-ms">Penghantaran telah ditutup pada 20 September 2026.</span><span class="lang-en">Submission closed on 20 September 2026.</span></strong></div>
 </div>
-<div class="phase-deadline">20 SEP 2026 · 11.59 PM (MYT)</div>
+<div class="phase-deadline"><span class="lang-ms">DITUTUP 20 SEP 2026 · 11.59 PM (MYT)</span><span class="lang-en">CLOSED 20 SEP 2026 · 11.59 PM (MYT)</span></div>
 </div>
 </article>
 <article class="phase-card phase-judging reveal">

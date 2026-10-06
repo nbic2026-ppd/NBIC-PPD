@@ -61,6 +61,12 @@
 .nbic-sched-card h3{margin:12px 0 6px;color:#10213f;font-size:1.15rem;line-height:1.3}
 .nbic-sched-card p{margin:0;color:#3b4a63;font-size:.95rem;line-height:1.55}
 @media(max-width:640px){.nbic-sched{grid-template-columns:1fr}}
+.btn-closed{background:#e8ecf3!important;color:#64748b!important;border:1px dashed #94a3b8!important;box-shadow:none!important;cursor:not-allowed!important;pointer-events:none;user-select:none;filter:none!important;text-shadow:none!important}
+.btn-closed .arrow{display:none}
+.btn-closed .lock{margin-right:.4em}
+.timeline-home-step.is-locked{filter:grayscale(.85);opacity:.8}
+.step-closed{display:inline-flex;margin:0 0 0 8px;padding:.32rem .65rem;border-radius:999px;background:#5b6472;color:#fff;font-family:'Orbitron',sans-serif;font-size:.68rem;font-weight:800;letter-spacing:.06em;text-transform:uppercase;vertical-align:middle}
+.nav-item-closed{opacity:.55;cursor:not-allowed!important;pointer-events:none}
 </style></head>
 <body class="inner-page home-page">
 <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -86,7 +92,7 @@
 </div>
 <div class="nav-dropdown">
 <button aria-expanded="false" class="nav-dropdown-toggle" type="button"><span class="lang-en">Participate</span><span class="lang-ms">Penyertaan</span><span class="caret">▾</span></button>
-<div class="nav-dropdown-menu"><a href="participation-guide.html"><span class="lang-en">Participation Guide</span><span class="lang-ms">Panduan Penyertaan</span></a><a href="evaluation.html"><span class="lang-en">Evaluation Criteria</span><span class="lang-ms">Kriteria Penilaian</span></a><a href="registration.html"><span class="lang-en">Registration</span><span class="lang-ms">Pendaftaran</span></a><a href="https://forms.gle/dYY2yKwu6adYgLa46" rel="noopener" target="_blank"><span class="lang-en">Submission</span><span class="lang-ms">Penghantaran</span></a></div>
+<div class="nav-dropdown-menu"><a href="participation-guide.html"><span class="lang-en">Participation Guide</span><span class="lang-ms">Panduan Penyertaan</span></a><a href="evaluation.html"><span class="lang-en">Evaluation Criteria</span><span class="lang-ms">Kriteria Penilaian</span></a><a href="registration.html"><span class="lang-en">Registration</span><span class="lang-ms">Pendaftaran</span></a><a class="nav-item-closed" role="link" aria-disabled="true" tabindex="-1"><span class="lang-en">🔒 Submission · Closed</span><span class="lang-ms">🔒 Penghantaran · Ditutup</span></a></div>
 </div>
 <div class="nav-dropdown">
 <button aria-expanded="false" class="nav-dropdown-toggle" type="button"><span class="lang-en">Results</span><span class="lang-ms">Keputusan</span><span class="caret">▾</span></button>
@@ -101,9 +107,9 @@
 <div class="lang-switch">
 <button data-set-lang="ms" type="button">BM</button><span class="sep">|</span><button data-set-lang="en" type="button">EN</button>
 </div>
-<a class="nav-cta" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank">
-<span class="lang-en">Register Now</span><span class="lang-ms">Daftar Sekarang</span><span class="arrow">→</span>
-</a>
+<span class="nav-cta btn-closed" role="link" aria-disabled="true">
+<span class="lock" aria-hidden="true">🔒</span><span class="lang-en">Registration Closed</span><span class="lang-ms">Pendaftaran Ditutup</span>
+</span>
 </div>
 </nav>
 </div>
@@ -129,9 +135,9 @@
 <span class="lang-en">Congratulations to the NBIC 2026 Top 20 finalists! Exhibition &amp; main prize winner announcement on 15 October 2026.</span>
 </p>
 <div class="hero-actions">
-<a class="btn-primary" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank">
-<span class="lang-ms">Daftar Sekarang</span><span class="lang-en">Register Now</span><span aria-hidden="true">→</span>
-</a>
+<span class="btn-primary btn-closed" role="link" aria-disabled="true">
+<span class="lock" aria-hidden="true">🔒</span><span class="lang-ms">Pendaftaran Ditutup</span><span class="lang-en">Registration Closed</span>
+</span>
 <a class="btn-outline-light" href="participation-guide.html">
 <span class="lang-ms">Panduan Penyertaan</span><span class="lang-en">Participation Guide</span>
 </a>
@@ -349,9 +355,9 @@
 <h2><span class="lang-ms">Lima peringkat utama <em>NBIC 2026</em></span><span class="lang-en">Five key stages of <em>NBIC 2026</em></span></h2>
 </div>
 <div class="timeline-home-grid">
-<article class="timeline-home-step phase-registration"><time>21 AUG → 18 SEP 2026</time><h3><span class="lang-ms">Pendaftaran &amp; Penghantaran Abstrak Dilanjutkan</span><span class="lang-en">Registration &amp; Abstract Submission Extended</span></h3><p>11.59 PM (MYT)</p></article>
-<article class="timeline-home-step phase-acceptance"><time>29 AUG → 18 SEP 2026</time><h3><span class="lang-ms">Notis Penerimaan &amp; Tempoh Pembayaran Dilanjutkan</span><span class="lang-en">Acceptance Notice &amp; Payment Period Extended</span></h3></article>
-<article class="timeline-home-step phase-submission"><time>28 AUG → 20 SEP 2026</time><h3><span class="lang-ms">Penghantaran Poster &amp; Video</span><span class="lang-en">Poster &amp; Video Submission</span></h3></article>
+<article class="timeline-home-step phase-registration is-locked"><time>21 AUG → 18 SEP 2026</time><span class="step-closed"><span class="lang-ms">🔒 Ditutup</span><span class="lang-en">🔒 Closed</span></span><h3><span class="lang-ms">Pendaftaran &amp; Penghantaran Abstrak</span><span class="lang-en">Registration &amp; Abstract Submission</span></h3><p><span class="lang-ms">Ditutup 18 September 2026, 11.59 PM (MYT)</span><span class="lang-en">Closed 18 September 2026, 11.59 PM (MYT)</span></p></article>
+<article class="timeline-home-step phase-acceptance is-locked"><time>29 AUG → 18 SEP 2026</time><span class="step-closed"><span class="lang-ms">🔒 Ditutup</span><span class="lang-en">🔒 Closed</span></span><h3><span class="lang-ms">Notis Penerimaan &amp; Tempoh Pembayaran</span><span class="lang-en">Acceptance Notice &amp; Payment Period</span></h3></article>
+<article class="timeline-home-step phase-submission is-locked"><time>28 AUG → 20 SEP 2026</time><span class="step-closed"><span class="lang-ms">🔒 Ditutup</span><span class="lang-en">🔒 Closed</span></span><h3><span class="lang-ms">Penghantaran Poster &amp; Video</span><span class="lang-en">Poster &amp; Video Submission</span></h3><p><span class="lang-ms">Ditutup 20 September 2026, 11.59 PM (MYT)</span><span class="lang-en">Closed 20 September 2026, 11.59 PM (MYT)</span></p></article>
 <article class="timeline-home-step phase-judging"><time>27 SEP – 05 OCT 2026</time><h3><span class="lang-ms">Penilaian Peringkat Saringan</span><span class="lang-en">Preliminary Round Judging</span></h3></article>
 <article class="timeline-home-step phase-final"><time>14–15 OCT 2026</time><h3><span class="lang-ms">Pameran Finalis &amp; Pengumuman Pemenang</span><span class="lang-en">Finalist Exhibition &amp; Winner Announcement</span></h3><p><span class="lang-ms">14 Okt: Persiapan Pameran · 15 Okt: Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">14 Oct: Exhibition Preparation · 15 Oct: Exhibition &amp; Winner Announcement</span></p></article>
 </div>
@@ -375,10 +381,10 @@
 <div class="container">
 <div class="home-register-panel reveal">
 <div>
-<h2><span class="lang-ms">Sedia untuk menyertai NBIC 2026?</span><span class="lang-en">Ready to participate in NBIC 2026?</span></h2>
-<p><span class="lang-ms">Pastikan maklumat pasukan, penyelia dan ringkasan projek telah lengkap sebelum mengisi borang pendaftaran rasmi.</span><span class="lang-en">Ensure your team information, supervisor details and project summary are complete before submitting the official registration form.</span></p>
+<h2><span class="lang-ms">Pendaftaran NBIC 2026 telah ditutup.</span><span class="lang-en">NBIC 2026 registration is now closed.</span></h2>
+<p><span class="lang-ms">Terima kasih kepada semua peserta. Tahniah kepada 20 finalis yang dipanggil ke pameran dan pengumuman pemenang pada 15 Oktober 2026.</span><span class="lang-en">Thank you to all participants. Congratulations to the 20 finalists called to the exhibition and winner announcement on 15 October 2026.</span></p>
 </div>
-<a class="btn-primary" href="https://forms.gle/xqiHcMK7a9vtpRTu7" rel="noopener" target="_blank"><span class="lang-ms">Ke Halaman Pendaftaran</span><span class="lang-en">Open Registration Form</span> →</a>
+<a class="btn-primary" href="winners.html#top-20-finalists"><span class="lang-ms">Lihat Finalis</span><span class="lang-en">View Finalists</span> →</a>
 </div>
 </div>
 </section>
@@ -386,13 +392,13 @@
 <div class="container">
 <div class="section-title-wrap reveal">
 <p class="eyebrow"><span class="lang-ms">Soalan Lazim</span><span class="lang-en">Frequently Asked Questions</span></p>
-<h2><span class="lang-ms">Maklumat penting <em>sebelum mendaftar</em></span><span class="lang-en">Important information <em>before registration</em></span></h2>
+<h2><span class="lang-ms">Maklumat penting <em>mengenai NBIC 2026</em></span><span class="lang-en">Important information <em>about NBIC 2026</em></span></h2>
 </div>
 <div class="home-faq-list">
 <details class="home-faq-item"><summary><span class="lang-ms">Siapakah yang layak menyertai NBIC 2026?</span><span class="lang-en">Who is eligible to participate in NBIC 2026?</span></summary><div class="home-faq-answer"><span class="lang-ms">Pelajar aktif daripada Politeknik Malaysia, Kolej Komuniti, Universiti Awam, IPTS, Kolej Universiti dan institusi TVET yang diiktiraf, tertakluk kepada syarat rasmi.</span><span class="lang-en">Active students from Malaysian Polytechnics, Community Colleges, Public Universities, Private HEIs, University Colleges and recognised TVET institutions, subject to the official rules.</span></div></details>
 <details class="home-faq-item"><summary><span class="lang-ms">Apakah komposisi setiap pasukan?</span><span class="lang-en">What is the required team composition?</span></summary><div class="home-faq-answer"><span class="lang-ms">Satu (1) pensyarah/penyelia dan empat (4) orang pelajar; jumlah lima (5) orang setiap pasukan.</span><span class="lang-en">One (1) lecturer/supervisor and four (4) students; five (5) members in total.</span></div></details>
-<details class="home-faq-item"><summary><span class="lang-ms">Apakah yuran penyertaan?</span><span class="lang-en">What are the registration fees?</span></summary><div class="home-faq-answer"><span class="lang-ms">Yuran Penyertaan: Pendaftaran Awal (Early Bird) RM120 telah tamat tempoh pada 31 Ogos 2026; RM150 bagi pendaftaran dari 1 hingga 18 September 2026. Terbuka kepada semua IPTA/IPTS.</span><span class="lang-en">Participation Fee: Early Bird RM120 closed on 31 August 2026; RM150 for registrations made from 1 to 18 September 2026. Open to all IPTA/IPTS.</span></div></details>
-<details class="home-faq-item"><summary><span class="lang-ms">Bilakah pendaftaran ditutup?</span><span class="lang-en">When does registration close?</span></summary><div class="home-faq-answer"><span class="lang-ms">Pendaftaran dan penghantaran abstrak dilanjutkan sehingga 18 September 2026, jam 11.59 malam (MYT).</span><span class="lang-en">Registration and abstract submission are extended until 18 September 2026 at 11.59 PM (MYT).</span></div></details>
+<details class="home-faq-item"><summary><span class="lang-ms">Apakah yuran penyertaan?</span><span class="lang-en">What are the registration fees?</span></summary><div class="home-faq-answer"><span class="lang-ms">Yuran Penyertaan: Pendaftaran Awal (Early Bird) RM120 tamat tempoh pada 31 Ogos 2026; yuran biasa RM150 bagi pendaftaran 1 hingga 18 September 2026. Pendaftaran kini telah ditutup.</span><span class="lang-en">Participation Fee: Early Bird RM120 closed on 31 August 2026; standard fee RM150 for registrations from 1 to 18 September 2026. Registration is now closed.</span></div></details>
+<details class="home-faq-item"><summary><span class="lang-ms">Adakah pendaftaran masih dibuka?</span><span class="lang-en">Is registration still open?</span></summary><div class="home-faq-answer"><span class="lang-ms">Tidak. Pendaftaran dan penghantaran abstrak telah ditutup pada 18 September 2026, jam 11.59 malam (MYT).</span><span class="lang-en">No. Registration and abstract submission closed on 18 September 2026 at 11.59 PM (MYT).</span></div></details>
 </div>
 </div>
 </section>
