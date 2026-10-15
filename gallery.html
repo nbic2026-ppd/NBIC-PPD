@@ -28,6 +28,24 @@
 .btn-closed .arrow{display:none}
 .btn-closed .lock{margin-right:.4em}
 .nav-item-closed{opacity:.55;cursor:not-allowed!important;pointer-events:none}
+.nbic-gal{column-count:3;column-gap:16px}
+.nbic-gal-item{break-inside:avoid;margin:0 0 16px;border-radius:18px;overflow:hidden;background:#0b0b3b;border:1px solid rgba(125,211,252,.28);box-shadow:0 12px 28px rgba(42,34,168,.22)}
+.nbic-gal-item.wide{column-span:all;margin-bottom:16px}
+.nbic-gal-btn{display:block;width:100%;padding:0;margin:0;border:0;background:none;cursor:zoom-in;line-height:0}
+.nbic-gal-btn img{display:block;width:100%;height:auto;transition:transform .35s ease}
+.nbic-gal-btn:hover img,.nbic-gal-btn:focus-visible img{transform:scale(1.03)}
+.nbic-gal-btn:focus-visible{outline:3px solid #7dd3fc;outline-offset:-3px}
+.nbic-gal-item{position:relative}
+.nbic-gal-item figcaption{padding:12px 14px;background:linear-gradient(145deg,#0b0b3b 0%,#2a22a8 70%,#5b2fd6 100%);color:#fff;font-weight:700;font-size:.88rem;line-height:1.4}
+.nbic-lb{position:fixed;inset:0;z-index:9999;display:none;align-items:center;justify-content:center;flex-direction:column;gap:12px;padding:20px;background:rgba(7,10,40,.94)}
+.nbic-lb.open{display:flex}
+.nbic-lb img{max-width:100%;max-height:78vh;border-radius:12px;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.nbic-lb p{margin:0;color:#fff;text-align:center;font-weight:700;max-width:760px}
+.nbic-lb-x{position:absolute;top:14px;right:14px;width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);color:#fff;font-size:1.5rem;cursor:pointer}
+.nbic-gal.cols2{column-count:2}
+.nbic-gal.grid4{column-count:4}
+@media(max-width:900px){.nbic-gal,.nbic-gal.grid4{column-count:2}}
+@media(max-width:560px){.nbic-gal,.nbic-gal.cols2,.nbic-gal.grid4{column-count:1}}
 </style></head>
 <body class="inner-page system-page gallery-page"><a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
@@ -39,7 +57,7 @@
 <div class="rc4-hero-copy reveal">
 <p class="eyebrow"><span class="lang-en">Gallery &amp; Experience</span><span class="lang-ms">Galeri &amp; Pengalaman</span></p>
 <h1><span class="lang-en">Experience the journey of <em>NBIC 2026.</em></span><span class="lang-ms">Hayati perjalanan <em>NBIC 2026.</em></span></h1>
-<p><span class="lang-en">Discover the innovation showcase, participant experience and official visual highlights that shape the NBIC 2026 story.</span><span class="lang-ms">Terokai pameran inovasi, pengalaman peserta dan sorotan visual rasmi yang membentuk perjalanan NBIC 2026.</span></p>
+<p><span class="lang-en">Real moments from the NBIC 2026 final showcase and closing ceremony at Politeknik Premier Port Dickson, 14–15 October 2026.</span><span class="lang-ms">Detik sebenar daripada pameran akhir dan majlis penutup NBIC 2026 di Politeknik Premier Port Dickson, 14–15 Oktober 2026.</span></p>
 </div>
 </div>
 </section>
@@ -74,23 +92,28 @@
 </div>
 </div>
 </section>
-<section class="rc4-section">
-<div class="container">
-<div class="rc4-title reveal">
-<p class="eyebrow"><span class="lang-en">Official Visual Preview</span><span class="lang-ms">Pratonton Visual Rasmi</span></p>
-<h2><span class="lang-en">A gallery ready to <em>grow with the event.</em></span><span class="lang-ms">Galeri yang bersedia <em>berkembang bersama acara.</em></span></h2>
-<p><span class="lang-en">The current preview uses NBIC 2026 visual assets. Real event photography and official highlights can replace these panels later without changing the page structure.</span><span class="lang-ms">Pratonton semasa menggunakan aset visual NBIC 2026. Fotografi acara sebenar dan sorotan rasmi boleh menggantikan panel ini kemudian tanpa mengubah struktur halaman.</span></p>
+<section class="rc4-section"><div class="container"><div class="rc4-title reveal"><p class="eyebrow"><span class="lang-en">Awards Presentation</span><span class="lang-ms">Penyampaian Hadiah</span></p><h2><span class="lang-en">Celebrating the <em>winners.</em></span><span class="lang-ms">Meraikan <em>para pemenang.</em></span></h2></div><div class="nbic-gal cols2 reveal">
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/naib-juara-campus-bizhub.jpg" aria-label="Naib Juara – Campus Bizhub : Centralized Marketplace menerima hadiah RM500"><img src="assets/images/gallery/naib-juara-campus-bizhub.jpg" width="1500" height="844" loading="lazy" decoding="async" alt="Naib Juara – Campus Bizhub : Centralized Marketplace menerima hadiah RM500"/></button><figcaption><span class="lang-en">Runner-up · Campus Bizhub : Centralized Marketplace · RM500</span><span class="lang-ms">Naib Juara · Campus Bizhub : Centralized Marketplace · RM500</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/tempat-ketiga-aquaculture.jpg" aria-label="Tempat Ketiga – Sustainable Management of Aquaculture System menerima hadiah RM300"><img src="assets/images/gallery/tempat-ketiga-aquaculture.jpg" width="1500" height="844" loading="lazy" decoding="async" alt="Tempat Ketiga – Sustainable Management of Aquaculture System menerima hadiah RM300"/></button><figcaption><span class="lang-en">Third Place · Sustainable Management of Aquaculture System · RM300</span><span class="lang-ms">Tempat Ketiga · Sustainable Management of Aquaculture System · RM300</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/pembentang-terbaik-rebrew.jpg" aria-label="Anugerah Pembentang Terbaik – REBREW! CANDLE"><img src="assets/images/gallery/pembentang-terbaik-rebrew.jpg" width="1500" height="844" loading="lazy" decoding="async" alt="Anugerah Pembentang Terbaik – REBREW! CANDLE"/></button><figcaption><span class="lang-en">Best Presenter Award · REBREW! CANDLE</span><span class="lang-ms">Anugerah Pembentang Terbaik · REBREW! CANDLE</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-terbaik-aquaculture.jpg" aria-label="Sustainable Management of Aquaculture System menerima hamper penghargaan"><img src="assets/images/gallery/booth-terbaik-aquaculture.jpg" width="1500" height="844" loading="lazy" decoding="async" alt="Sustainable Management of Aquaculture System menerima hamper penghargaan"/></button><figcaption><span class="lang-en">Sustainable Management of Aquaculture System · Best Booth</span><span class="lang-ms">Sustainable Management of Aquaculture System · Booth Terbaik</span></figcaption></figure>
+<figure class="nbic-gal-item wide"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/sesi-bergambar-pemenang.jpg" aria-label="Sesi bergambar bersama para pemenang, peserta dan jawatankuasa NBIC 2026"><img src="assets/images/gallery/sesi-bergambar-pemenang.jpg" width="1500" height="844" loading="lazy" decoding="async" alt="Sesi bergambar bersama para pemenang, peserta dan jawatankuasa NBIC 2026"/></button><figcaption><span class="lang-en">Group photo with winners, participants and the organising committee</span><span class="lang-ms">Sesi bergambar bersama pemenang, peserta dan jawatankuasa</span></figcaption></figure>
+</div></div></section>
+<section class="rc4-section rc4-fog"><div class="container"><div class="rc4-title reveal"><p class="eyebrow"><span class="lang-en">Closing Ceremony</span><span class="lang-ms">Majlis Penutup</span></p><h2><span class="lang-en">Moments from the <em>ceremony.</em></span><span class="lang-ms">Detik-detik <em>majlis penutup.</em></span></h2></div><div class="nbic-gal reveal">
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/ucapan-perasmian.jpg" aria-label="Ucapan di Majlis Penutup NBIC 2026"><img src="assets/images/gallery/ucapan-perasmian.jpg" width="844" height="1500" loading="lazy" decoding="async" alt="Ucapan di Majlis Penutup NBIC 2026"/></button><figcaption><span class="lang-en">Address at the NBIC 2026 closing ceremony</span><span class="lang-ms">Ucapan di Majlis Penutup NBIC 2026</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/cenderahati-juri.jpg" aria-label="Penyampaian cenderahati juri"><img src="assets/images/gallery/cenderahati-juri.jpg" width="844" height="1500" loading="lazy" decoding="async" alt="Penyampaian cenderahati juri"/></button><figcaption><span class="lang-en">Presentation of tokens of appreciation to the judges</span><span class="lang-ms">Penyampaian cenderahati kepada juri</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/poster-nbic-2026.jpg" aria-label="Poster rasmi National Biz-Inno Challenge 2026"><img src="assets/images/gallery/poster-nbic-2026.jpg" width="650" height="1168" loading="lazy" decoding="async" alt="Poster rasmi National Biz-Inno Challenge 2026"/></button><figcaption><span class="lang-en">Official NBIC 2026 poster</span><span class="lang-ms">Poster rasmi NBIC 2026</span></figcaption></figure>
+</div></div></section>
+<section class="rc4-section"><div class="container"><div class="rc4-title reveal"><p class="eyebrow"><span class="lang-en">Innovation Exhibition</span><span class="lang-ms">Pameran Inovasi</span></p><h2><span class="lang-en">Finalists at <em>their booths.</em></span><span class="lang-ms">Finalis di <em>booth masing-masing.</em></span></h2></div><div class="nbic-gal grid4 reveal">
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-aquaculture.jpg" aria-label="Booth 12 – Sustainable Management of Aquaculture System"><img src="assets/images/gallery/booth-aquaculture.jpg" width="608" height="1080" loading="lazy" decoding="async" alt="Booth 12 – Sustainable Management of Aquaculture System"/></button><figcaption><span class="lang-en">Booth 12 · Sustainable Management of Aquaculture System</span><span class="lang-ms">Booth 12 · Sustainable Management of Aquaculture System</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-pameran-1.jpg" aria-label="Booth finalis di pameran inovasi NBIC 2026"><img src="assets/images/gallery/booth-pameran-1.jpg" width="608" height="1080" loading="lazy" decoding="async" alt="Booth finalis di pameran inovasi NBIC 2026"/></button><figcaption><span class="lang-en">Finalist booth at the exhibition</span><span class="lang-ms">Booth finalis di pameran</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-pameran-3.jpg" aria-label="Booth finalis di pameran inovasi NBIC 2026"><img src="assets/images/gallery/booth-pameran-3.jpg" width="608" height="1080" loading="lazy" decoding="async" alt="Booth finalis di pameran inovasi NBIC 2026"/></button><figcaption><span class="lang-en">Finalist booth at the exhibition</span><span class="lang-ms">Booth finalis di pameran</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-pameran-2.jpg" aria-label="Booth finalis di pameran inovasi NBIC 2026"><img src="assets/images/gallery/booth-pameran-2.jpg" width="608" height="1080" loading="lazy" decoding="async" alt="Booth finalis di pameran inovasi NBIC 2026"/></button><figcaption><span class="lang-en">Finalist booth at the exhibition</span><span class="lang-ms">Booth finalis di pameran</span></figcaption></figure>
 </div>
-<div class="rc4-gallery reveal">
-<figure class="rc4-gallery-card"><img alt="NBIC 2026 gallery visual" onerror="this.onerror=null;this.src='assets/images/registration-hero.png';" src="assets/images/gallery-page-hero.png"/><figcaption><span class="lang-en">Visual Identity</span><span class="lang-ms">Identiti Visual</span></figcaption></figure>
-<figure class="rc4-gallery-card"><img alt="Competition areas visual" onerror="this.onerror=null;this.src='assets/images/registration-hero.png';" src="assets/images/category-hero-page.png"/><figcaption><span class="lang-en">Competition Areas</span><span class="lang-ms">Bidang Pertandingan</span></figcaption></figure>
-<figure class="rc4-gallery-card"><img alt="Participation guide visual" onerror="this.onerror=null;this.src='assets/images/registration-hero.png';" src="assets/images/participation-guide-hero.png"/><figcaption><span class="lang-en">Participant Journey</span><span class="lang-ms">Perjalanan Peserta</span></figcaption></figure>
-<figure class="rc4-gallery-card"><img alt="Evaluation visual" onerror="this.onerror=null;this.src='assets/images/registration-hero.png';" src="assets/images/evaluation-hero.png"/><figcaption><span class="lang-en">Team &amp; Pitch Experience</span><span class="lang-ms">Pengalaman Pasukan &amp; Pitching</span></figcaption></figure>
-<figure class="rc4-gallery-card"><img alt="Registration visual" onerror="this.onerror=null;this.src='assets/images/registration-hero.png';" src="assets/images/registration-hero.png"/><figcaption><span class="lang-en">Support &amp; Communication</span><span class="lang-ms">Sokongan &amp; Komunikasi</span></figcaption></figure>
-<figure class="rc4-gallery-card"><img alt="Results visual" onerror="this.onerror=null;this.src='assets/images/registration-hero.png';" src="assets/images/winners-page-hero.png"/><figcaption><span class="lang-en">Awards &amp; Recognition</span><span class="lang-ms">Anugerah &amp; Pengiktirafan</span></figcaption></figure>
-</div>
-</div>
-</section>
+<div class="nbic-gal cols2 reveal" style="margin-top:16px">
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-purechick.jpg" aria-label="Booth PureChick"><img src="assets/images/gallery/booth-purechick.jpg" width="1080" height="608" loading="lazy" decoding="async" alt="Booth PureChick"/></button><figcaption><span class="lang-en">PureChick booth</span><span class="lang-ms">Booth PureChick</span></figcaption></figure>
+<figure class="nbic-gal-item"><button type="button" class="nbic-gal-btn" data-full="assets/images/gallery/booth-ob-unlocked.jpg" aria-label="Booth OB Unlocked"><img src="assets/images/gallery/booth-ob-unlocked.jpg" width="1080" height="608" loading="lazy" decoding="async" alt="Booth OB Unlocked"/></button><figcaption><span class="lang-en">OB Unlocked booth</span><span class="lang-ms">Booth OB Unlocked</span></figcaption></figure>
+</div></div></section>
 <section class="rc4-section rc4-fog">
 <div class="container">
 <div class="rc4-title reveal">
@@ -108,8 +131,8 @@
 <section class="rc4-cta">
 <div class="container">
 <div class="rc4-cta-panel reveal">
-<div><p class="eyebrow"><span class="lang-en">Next</span><span class="lang-ms">Seterusnya</span></p><h2><span class="lang-en">Meet the Top 20 finalists.</span><span class="lang-ms">Kenali 20 finalis terbaik.</span></h2></div>
-<a class="btn-primary" href="winners.html#top-20-finalists"><span class="lang-en">View Finalists</span><span class="lang-ms">Lihat Finalis</span><span>→</span></a>
+<div><p class="eyebrow"><span class="lang-en">Next</span><span class="lang-ms">Seterusnya</span></p><h2><span class="lang-en">See the official NBIC 2026 results.</span><span class="lang-ms">Lihat keputusan rasmi NBIC 2026.</span></h2></div>
+<a class="btn-primary" href="winners.html#keputusan-rasmi"><span class="lang-en">View Results</span><span class="lang-ms">Lihat Keputusan</span><span>→</span></a>
 </div>
 </div>
 </section>
@@ -119,5 +142,14 @@
 </footer>
 <script src="js/script.js?v=20260807-menu-fix"></script>
 <script src="js/mobile-nav-fix.js?v=20260807-menu-fix"></script>
+<div class="nbic-lb" id="nbicLb" role="dialog" aria-modal="true" aria-label="Photo viewer"><button type="button" class="nbic-lb-x" aria-label="Close">×</button><img alt=""/><p></p></div>
+<script>
+(function(){var lb=document.getElementById('nbicLb');if(!lb)return;var im=lb.querySelector('img'),cp=lb.querySelector('p');
+function lang(){return document.documentElement.getAttribute('data-lang')==='en'?'.lang-en':'.lang-ms';}
+function open(b){var f=b.closest('figure'),c=f&&f.querySelector('figcaption '+lang());im.src=b.getAttribute('data-full');im.alt=b.getAttribute('aria-label')||'';cp.textContent=c?c.textContent:'';lb.classList.add('open');}
+function close(){lb.classList.remove('open');im.removeAttribute('src');}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('.nbic-gal-btn');if(b){open(b);return;}if(lb.classList.contains('open')&&(e.target===lb||e.target.closest('.nbic-lb-x')))close();});
+document.addEventListener('keydown',function(e){if(e.key==='Escape')close();});})();
+</script>
 </body>
 </html>
