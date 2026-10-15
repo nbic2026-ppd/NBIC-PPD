@@ -14,11 +14,11 @@
 <meta content="NBIC 2026" property="og:site_name"/>
 <meta content="https://nbic2026-ppd.github.io/NBIC-PPD/winners.html" property="og:url"/>
 <meta content="NBIC 2026 | Top 20 Finalists" property="og:title"/>
-<meta content="Top 20 finalists will be called to the NBIC 2026 exhibition. Main prize winners will be announced on 15 October 2026." property="og:description"/>
+<meta content="NBIC 2026 official results: Champion REBREW! CANDLE, Runner-up Campus Bizhub : Centralized Marketplace, Third Place Sustainable Management of Aquaculture System." property="og:description"/>
 <meta content="https://nbic2026-ppd.github.io/NBIC-PPD/assets/images/winners-page-hero.png" property="og:image"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="NBIC 2026 | Top 20 Finalists" name="twitter:title"/>
-<meta content="Top 20 finalists will be called to the NBIC 2026 exhibition. Main prize winners will be announced on 15 October 2026." name="twitter:description"/>
+<meta content="NBIC 2026 official results: Champion REBREW! CANDLE, Runner-up Campus Bizhub : Centralized Marketplace, Third Place Sustainable Management of Aquaculture System." name="twitter:description"/>
 <meta content="https://nbic2026-ppd.github.io/NBIC-PPD/assets/images/winners-page-hero.png" name="twitter:image"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -60,6 +60,61 @@
 .btn-closed .arrow{display:none}
 .btn-closed .lock{margin-right:.4em}
 .nav-item-closed{opacity:.55;cursor:not-allowed!important;pointer-events:none}
+
+/* ===== Award list ===== */
+.nbic-award-summary{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;margin:0 0 22px}
+.nbic-award-summary>span{display:inline-flex;align-items:center;gap:8px;padding:8px 16px;border-radius:999px;background:#fff;border:2px solid #dce3ed;color:#10213f;font-weight:700}
+.nbic-award-summary b{font-family:'Orbitron',sans-serif;font-size:1.15rem}
+.nbic-award-summary .gold{border-color:#d9a400;background:#fff8dc}
+.nbic-award-summary .silver{border-color:#8a94a6;background:#f1f3f7}
+.nbic-award-summary .bronze{border-color:#b9702f;background:#fdeee0}
+.nbic-award-summary .total{border-color:#3b2bd8;background:#eeedff}
+.nbic-award-grid{align-items:start}
+.nbic-award-count{margin:6px 0 0!important;font-family:'Orbitron',sans-serif;font-weight:800}
+.nbic-award-list{list-style:none;margin:16px 0 0;padding:0;display:grid;gap:8px;text-align:left}
+.nbic-award-list li{display:flex;gap:10px;align-items:flex-start;padding:9px 11px;border-radius:12px;background:rgba(255,255,255,.86);color:#10213f;font-weight:700;font-size:.9rem;line-height:1.35;overflow-wrap:anywhere}
+.nbic-award-list b{flex:none;margin-top:1px;padding:2px 8px;border-radius:999px;background:#122744;color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.04em}
+
+/* ===== Overall winners ===== */
+.nbic-podium{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;align-items:end;max-width:980px;margin:30px auto 0}
+.nbic-podium-card{position:relative;padding:26px 20px 24px;border:3px solid var(--tier);border-radius:22px;background:var(--fill);text-align:center;box-shadow:0 14px 30px rgba(15,35,70,.12)}
+.nbic-podium-card.p1{--tier:#d9a400;--fill:linear-gradient(160deg,#fff8dc,#ffe9a3);order:2;padding-top:40px;padding-bottom:36px;transform:translateY(-12px)}
+.nbic-podium-card.p2{--tier:#8a94a6;--fill:linear-gradient(160deg,#f6f7fa,#e3e7ee);order:1}
+.nbic-podium-card.p3{--tier:#b9702f;--fill:linear-gradient(160deg,#fdf0e4,#f6d5b6);order:3}
+.nbic-podium-medal{display:block;font-size:2.8rem;line-height:1}
+.nbic-podium-place{display:block;margin:10px 0 8px;color:#10213f;font-family:'Orbitron',sans-serif;font-weight:800;font-size:.95rem;letter-spacing:.06em;text-transform:uppercase}
+.nbic-podium-name{margin:0;color:#10213f;font-weight:800;font-size:1.12rem;line-height:1.3;overflow-wrap:anywhere}
+.nbic-podium-card.p1 .nbic-podium-name{font-size:1.45rem}
+.nbic-podium-code{display:inline-block;margin-top:12px;padding:3px 10px;border-radius:999px;background:#122744;color:#fff;font-size:.75rem;font-weight:800;letter-spacing:.06em}
+.nbic-special-label{display:block;margin:34px auto 0;text-align:center;color:#3b2bd8;font-family:'Orbitron',sans-serif;font-weight:800;font-size:.9rem;letter-spacing:.1em;text-transform:uppercase}
+.nbic-special-row{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;max-width:980px;margin:16px auto 0}
+.nbic-special-card{padding:18px;border-radius:18px;border:1px solid rgba(125,211,252,.30);background:radial-gradient(circle at 100% 0%,rgba(56,189,248,.28) 0,transparent 46%),linear-gradient(145deg,#0b0b3b 0%,#2a22a8 58%,#5b2fd6 100%);box-shadow:0 12px 28px rgba(42,34,168,.28)}
+.nbic-special-card small{display:block;color:#ffd3ea!important;font-family:'Orbitron',sans-serif;font-weight:800;font-size:.72rem;letter-spacing:.08em;text-transform:uppercase}
+.nbic-special-card h3,.nbic-special-card p{color:#fff!important}
+.nbic-special-card h3{margin:6px 0 8px;font-size:1.05rem}
+.nbic-special-card p{margin:0;font-weight:800;line-height:1.35;overflow-wrap:anywhere}
+@media(max-width:760px){.nbic-podium,.nbic-special-row{grid-template-columns:1fr}.nbic-podium-card.p1{order:1;transform:none}.nbic-podium-card.p2{order:2}.nbic-podium-card.p3{order:3}}
+.nbic-winner-name{margin:12px 0 0!important;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.9);color:#10213f!important;font-weight:800;line-height:1.3;font-size:.92rem;overflow-wrap:anywhere}
+.nbic-finalist-win{display:inline-block;margin:0 0 6px 6px;padding:3px 10px;border-radius:999px;background:#ffd23f;color:#3b2a00;font-size:.72rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase}
+.rc4-special-awards .rc4-special-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+@media(max-width:760px){.rc4-special-awards .rc4-special-grid{grid-template-columns:1fr!important}}
+
+.nbic-thanks{padding:64px 0;background:#fff;scroll-margin-top:100px}
+.nbic-thanks-panel{max-width:1040px;margin:0 auto;padding:40px 28px;border-radius:26px;text-align:center;border:1px solid rgba(125,211,252,.30);background:radial-gradient(circle at 100% 0%,rgba(56,189,248,.30) 0,transparent 46%),radial-gradient(circle at 0% 100%,rgba(244,63,158,.18) 0,transparent 44%),linear-gradient(145deg,#0b0b3b 0%,#2a22a8 58%,#5b2fd6 100%);box-shadow:0 18px 44px rgba(42,34,168,.30)}
+.nbic-thanks-panel .eyebrow{color:#ffd3ea!important}
+.nbic-thanks-panel h2{color:#fff!important;font-family:'Orbitron',sans-serif;margin:8px 0 14px}
+.nbic-thanks-panel h2 em{color:#ffb089;font-style:normal}
+.nbic-thanks-lead{color:#e6e9ff!important;max-width:760px;margin:0 auto;line-height:1.7}
+.nbic-thanks-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:26px 0 0;text-align:left}
+.nbic-thanks-card{padding:18px;border-radius:16px;background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.22)}
+.nbic-thanks-card h3{margin:0 0 6px;color:#fff!important;font-size:1rem}
+.nbic-thanks-card p{margin:0;color:#e6e9ff!important;line-height:1.55;font-size:.93rem}
+.nbic-seeyou{margin:30px 0 0;padding-top:24px;border-top:1px solid rgba(255,255,255,.25)}
+.nbic-seeyou strong{display:block;font-family:'Orbitron',sans-serif;font-weight:900;font-size:clamp(1.3rem,4vw,2.1rem);line-height:1.25;color:#fff;overflow-wrap:anywhere}
+.nbic-seeyou strong span.hl{background:linear-gradient(135deg,#f36b21,#f43f9e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.nbic-tags{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin:18px 0 0;padding:0;list-style:none}
+.nbic-tags li{padding:6px 12px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);color:#dbe4ff;font-weight:700;font-size:.82rem}
+@media(max-width:760px){.nbic-thanks{padding:40px 0}.nbic-thanks-panel{padding:28px 16px}.nbic-thanks-grid{grid-template-columns:1fr}}
 </style></head>
 <body class="inner-page system-page winners-page"><a class="skip-link" href="#main-content">Skip to main content</a>
 <header class="site-header">
@@ -70,47 +125,47 @@
 <div class="container rc4-hero-inner">
 <div class="rc4-hero-copy reveal">
 <p class="eyebrow"><span class="lang-en">Official Results Centre</span><span class="lang-ms">Pusat Keputusan Rasmi</span></p>
-<h1><span class="lang-en">Top 20 finalists, <em>heading to the NBIC 2026 exhibition.</em></span><span class="lang-ms">20 finalis terbaik, <em>menuju Pameran NBIC 2026.</em></span></h1>
-<p><span class="lang-en">Congratulations to the NBIC 2026 Top 20 finalists. Finalists will receive an official call letter (<i>surat panggilan</i>) to attend the exhibition and the announcement of the main prize winners on 15 October 2026.</span><span class="lang-ms">Tahniah kepada 20 finalis terbaik NBIC 2026. Finalis akan menerima surat panggilan rasmi untuk menghadiri pameran dan pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span></p>
-<div class="nbic-hero-actions"><a class="btn-primary" href="#top-20-finalists"><span class="lang-en">View Finalists</span><span class="lang-ms">Lihat Finalis</span><span>→</span></a><a class="btn-outline-light" href="#pameran-schedule"><span class="lang-en">Exhibition Schedule</span><span class="lang-ms">Jadual Pameran</span></a></div>
+<h1><span class="lang-en">Congratulations to the <em>NBIC 2026 winners.</em></span><span class="lang-ms">Tahniah kepada <em>pemenang NBIC 2026.</em></span></h1>
+<p><span class="lang-en">The official NBIC 2026 results were announced on 15 October 2026. Congratulations to the champion, runner-up, third place, special award winners and all 20 finalists.</span><span class="lang-ms">Keputusan rasmi NBIC 2026 telah diumumkan pada 15 Oktober 2026. Tahniah kepada juara, naib juara, tempat ketiga, penerima anugerah khas dan semua 20 finalis.</span></p>
+<div class="nbic-hero-actions"><a class="btn-primary" href="#keputusan-rasmi"><span class="lang-en">Official Results</span><span class="lang-ms">Keputusan Rasmi</span><span>→</span></a><a class="btn-outline-light" href="#top-20-finalists"><span class="lang-en">View Finalists</span><span class="lang-ms">Lihat Finalis</span></a><a class="btn-outline-light" href="#senarai-anugerah"><span class="lang-en">Award List</span><span class="lang-ms">Senarai Anugerah</span></a></div>
 </div>
 </div>
 </section>
-<section class="nbic-pameran" id="pameran-schedule" aria-labelledby="pameran-heading"><div class="container">
+<section class="nbic-pameran" id="keputusan-rasmi" aria-labelledby="results-heading"><div class="container">
 <div class="rc4-title reveal">
-<p class="eyebrow"><span class="lang-en">Exhibition &amp; Announcement</span><span class="lang-ms">Pameran &amp; Pengumuman</span></p>
-<h2 id="pameran-heading"><span class="lang-en">Finalists called to the <em>NBIC 2026 Exhibition.</em></span><span class="lang-ms">Finalis dipanggil ke <em>Pameran NBIC 2026.</em></span></h2>
-<p><span class="lang-en">The 20 finalists will receive an official call letter (<i>surat panggilan</i>) to attend the exhibition and the announcement of the NBIC 2026 main prize winners.</span><span class="lang-ms">20 finalis akan menerima surat panggilan rasmi untuk menghadiri pameran dan pengumuman pemenang hadiah utama NBIC 2026.</span></p>
+<p class="eyebrow"><span class="lang-en">Official Results</span><span class="lang-ms">Keputusan Rasmi</span></p>
+<h2 id="results-heading"><span class="lang-en">NBIC 2026 <em>Overall Winners.</em></span><span class="lang-ms">Pemenang <em>Keseluruhan NBIC 2026.</em></span></h2>
+<p><span class="lang-en">Announced at the exhibition and closing ceremony on 15 October 2026. Heartfelt congratulations to all winners and finalists!</span><span class="lang-ms">Diumumkan semasa pameran dan majlis penutup pada 15 Oktober 2026. Setinggi-tinggi tahniah kepada semua pemenang dan finalis!</span></p>
 </div>
-<div class="nbic-countdown reveal" data-home-deadline="2026-10-15T00:00:00+08:00" role="timer" aria-label="Kiraan masa ke pameran 15 Oktober 2026 · Countdown to the exhibition, 15 October 2026">
-<span class="nbic-countdown-kicker"><span class="lang-ms">Kiraan masa ke Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">Countdown to the Exhibition &amp; Winner Announcement</span></span>
-<span class="nbic-countdown-date"><span class="lang-ms">15 Oktober 2026</span><span class="lang-en">15 October 2026</span></span>
-<div class="nbic-countdown-grid">
-<div class="nbic-countdown-unit"><strong data-count="days">00</strong><span class="nbic-unit-label"><span class="lang-ms">Hari</span><span class="lang-en">Days</span></span></div>
-<div class="nbic-countdown-unit"><strong data-count="hours">00</strong><span class="nbic-unit-label"><span class="lang-ms">Jam</span><span class="lang-en">Hours</span></span></div>
-<div class="nbic-countdown-unit"><strong data-count="minutes">00</strong><span class="nbic-unit-label"><span class="lang-ms">Minit</span><span class="lang-en">Minutes</span></span></div>
-<div class="nbic-countdown-unit"><strong data-count="seconds">00</strong><span class="nbic-unit-label"><span class="lang-ms">Saat</span><span class="lang-en">Seconds</span></span></div>
+<div class="nbic-podium reveal">
+<article class="nbic-podium-card p2"><span class="nbic-podium-medal" aria-hidden="true">🥈</span><span class="nbic-podium-place"><span class="lang-en">Runner-up</span><span class="lang-ms">Naib Juara</span></span><p class="nbic-podium-name">Campus Bizhub : Centralized Marketplace</p><span class="nbic-podium-code">NBIC0011</span></article>
+<article class="nbic-podium-card p1"><span class="nbic-podium-medal" aria-hidden="true">🥇</span><span class="nbic-podium-place"><span class="lang-en">Champion</span><span class="lang-ms">Juara</span></span><p class="nbic-podium-name">REBREW! CANDLE</p><span class="nbic-podium-code">NBIC004</span></article>
+<article class="nbic-podium-card p3"><span class="nbic-podium-medal" aria-hidden="true">🥉</span><span class="nbic-podium-place"><span class="lang-en">Third Place</span><span class="lang-ms">Tempat Ketiga</span></span><p class="nbic-podium-name">SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p><span class="nbic-podium-code">NBIC003</span></article>
 </div>
+<span class="nbic-special-label"><span class="lang-en">Special Awards</span><span class="lang-ms">Anugerah Khas</span></span>
+<div class="nbic-special-row reveal">
+<article class="nbic-special-card"><small>⭐ <span class="lang-en">Special Award</span><span class="lang-ms">Anugerah Khas</span></small><h3><span class="lang-en">Best Presentation</span><span class="lang-ms">Pembentangan Terbaik</span></h3><p>REBREW! CANDLE</p></article>
+<article class="nbic-special-card"><small>⭐ <span class="lang-en">Special Award</span><span class="lang-ms">Anugerah Khas</span></small><h3><span class="lang-en">Best Booth</span><span class="lang-ms">Booth Terbaik</span></h3><p>SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p></article>
+<article class="nbic-special-card"><small>⭐ <span class="lang-en">Special Award</span><span class="lang-ms">Anugerah Khas</span></small><h3><span class="lang-en">Best Prototype</span><span class="lang-ms">Prototaip Terbaik</span></h3><p>REBREW! CANDLE</p></article>
 </div>
+<span class="nbic-special-label"><span class="lang-en">Exhibition Schedule</span><span class="lang-ms">Jadual Pameran</span></span>
+<div id="pameran-schedule" class="nbic-sched-wrap">
 <div class="nbic-sched reveal">
 <article class="nbic-sched-card"><time datetime="2026-10-14"><span class="lang-ms">14 OKT 2026</span><span class="lang-en">14 OCT 2026</span></time><h3><span class="lang-ms">Persiapan Pameran</span><span class="lang-en">Exhibition Preparation</span></h3><p><span class="lang-ms">Finalis membuat persiapan pameran. Maklumat lanjut akan dinyatakan dalam surat panggilan rasmi.</span><span class="lang-en">Finalists prepare for the exhibition. Further details will be stated in the official call letter.</span></p></article>
 <article class="nbic-sched-card is-expo"><time datetime="2026-10-15"><span class="lang-ms">15 OKT 2026</span><span class="lang-en">15 OCT 2026</span></time><h3><span class="lang-ms">Pameran &amp; Pengumuman Pemenang</span><span class="lang-en">Exhibition &amp; Winner Announcement</span></h3><p><span class="lang-ms">Pameran finalis dan pengumuman pemenang hadiah utama NBIC 2026.</span><span class="lang-en">Finalist exhibition and announcement of the NBIC 2026 main prize winners.</span></p></article>
 </div>
-<div class="nbic-callout reveal">
-<span class="nbic-callout-icon" aria-hidden="true"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span>
-<div><strong><span class="lang-ms">Surat Panggilan Finalis</span><span class="lang-en">Finalist Call Letter</span></strong><p><span class="lang-ms">Setiap finalis akan menerima surat panggilan rasmi bagi pameran serta pengumuman pemenang hadiah utama. Sila <a href="contact.html">hubungi urus setia</a> sekiranya terdapat pertanyaan.</span><span class="lang-en">Every finalist will receive an official call letter for the exhibition and the main prize announcement. Please <a href="contact.html">contact the secretariat</a> if you have any questions.</span></p></div>
 </div>
 </div></section>
 <section class="nbic-finalists" id="top-20-finalists" aria-labelledby="finalists-heading"><div class="container">
 <div class="rc4-title reveal">
 <p class="eyebrow">NBIC 2026</p><h2 id="finalists-heading"><span class="lang-en">Top 20 <em>Finalists.</em></span><span class="lang-ms">20 Finalis <em>Terbaik.</em></span></h2>
-<p><span class="lang-en">Congratulations to the 20 innovations selected for the exhibition stage. The list follows the announcement order and does not indicate ranking. Main prize winners will be announced on 15 October 2026.</span><span class="lang-ms">Tahniah kepada 20 inovasi yang terpilih ke peringkat pameran. Senarai mengikut susunan pengumuman dan tidak menunjukkan kedudukan. Pemenang hadiah utama akan diumumkan pada 15 Oktober 2026.</span></p>
+<p><span class="lang-en">Congratulations to the 20 innovations selected for the exhibition stage. The list follows the announcement order and does not indicate ranking. The overall winners are highlighted below.</span><span class="lang-ms">Tahniah kepada 20 inovasi yang terpilih ke peringkat pameran. Senarai mengikut susunan pengumuman dan tidak menunjukkan kedudukan. Pemenang keseluruhan ditandakan di bawah.</span></p>
 </div>
 <ol class="nbic-finalist-grid" aria-label="NBIC 2026 Top 20 Finalists / 20 Finalis Terbaik NBIC 2026">
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">01</span><div><span class="nbic-finalist-code">NBIC0012</span><p class="nbic-finalist-name">SCENTNATURE (AROMUSIC THERAPY CANDLES)</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">02</span><div><span class="nbic-finalist-code">NBIC0022</span><p class="nbic-finalist-name">GELAM FIX Natural Wood Glue Made From Gelam Tree Bark</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">03</span><div><span class="nbic-finalist-code">NBIC0010</span><p class="nbic-finalist-name">Compost Tube</p></div></li>
-<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">04</span><div><span class="nbic-finalist-code">NBIC0011</span><p class="nbic-finalist-name">Campus Bizhub : Centralized Marketplace</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">04</span><div><span class="nbic-finalist-code">NBIC0011</span><span class="nbic-finalist-win"><span class="lang-en">🥈 Runner-up</span><span class="lang-ms">🥈 Naib Juara</span></span><p class="nbic-finalist-name">Campus Bizhub : Centralized Marketplace</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">05</span><div><span class="nbic-finalist-code">NBIC0021</span><p class="nbic-finalist-name">PiCoS - Mini Dehumidifier and Odour Absorber</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">06</span><div><span class="nbic-finalist-code">NBIC0013</span><p class="nbic-finalist-name">GREENNEST POT</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">07</span><div><span class="nbic-finalist-code">NBIC0025</span><p class="nbic-finalist-name">CHITOSENSE</p></div></li>
@@ -118,14 +173,14 @@
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">09</span><div><span class="nbic-finalist-code">NBIC0018</span><p class="nbic-finalist-name">ChickyGo! SpiceDial</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">10</span><div><span class="nbic-finalist-code">NBIC007</span><p class="nbic-finalist-name">EMPOWERFOOD HUB</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">11</span><div><span class="nbic-finalist-code">NBIC0030</span><p class="nbic-finalist-name">VITAPEEL - BANANA PEEL PROTEIN DRINK</p></div></li>
-<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">12</span><div><span class="nbic-finalist-code">NBIC003</span><p class="nbic-finalist-name">SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">12</span><div><span class="nbic-finalist-code">NBIC003</span><span class="nbic-finalist-win"><span class="lang-en">🥉 Third Place</span><span class="lang-ms">🥉 Tempat Ketiga</span></span><p class="nbic-finalist-name">SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">13</span><div><span class="nbic-finalist-code">NBIC0033</span><p class="nbic-finalist-name">PURECHICK</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">14</span><div><span class="nbic-finalist-code">NBIC0019</span><p class="nbic-finalist-name">OB UNLOCKED: WORKPLAY EDITION</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">15</span><div><span class="nbic-finalist-code">NBIC0016</span><p class="nbic-finalist-name">MellyChi</p></div></li>
-<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">16</span><div><span class="nbic-finalist-code">NBIC0036</span><p class="nbic-finalist-name">Development of Mistèra Hydrating Facial Mist Using Upcycled Dragon Fruit Peel Extract</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">16</span><div><span class="nbic-finalist-code">NBIC0036</span><p class="nbic-finalist-name">Development of Mistéra Hydrating Facial Mist Using Upcycled Dragon Fruit Peel Extract</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">17</span><div><span class="nbic-finalist-code">NBIC0015</span><p class="nbic-finalist-name">NutriBite: An AI-Powered Food Scanning Application for Nutrition Analysis and Recipe Recommendation</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">18</span><div><span class="nbic-finalist-code">NBIC0024</span><p class="nbic-finalist-name">CHAY JELLY</p></div></li>
-<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">19</span><div><span class="nbic-finalist-code">NBIC004</span><p class="nbic-finalist-name">REBREW! CANDLE</p></div></li>
+<li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">19</span><div><span class="nbic-finalist-code">NBIC004</span><span class="nbic-finalist-win"><span class="lang-en">🥇 Champion</span><span class="lang-ms">🥇 Juara</span></span><p class="nbic-finalist-name">REBREW! CANDLE</p></div></li>
 <li class="nbic-finalist-card"><span class="nbic-finalist-no" aria-hidden="true">20</span><div><span class="nbic-finalist-code">NBIC0023</span><p class="nbic-finalist-name">DRAGOUCE</p></div></li>
 </ol>
 </div></section>
@@ -136,10 +191,10 @@
 <h2><span class="lang-en">Current result <em>status.</em></span><span class="lang-ms">Status semasa <em>keputusan.</em></span></h2>
 </div>
 <div class="rc4-status-grid reveal">
-<article><span class="status-dot pending"></span><strong><span class="lang-en">Competition Stage</span><span class="lang-ms">Peringkat Pertandingan</span></strong><p><span class="lang-en">Exhibition preparation on 14 October 2026; exhibition and main prize announcement on 15 October 2026.</span><span class="lang-ms">Persiapan pameran pada 14 Oktober 2026; pameran dan pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span></p></article>
-<article><span class="status-dot pending"></span><strong><span class="lang-en">Results Verification</span><span class="lang-ms">Pengesahan Keputusan</span></strong><p><span class="lang-en">Official results remain pending until judging is completed and verified.</span><span class="lang-ms">Keputusan rasmi masih menunggu sehingga penilaian selesai dan disahkan.</span></p></article>
-<article><span class="status-dot pending"></span><strong><span class="lang-en">Publication</span><span class="lang-ms">Penerbitan</span></strong><p><span class="lang-en">The Top 20 finalist list is available above. Main prize winners will be published after the 15 October announcement.</span><span class="lang-ms">Senarai 20 finalis terbaik tersedia di atas. Pemenang hadiah utama akan diterbitkan selepas pengumuman pada 15 Oktober.</span></p></article>
-<article><span class="status-dot pending"></span><strong><span class="lang-en">Recognition</span><span class="lang-ms">Pengiktirafan</span></strong><p><span class="lang-en">Award details will follow the official final announcement.</span><span class="lang-ms">Butiran pengiktirafan akan mengikuti pengumuman rasmi akhir.</span></p></article>
+<article><span class="status-dot pending"></span><strong><span class="lang-en">Competition Stage</span><span class="lang-ms">Peringkat Pertandingan</span></strong><p><span class="lang-en">NBIC 2026 concluded with the exhibition and main prize announcement on 15 October 2026.</span><span class="lang-ms">NBIC 2026 berakhir dengan pameran dan pengumuman pemenang hadiah utama pada 15 Oktober 2026.</span></p></article>
+<article><span class="status-dot pending"></span><strong><span class="lang-en">Results Verification</span><span class="lang-ms">Pengesahan Keputusan</span></strong><p><span class="lang-en">Judging is complete and the official results have been verified.</span><span class="lang-ms">Penilaian telah selesai dan keputusan rasmi telah disahkan.</span></p></article>
+<article><span class="status-dot pending"></span><strong><span class="lang-en">Publication</span><span class="lang-ms">Penerbitan</span></strong><p><span class="lang-en">The overall winners, special award winners and Top 20 finalists are published above.</span><span class="lang-ms">Pemenang keseluruhan, penerima anugerah khas dan 20 finalis terbaik diterbitkan di atas.</span></p></article>
+<article><span class="status-dot pending"></span><strong><span class="lang-en">Recognition</span><span class="lang-ms">Pengiktirafan</span></strong><p><span class="lang-en">The official Gold, Silver and Bronze award list is published in the Prizes &amp; Recognition section below.</span><span class="lang-ms">Senarai anugerah rasmi Emas, Perak dan Gangsa diterbitkan dalam bahagian Hadiah &amp; Pengiktirafan di bawah.</span></p></article>
 </div>
 </div>
 </section>
@@ -178,21 +233,27 @@
           <p class="rc4-cash-kicker"><span class="lang-en">Second Place</span><span class="lang-ms">Tempat Kedua</span></p>
           <strong>RM500</strong>
           <span><span class="lang-en">Cash Prize</span><span class="lang-ms">Hadiah Wang Tunai</span></span>
-        </article>
+        
+<p class="nbic-winner-name">Campus Bizhub : Centralized Marketplace</p>
+</article>
 
         <article class="rc4-cash-card first">
           <div class="rc4-place-badge">01</div>
           <p class="rc4-cash-kicker"><span class="lang-en">First Place</span><span class="lang-ms">Tempat Pertama</span></p>
           <strong>RM700</strong>
           <span><span class="lang-en">Cash Prize</span><span class="lang-ms">Hadiah Wang Tunai</span></span>
-        </article>
+        
+<p class="nbic-winner-name">REBREW! CANDLE</p>
+</article>
 
         <article class="rc4-cash-card third">
           <div class="rc4-place-badge">03</div>
           <p class="rc4-cash-kicker"><span class="lang-en">Third Place</span><span class="lang-ms">Tempat Ketiga</span></p>
           <strong>RM300</strong>
           <span><span class="lang-en">Cash Prize</span><span class="lang-ms">Hadiah Wang Tunai</span></span>
-        </article>
+        
+<p class="nbic-winner-name">SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p>
+</article>
       </div>
 
       <div class="rc4-prize-note">
@@ -201,52 +262,96 @@
       </div>
     </div>
 
-    <div class="rc4-prize-group rc4-recognition reveal">
-      <div class="rc4-prize-group-heading">
-        <p class="eyebrow"><span class="lang-en">Recognition Awards</span><span class="lang-ms">Anugerah Pengiktirafan</span></p>
-        <h3><span class="lang-en">Gold, Silver and Bronze Recognition</span><span class="lang-ms">Pengiktirafan Emas, Perak dan Gangsa</span></h3>
-      </div>
+    <div class="rc4-prize-group rc4-recognition reveal" id="senarai-anugerah">
+<div class="rc4-prize-group-heading">
+<p class="eyebrow"><span class="lang-en">Award List</span><span class="lang-ms">Senarai Anugerah</span></p>
+<h3><span class="lang-en">Gold, Silver and Bronze Award List</span><span class="lang-ms">Senarai Anugerah Emas, Perak dan Gangsa</span></h3>
+</div>
+<div class="nbic-award-summary">
+<span class="gold"><b>10</b> <span class="lang-en">Gold</span><span class="lang-ms">Emas</span></span>
+<span class="silver"><b>11</b> <span class="lang-en">Silver</span><span class="lang-ms">Perak</span></span>
+<span class="bronze"><b>8</b> <span class="lang-en">Bronze</span><span class="lang-ms">Gangsa</span></span>
+<span class="total"><b>29</b> <span class="lang-en">Total awards</span><span class="lang-ms">Jumlah anugerah</span></span>
+</div>
+<div class="rc4-recognition-grid nbic-award-grid">
+<article class="rc4-recognition-card gold">
+<div class="rc4-recognition-medal">G</div>
+<h4><span class="lang-en">Gold Award (Anugerah Emas)</span><span class="lang-ms">Anugerah Emas (Gold)</span></h4>
+<p class="nbic-award-count"><span class="lang-en">10 entries</span><span class="lang-ms">10 penyertaan</span></p>
+<ul class="nbic-award-list">
+<li><b>NBIC0012</b><span>SCENTNATURE (AROMUSIC THERAPY CANDLES)</span></li>
+<li><b>NBIC0022</b><span>GELAM FIX Natural Wood Glue Made From Gelam Tree Bark</span></li>
+<li><b>NBIC0010</b><span>Compost Tube</span></li>
+<li><b>NBIC0011</b><span>Campus Bizhub : Centralized Marketplace</span></li>
+<li><b>NBIC0021</b><span>PiCoS - Mini Dehumidifier and Odour Absorber</span></li>
+<li><b>NBIC0013</b><span>GREENNEST POT</span></li>
+<li><b>NBIC0025</b><span>CHITOSENSE</span></li>
+<li><b>NBIC0032</b><span>Melorice Glow</span></li>
+<li><b>NBIC0018</b><span>ChickyGo! SpiceDial</span></li>
+<li><b>NBIC007</b><span>EMPOWERFOOD HUB</span></li>
+</ul>
+</article>
+<article class="rc4-recognition-card silver">
+<div class="rc4-recognition-medal">S</div>
+<h4><span class="lang-en">Silver Award (Anugerah Perak)</span><span class="lang-ms">Anugerah Perak (Silver)</span></h4>
+<p class="nbic-award-count"><span class="lang-en">11 entries</span><span class="lang-ms">11 penyertaan</span></p>
+<ul class="nbic-award-list">
+<li><b>NBIC0030</b><span>VITAPEEL - BANANA PEEL PROTEIN DRINK</span></li>
+<li><b>NBIC003</b><span>SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</span></li>
+<li><b>NBIC0033</b><span>PURECHICK</span></li>
+<li><b>NBIC0019</b><span>OB UNLOCKED: WORKPLAY EDITION</span></li>
+<li><b>NBIC0016</b><span>MellyChi</span></li>
+<li><b>NBIC0036</b><span>Development of Mistéra Hydrating Facial Mist Using Upcycled Dragon Fruit Peel Extract</span></li>
+<li><b>NBIC0015</b><span>NutriBite: An AI-Powered Food Scanning Application for Nutrition Analysis and Recipe Recommendation</span></li>
+<li><b>NBIC0024</b><span>CHAY JELLY</span></li>
+<li><b>NBIC004</b><span>REBREW! CANDLE</span></li>
+<li><b>NBIC0023</b><span>DRAGOUCE</span></li>
+<li><b>NBIC0028</b><span>Oryza Foot Scrub</span></li>
+</ul>
+</article>
+<article class="rc4-recognition-card bronze">
+<div class="rc4-recognition-medal">B</div>
+<h4><span class="lang-en">Bronze Award (Anugerah Gangsa)</span><span class="lang-ms">Anugerah Gangsa (Bronze)</span></h4>
+<p class="nbic-award-count"><span class="lang-en">8 entries</span><span class="lang-ms">8 penyertaan</span></p>
+<ul class="nbic-award-list">
+<li><b>NBIC0031</b><span>Durable Fabric with Low Carbon for Sustainable and Green Construction</span></li>
+<li><b>NBIC0014</b><span>J-MART</span></li>
+<li><b>NBIC0027</b><span>MANGISHIELD</span></li>
+<li><b>NBIC005</b><span>MUSHBOOM</span></li>
+<li><b>NBIC002</b><span>PEMBERSIHAN LONGKANG SECARA AUTOMATIK</span></li>
+<li><b>NBIC0035</b><span>Sambal Mandai by Nanka Lab</span></li>
+<li><b>NBIC009</b><span>Iot solar smart mix fetilizer (ISOMER)</span></li>
+<li><b>NBIC001</b><span>KNX Smart House System (Energy &amp; Safety)</span></li>
+</ul>
+</article>
+</div>
+<div class="rc4-prize-note">
+<span class="lang-en">Congratulations to all award recipients. Gold, Silver and Bronze are official recognition awards and are separate from the Main Cash Prizes. Entries are listed in the order of the official award list.</span>
+<span class="lang-ms">Tahniah kepada semua penerima anugerah. Emas, Perak dan Gangsa ialah anugerah pengiktirafan rasmi dan berasingan daripada Hadiah Wang Tunai Utama. Penyertaan disenaraikan mengikut susunan senarai anugerah rasmi.</span>
+</div>
+</div>
 
-      <div class="rc4-recognition-grid">
-        <article class="rc4-recognition-card gold">
-          <div class="rc4-recognition-medal">G</div>
-          <h4><span class="lang-en">Gold Recognition</span><span class="lang-ms">Pengiktirafan Emas</span></h4>
-          <p><span class="lang-en">Official Gold-level recognition for participating entries that meet the required judging standard.</span><span class="lang-ms">Pengiktirafan rasmi tahap Emas bagi penyertaan yang memenuhi standard penilaian yang ditetapkan.</span></p>
-        </article>
-
-        <article class="rc4-recognition-card silver">
-          <div class="rc4-recognition-medal">S</div>
-          <h4><span class="lang-en">Silver Recognition</span><span class="lang-ms">Pengiktirafan Perak</span></h4>
-          <p><span class="lang-en">Official Silver-level recognition for participating entries that meet the required judging standard.</span><span class="lang-ms">Pengiktirafan rasmi tahap Perak bagi penyertaan yang memenuhi standard penilaian yang ditetapkan.</span></p>
-        </article>
-
-        <article class="rc4-recognition-card bronze">
-          <div class="rc4-recognition-medal">B</div>
-          <h4><span class="lang-en">Bronze Recognition</span><span class="lang-ms">Pengiktirafan Gangsa</span></h4>
-          <p><span class="lang-en">Official Bronze-level recognition for participating entries that meet the required judging standard.</span><span class="lang-ms">Pengiktirafan rasmi tahap Gangsa bagi penyertaan yang memenuhi standard penilaian yang ditetapkan.</span></p>
-        </article>
-      </div>
-
-      <div class="rc4-prize-note">
-        <span class="lang-en">Gold, Silver and Bronze are participant recognition awards and are separate from the Main Cash Prizes.</span>
-        <span class="lang-ms">Emas, Perak dan Gangsa ialah anugerah pengiktirafan peserta dan berasingan daripada Hadiah Wang Tunai Utama.</span>
-      </div>
-    </div>
-
-    <div class="rc4-special-awards reveal">
+<div class="rc4-special-awards reveal">
       <div class="rc4-special-heading">
         <p class="eyebrow"><span class="lang-en">Special Awards</span><span class="lang-ms">Anugerah Khas</span></p>
       </div>
       <div class="rc4-special-grid">
-        <article class="rc4-special-card">
-          <div class="rc4-icon">◆</div>
-          <h3><span class="lang-en">Best Prototype Award</span><span class="lang-ms">Anugerah Prototaip Terbaik</span></h3>
-        </article>
-        <article class="rc4-special-card">
-          <div class="rc4-icon">★</div>
-          <h3><span class="lang-en">Best Presentation Award</span><span class="lang-ms">Anugerah Pembentangan Terbaik</span></h3>
-        </article>
-      </div>
+<article class="rc4-special-card">
+<div class="rc4-icon">★</div>
+<h3><span class="lang-en">Best Presentation Award</span><span class="lang-ms">Anugerah Pembentangan Terbaik</span></h3>
+<p class="nbic-winner-name">REBREW! CANDLE</p>
+</article>
+<article class="rc4-special-card">
+<div class="rc4-icon">▣</div>
+<h3><span class="lang-en">Best Booth Award</span><span class="lang-ms">Anugerah Booth Terbaik</span></h3>
+<p class="nbic-winner-name">SUSTAINABLE MANAGEMENT OF AQUACULTURE SYSTEM</p>
+</article>
+<article class="rc4-special-card">
+<div class="rc4-icon">◆</div>
+<h3><span class="lang-en">Best Prototype Award</span><span class="lang-ms">Anugerah Prototaip Terbaik</span></h3>
+<p class="nbic-winner-name">REBREW! CANDLE</p>
+</article>
+</div>
     </div>
   </div>
 </section>
@@ -258,7 +363,7 @@
 <h2><span class="lang-en">Quick guidance on <em>result publication.</em></span><span class="lang-ms">Panduan ringkas tentang <em>penerbitan keputusan.</em></span></h2>
 </div>
 <div class="rc4-faq">
-<details><summary><span class="lang-en">When will NBIC 2026 results be published?</span><span class="lang-ms">Bilakah keputusan NBIC 2026 akan diterbitkan?</span></summary><div><span class="lang-en">Main prize winners will be announced during the exhibition on 15 October 2026. This page will then be updated with verified results.</span><span class="lang-ms">Pemenang hadiah utama akan diumumkan semasa pameran pada 15 Oktober 2026. Halaman ini kemudian akan dikemas kini dengan keputusan yang disahkan.</span></div></details>
+<details><summary><span class="lang-en">When will NBIC 2026 results be published?</span><span class="lang-ms">Bilakah keputusan NBIC 2026 akan diterbitkan?</span></summary><div><span class="lang-en">The official results were announced at the exhibition on 15 October 2026 and are published on this page.</span><span class="lang-ms">Keputusan rasmi telah diumumkan semasa pameran pada 15 Oktober 2026 dan diterbitkan di halaman ini.</span></div></details>
 <details><summary><span class="lang-en">How will finalists be notified?</span><span class="lang-ms">Bagaimanakah finalis dimaklumkan?</span></summary><div><span class="lang-en">The 20 finalists will receive an official call letter (surat panggilan) for the exhibition and the announcement of the main prize winners.</span><span class="lang-ms">20 finalis akan menerima surat panggilan rasmi bagi pameran dan pengumuman pemenang hadiah utama.</span></div></details>
 <details><summary><span class="lang-en">Where should participants check for official results?</span><span class="lang-ms">Di mana peserta perlu menyemak keputusan rasmi?</span></summary><div><span class="lang-en">This page is the dedicated NBIC 2026 results centre and will be updated with confirmed information.</span><span class="lang-ms">Halaman ini ialah pusat keputusan NBIC 2026 dan akan dikemas kini dengan maklumat yang disahkan.</span></div></details>
 <details><summary><span class="lang-en">How will judging questions be handled?</span><span class="lang-ms">Bagaimana pertanyaan berkaitan penilaian dikendalikan?</span></summary><div><span class="lang-en">Use the Evaluation Criteria page for rubric information and the Contact page for official enquiries.</span><span class="lang-ms">Gunakan halaman Kriteria Penilaian untuk maklumat rubrik dan halaman Hubungi untuk pertanyaan rasmi.</span></div></details>
@@ -267,6 +372,20 @@
 </section>
 
 
+
+<section class="nbic-thanks" id="terima-kasih" aria-labelledby="thanks-heading"><div class="container">
+<div class="nbic-thanks-panel reveal">
+<p class="eyebrow"><span class="lang-en">Appreciation</span><span class="lang-ms">Penghargaan</span></p>
+<h2 id="thanks-heading"><span class="lang-en">Thank you for making <em>history</em> with us.</span><span class="lang-ms">Terima kasih kerana mencipta <em>sejarah</em> bersama kami.</span></h2>
+<p class="nbic-thanks-lead"><span class="lang-en">NBIC 2026 brought 20 finalists from 7 institutions onto one national innovation stage. Congratulations to every finalist, and heartfelt thanks to everyone who made this first edition possible.</span><span class="lang-ms">NBIC 2026 menghimpunkan 20 finalis daripada 7 institusi di satu pentas inovasi kebangsaan. Tahniah kepada semua finalis, dan setinggi-tinggi penghargaan kepada semua yang menjayakan edisi pertama ini.</span></p>
+<div class="nbic-thanks-grid">
+<div class="nbic-thanks-card"><h3>⚖️ <span class="lang-en">Our judges</span><span class="lang-ms">Para juri</span></h3><p><span class="lang-en">For your time, expertise and fair evaluation of every innovation.</span><span class="lang-ms">Atas masa, kepakaran dan penilaian adil terhadap setiap inovasi.</span></p></div>
+<div class="nbic-thanks-card"><h3>🏛️ <span class="lang-en">Participating institutions</span><span class="lang-ms">Institusi penyertaan</span></h3><p><span class="lang-en">For trusting NBIC with your students' ideas and entrepreneurial spirit.</span><span class="lang-ms">Atas kepercayaan kepada NBIC dengan idea dan semangat keusahawanan pelajar anda.</span></p></div>
+<div class="nbic-thanks-card"><h3>🤝 <span class="lang-en">Organising committee</span><span class="lang-ms">Jawatankuasa penganjur</span></h3><p><span class="lang-en">JPPKK, Ministry of Higher Education and Politeknik Premier Port Dickson, for the dedication behind the scenes.</span><span class="lang-ms">JPPKK, Kementerian Pendidikan Tinggi dan Politeknik Premier Port Dickson, atas dedikasi di sebalik tabir.</span></p></div>
+</div>
+<div class="nbic-seeyou"><strong><span class="lang-en">See you again at <span class="hl">NBIC 2027!</span></span><span class="lang-ms">Jumpa lagi di <span class="hl">NBIC 2027!</span></span></strong>
+<ul class="nbic-tags" aria-label="Hashtags"><li>#TeamPPPD</li><li>#BersamaMenujuKecemerlangan</li><li>#POLYCC</li><li>#TVETForAll</li><li>#MalaysiaMADANI</li><li>#MADANIBekerja</li></ul></div>
+</div></div></section>
 
 <section class="rc4-cta">
 <div class="container">
